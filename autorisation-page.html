@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AutorisationPage - Lottery ver.1</title>
+    <meta property="og:title" content="AutorisationPage - Lottery ver.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      #phone-error {
+        display: none;
+        color: red;
+        font-size: 14px;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <script
+        type="text/javascript"
+        src="https://github.com/teleporthq/date-time-primitive/blob/main/dist/default/lib.umd.js"
+      ></script>
+      <link href="./autorisation-page.css" rel="stylesheet" />
+
+      <div class="autorisation-page-container">
+        <log-in-ver1-for-test-page-wrapper
+          class="log-in-ver1-for-test-page-wrapper"
+        >
+          <!--LogINVer1ForTestPage component-->
+          <div
+            class="log-in-ver1-for-test-page-container1 login-container log-in-ver1-for-test-page"
+          >
+            <h2 class="log-in-ver1-for-test-page-text10">
+              <fragment class="autorisation-page-fragment9">
+                <span class="autorisation-page-text9">Вход в аккаунт</span>
+              </fragment>
+            </h2>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="log-in-ver1-for-test-page-icon1 close-login"
+            >
+              <path
+                d="M16 12H4m12 0l-4 4m4-4l-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <label for="phone">
+              <fragment class="autorisation-page-fragment1">
+                <span class="autorisation-page-text1">Номер телефона</span>
+              </fragment>
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              maxlength="18"
+              placeholder="+7 (___) ___-__-__"
+              class="log-in-ver1-for-test-page-textinput1 input"
+            />
+            <div class="log-in-ver1-for-test-page-container2 note">
+              <span class="log-in-ver1-for-test-page-text12">
+                <fragment class="autorisation-page-fragment2">
+                  <span class="autorisation-page-text2">
+                    Мы отправим код подтверждения на указанный номер.
+                  </span>
+                </fragment>
+              </span>
+            </div>
+            <div id="smsCodeBlock" class="hidden">
+              <label for="sms-code">
+                <fragment class="autorisation-page-fragment3">
+                  <span class="autorisation-page-text3">Код из СМС</span>
+                </fragment>
+              </label>
+              <input
+                type="text"
+                id="sms-code"
+                pattern="\d*"
+                inputmode="numeric"
+                maxlength="4"
+                placeholder="____"
+                class="log-in-ver1-for-test-page-textinput2 input"
+              />
+              <button
+                onclick="verifyCode()"
+                class="log-in-ver1-for-test-page-button1 sms-btn button"
+              >
+                <span>
+                  <fragment class="autorisation-page-fragment7">
+                    <span class="autorisation-page-text7">Продолжить</span>
+                  </fragment>
+                </span>
+              </button>
+            </div>
+            <div id="passwordBlock" class="hidden">
+              <label for="password">
+                <fragment class="autorisation-page-fragment4">
+                  <span class="autorisation-page-text4">Пароль</span>
+                </fragment>
+              </label>
+              <input
+                type="password"
+                id="password"
+                minlength="6"
+                placeholder="Введите пароль"
+                class="log-in-ver1-for-test-page-textinput3 input"
+              />
+              <button
+                onclick="verifyPassword()"
+                class="log-in-ver1-for-test-page-button2 sms-btn button"
+              >
+                <span>
+                  <fragment class="autorisation-page-fragment8">
+                    <span class="autorisation-page-text8">Продолжить</span>
+                  </fragment>
+                </span>
+              </button>
+            </div>
+            <button
+              id="smsBtn"
+              onclick="handleSmsLogin()"
+              class="log-in-ver1-for-test-page-button3 sms-btn button"
+            >
+              <span id="smsBtnText">
+                <fragment class="autorisation-page-fragment5">
+                  <span class="autorisation-page-text5">Войти по СМС</span>
+                </fragment>
+              </span>
+            </button>
+            <button
+              onclick="handlePasswordLogin()"
+              class="log-in-ver1-for-test-page-button4 button password-btn"
+            >
+              <span>
+                <fragment class="autorisation-page-fragment6">
+                  <span class="autorisation-page-text6">Войти по паролю</span>
+                </fragment>
+              </span>
+            </button>
+            <span>
+              <date-time-primitive
+                format="DD/MM/YYYY"
+                date="Mon Jun 23 2025 22:38:05 GMT+0300 (Москва, стандартное время)"
+              ></date-time-primitive>
+            </span>
+            <div
+              id="message"
+              class="log-in-ver1-for-test-page-container5 success-message hidden"
+            ></div>
+          </div>
+        </log-in-ver1-for-test-page-wrapper>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

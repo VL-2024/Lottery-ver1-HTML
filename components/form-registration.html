@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lottery ver.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      #phone-error {
+        display: none;
+        color: red;
+        font-size: 14px;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./form-registration.css" rel="stylesheet" />
+      <div class="form-registration-container1 form-registration">
+        <div class="form-registration-container2">
+          <div class="form-registration-container3">
+            <style>
+              .register-wrapper {
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #f4f4f4;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+              }
+
+              .register-container {
+                background: #fff;
+                padding: 32px;
+                border-radius: 16px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                max-width: 400px;
+                width: 100%;
+              }
+
+              h2 {
+                text-align: center;
+                margin-bottom: 24px;
+              }
+
+              label {
+                display: block;
+                margin-bottom: 6px;
+                font-size: 14px;
+              }
+
+              input {
+                width: 100%;
+                padding: 14px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin-bottom: 12px;
+              }
+
+              button {
+                width: 100%;
+                padding: 14px;
+                font-size: 16px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: #10b981;
+                color: white;
+                transition: background-color 0.2s ease;
+              }
+
+              button:hover {
+                background-color: #059669;
+              }
+
+              .success-message {
+                background: #e0fce0;
+                border: 1px solid #6dd36d;
+                color: #2e7d32;
+                padding: 10px;
+                border-radius: 8px;
+                margin-top: 10px;
+                font-size: 14px;
+                text-align: center;
+              }
+            </style>
+
+            <div class="register-wrapper">
+              <div class="register-container">
+                <h2>Регистрация</h2>
+
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Ваше имя" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com" />
+
+                <label for="phone">Телефон</label>
+                <input
+                  type="tel"
+                  id="reg-phone"
+                  placeholder="+7 (___) ___-__-__"
+                />
+
+                <label for="password">Пароль</label>
+                <input
+                  type="password"
+                  id="reg-password"
+                  placeholder="Введите пароль"
+                  minlength="6"
+                />
+
+                <label for="confirm">Повторите пароль</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  placeholder="Повторите пароль"
+                  minlength="6"
+                />
+
+                <button onclick="handleRegister()">Зарегистрироваться</button>
+
+                <div
+                  id="reg-message"
+                  class="success-message"
+                  style="display: none;"
+                ></div>
+              </div>
+            </div>
+
+            <script>
+              function handleRegister() {
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('reg-phone').value.trim();
+                const pass = document.getElementById('reg-password').value;
+                const confirm = document.getElementById('confirm-password').value;
+                const message = document.getElementById('reg-message');
+
+                if (!name || !email || !phone || !pass || !confirm) {
+                  showRegMessage('Пожалуйста, заполните все поля', false);
+                  return;
+                }
+
+                if (pass !== confirm) {
+                  showRegMessage('Пароли не совпадают', false);
+                  return;
+                }
+
+                if (pass.length < 6) {
+                  showRegMessage('Пароль слишком короткий', false);
+                  return;
+                }
+
+                showRegMessage('✅ Регистрация прошла успешно!');
+              }
+
+              function showRegMessage(text, success = true) {
+                const el = document.getElementById('reg-message');
+                el.style.display = 'block';
+                el.textContent = text;
+                el.style.backgroundColor = success ? '#e0fce0' : '#ffe0e0';
+                el.style.borderColor = success ? '#6dd36d' : '#ff8c8c';
+                el.style.color = success ? '#2e7d32' : '#c62828';
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

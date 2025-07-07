@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lottery ver.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      #phone-error {
+        display: none;
+        color: red;
+        font-size: 14px;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./sport-lottery-section.css" rel="stylesheet" />
+      <div
+        id="sportlottery"
+        class="sport-lottery-section-container1 sport-lottery-section"
+      >
+        <div class="sport-lottery-section-container2">
+          <h1 class="sport-lottery-section-text10 thq-heading-2">
+            <fragment class="sport-lottery-section-fragment84">
+              <span class="sport-lottery-section-text87">
+                Спортивные лотереи
+              </span>
+            </fragment>
+          </h1>
+          <span class="sport-lottery-section-text11">
+            <fragment class="sport-lottery-section-fragment83">
+              <span class="sport-lottery-section-text86">
+                Прогнозируй спорт — выигрывай как в лотерее
+              </span>
+            </fragment>
+          </span>
+          <span class="sport-lottery-section-text12">
+            <fragment class="sport-lottery-section-fragment82">
+              <span class="sport-lottery-section-text85">
+                Выбери исходы спортивных матчей, используй интуицию и знание
+                спорта, чтобы забрать главный приз
+              </span>
+            </fragment>
+          </span>
+        </div>
+        <div class="sport-lottery-section-container3">
+          <test-sport-card-wrapper
+            class="test-sport-card-wrapper"
+            rootclassname="test-sport-cardundefined"
+          >
+            <!--TestSportCard component-->
+            <div
+              class="test-sport-card-container test-sport-cardroot-class-name"
+            >
+              <div class="test-sport-card-container-event">
+                <div class="test-sport-card-title-event">
+                  <span class="test-sport-card-text10">
+                    <fragment class="sport-lottery-section-fragment10">
+                      <span class="sport-lottery-section-text13">Футбол</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text11">
+                    <fragment class="sport-lottery-section-fragment13">
+                      <span class="sport-lottery-section-text16">1</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text12">
+                    <fragment class="sport-lottery-section-fragment15">
+                      <span class="sport-lottery-section-text18">Х</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text13">
+                    <fragment class="sport-lottery-section-fragment20">
+                      <span class="sport-lottery-section-text23">2</span>
+                    </fragment>
+                  </span>
+                </div>
+                <div class="test-sport-card-event1">
+                  <span class="test-sport-card-text14">
+                    <fragment class="sport-lottery-section-fragment14">
+                      <span class="sport-lottery-section-text17">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox10"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox11"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox12"
+                  />
+                </div>
+                <div class="test-sport-card-event2">
+                  <span class="test-sport-card-text15">
+                    <fragment class="sport-lottery-section-fragment19">
+                      <span class="sport-lottery-section-text22">
+                        fthfthfhfh fh t t ytyy eryt ee er&nbsp;
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox13"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox14"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox15"
+                  />
+                </div>
+                <div class="test-sport-card-event3">
+                  <span class="test-sport-card-text16">
+                    <fragment class="sport-lottery-section-fragment18">
+                      <span class="sport-lottery-section-text21">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox16"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox17"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox18"
+                  />
+                </div>
+                <div class="test-sport-card-event4">
+                  <span class="test-sport-card-text17">
+                    <fragment class="sport-lottery-section-fragment17">
+                      <span class="sport-lottery-section-text20">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox19"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox20"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox21"
+                  />
+                </div>
+                <div class="test-sport-card-event5">
+                  <span class="test-sport-card-text18">
+                    <fragment class="sport-lottery-section-fragment16">
+                      <span class="sport-lottery-section-text19">
+                        Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox22"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox23"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox24"
+                  />
+                </div>
+                <div class="test-sport-card-container-button">
+                  <div class="test-sport-card-price">
+                    <span class="test-sport-card-text19">
+                      <fragment class="sport-lottery-section-fragment21">
+                        <span class="sport-lottery-section-text24">
+                          Цена билета
+                        </span>
+                      </fragment>
+                    </span>
+                    <span class="test-sport-card-text20">
+                      <fragment class="sport-lottery-section-fragment11">
+                        <span class="sport-lottery-section-text14">100</span>
+                      </fragment>
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    class="test-sport-card-button thq-button-animated thq-button-filled button"
+                  >
+                    <span class="test-sport-card-text21">
+                      <fragment class="sport-lottery-section-fragment12">
+                        <span class="sport-lottery-section-text15">
+                          Сделать прогноз
+                        </span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </test-sport-card-wrapper>
+          <test-sport-card-wrapper-5bmw
+            class="test-sport-card-wrapper-5bmw"
+            rootclassname="test-sport-cardundefined"
+          >
+            <!--TestSportCard component-->
+            <div
+              class="test-sport-card-container1 test-sport-cardroot-class-name1"
+            >
+              <div class="test-sport-card-container-event1">
+                <div class="test-sport-card-title-event1">
+                  <span class="test-sport-card-text22">
+                    <fragment class="sport-lottery-section-fragment22">
+                      <span class="sport-lottery-section-text25">Теннис</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text23">
+                    <fragment class="sport-lottery-section-fragment25">
+                      <span class="sport-lottery-section-text28">1</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text24">
+                    <fragment class="sport-lottery-section-fragment27">
+                      <span class="sport-lottery-section-text30">Х</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text25">
+                    <fragment class="sport-lottery-section-fragment32">
+                      <span class="sport-lottery-section-text35">2</span>
+                    </fragment>
+                  </span>
+                </div>
+                <div class="test-sport-card-event6">
+                  <span class="test-sport-card-text26">
+                    <fragment class="sport-lottery-section-fragment26">
+                      <span class="sport-lottery-section-text29">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox25"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox26"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox27"
+                  />
+                </div>
+                <div class="test-sport-card-event7">
+                  <span class="test-sport-card-text27">
+                    <fragment class="sport-lottery-section-fragment31">
+                      <span class="sport-lottery-section-text34">
+                        Barbora Krejcikova - Alexandra Eala 15:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox28"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox29"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox30"
+                  />
+                </div>
+                <div class="test-sport-card-event8">
+                  <span class="test-sport-card-text28">
+                    <fragment class="sport-lottery-section-fragment30">
+                      <span class="sport-lottery-section-text33">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox31"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox32"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox33"
+                  />
+                </div>
+                <div class="test-sport-card-event9">
+                  <span class="test-sport-card-text29">
+                    <fragment class="sport-lottery-section-fragment29">
+                      <span class="sport-lottery-section-text32">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox34"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox35"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox36"
+                  />
+                </div>
+                <div class="test-sport-card-event10">
+                  <span class="test-sport-card-text30">
+                    <fragment class="sport-lottery-section-fragment28">
+                      <span class="sport-lottery-section-text31">
+                        Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox37"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox38"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox39"
+                  />
+                </div>
+                <div class="test-sport-card-container-button1">
+                  <div class="test-sport-card-price1">
+                    <span class="test-sport-card-text31">
+                      <fragment class="sport-lottery-section-fragment33">
+                        <span class="sport-lottery-section-text36">
+                          Цена билета
+                        </span>
+                      </fragment>
+                    </span>
+                    <span class="test-sport-card-text32">
+                      <fragment class="sport-lottery-section-fragment23">
+                        <span class="sport-lottery-section-text26">100</span>
+                      </fragment>
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    class="test-sport-card-button1 thq-button-animated thq-button-filled button"
+                  >
+                    <span class="test-sport-card-text33">
+                      <fragment class="sport-lottery-section-fragment24">
+                        <span class="sport-lottery-section-text27">
+                          Сделать прогноз
+                        </span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </test-sport-card-wrapper-5bmw>
+          <test-sport-card-wrapper-fmxr
+            class="test-sport-card-wrapper-fmxr"
+            rootclassname="test-sport-cardundefined"
+          >
+            <!--TestSportCard component-->
+            <div
+              class="test-sport-card-container2 test-sport-cardroot-class-name2"
+            >
+              <div class="test-sport-card-container-event2">
+                <div class="test-sport-card-title-event2">
+                  <span class="test-sport-card-text34">
+                    <fragment class="sport-lottery-section-fragment34">
+                      <span class="sport-lottery-section-text37">
+                        Баскетбол
+                      </span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text35">
+                    <fragment class="sport-lottery-section-fragment37">
+                      <span class="sport-lottery-section-text40">1</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text36">
+                    <fragment class="sport-lottery-section-fragment39">
+                      <span class="sport-lottery-section-text42">Х</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text37">
+                    <fragment class="sport-lottery-section-fragment44">
+                      <span class="sport-lottery-section-text47">2</span>
+                    </fragment>
+                  </span>
+                </div>
+                <div class="test-sport-card-event11">
+                  <span class="test-sport-card-text38">
+                    <fragment class="sport-lottery-section-fragment38">
+                      <span class="sport-lottery-section-text41">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox40"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox41"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox42"
+                  />
+                </div>
+                <div class="test-sport-card-event12">
+                  <span class="test-sport-card-text39">
+                    <fragment class="sport-lottery-section-fragment43">
+                      <span class="sport-lottery-section-text46">
+                        Barbora Krejcikova - Alexandra Eala 15:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox43"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox44"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox45"
+                  />
+                </div>
+                <div class="test-sport-card-event13">
+                  <span class="test-sport-card-text40">
+                    <fragment class="sport-lottery-section-fragment42">
+                      <span class="sport-lottery-section-text45">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox46"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox47"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox48"
+                  />
+                </div>
+                <div class="test-sport-card-event14">
+                  <span class="test-sport-card-text41">
+                    <fragment class="sport-lottery-section-fragment41">
+                      <span class="sport-lottery-section-text44">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox49"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox50"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox51"
+                  />
+                </div>
+                <div class="test-sport-card-event15">
+                  <span class="test-sport-card-text42">
+                    <fragment class="sport-lottery-section-fragment40">
+                      <span class="sport-lottery-section-text43">
+                        Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox52"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox53"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox54"
+                  />
+                </div>
+                <div class="test-sport-card-container-button2">
+                  <div class="test-sport-card-price2">
+                    <span class="test-sport-card-text43">
+                      <fragment class="sport-lottery-section-fragment45">
+                        <span class="sport-lottery-section-text48">
+                          Цена билета
+                        </span>
+                      </fragment>
+                    </span>
+                    <span class="test-sport-card-text44">
+                      <fragment class="sport-lottery-section-fragment35">
+                        <span class="sport-lottery-section-text38">100</span>
+                      </fragment>
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    class="test-sport-card-button2 thq-button-animated thq-button-filled button"
+                  >
+                    <span class="test-sport-card-text45">
+                      <fragment class="sport-lottery-section-fragment36">
+                        <span class="sport-lottery-section-text39">
+                          Сделать прогноз
+                        </span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </test-sport-card-wrapper-fmxr>
+          <test-sport-card-wrapper-k4ps
+            class="test-sport-card-wrapper-k4ps"
+            rootclassname="test-sport-cardundefined"
+          >
+            <!--TestSportCard component-->
+            <div
+              class="test-sport-card-container3 test-sport-cardroot-class-name11"
+            >
+              <div class="test-sport-card-container-event3">
+                <div class="test-sport-card-title-event3">
+                  <span class="test-sport-card-text46">
+                    <fragment class="sport-lottery-section-fragment46">
+                      <span class="sport-lottery-section-text49">Хоккей</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text47">
+                    <fragment class="sport-lottery-section-fragment49">
+                      <span class="sport-lottery-section-text52">1</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text48">
+                    <fragment class="sport-lottery-section-fragment51">
+                      <span class="sport-lottery-section-text54">Х</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text49">
+                    <fragment class="sport-lottery-section-fragment56">
+                      <span class="sport-lottery-section-text59">2</span>
+                    </fragment>
+                  </span>
+                </div>
+                <div class="test-sport-card-event16">
+                  <span class="test-sport-card-text50">
+                    <fragment class="sport-lottery-section-fragment50">
+                      <span class="sport-lottery-section-text53">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox55"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox56"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox57"
+                  />
+                </div>
+                <div class="test-sport-card-event17">
+                  <span class="test-sport-card-text51">
+                    <fragment class="sport-lottery-section-fragment55">
+                      <span class="sport-lottery-section-text58">
+                        Barbora Krejcikova - Alexandra Eala 15:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox58"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox59"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox60"
+                  />
+                </div>
+                <div class="test-sport-card-event18">
+                  <span class="test-sport-card-text52">
+                    <fragment class="sport-lottery-section-fragment54">
+                      <span class="sport-lottery-section-text57">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox61"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox62"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox63"
+                  />
+                </div>
+                <div class="test-sport-card-event19">
+                  <span class="test-sport-card-text53">
+                    <fragment class="sport-lottery-section-fragment53">
+                      <span class="sport-lottery-section-text56">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox64"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox65"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox66"
+                  />
+                </div>
+                <div class="test-sport-card-event20">
+                  <span class="test-sport-card-text54">
+                    <fragment class="sport-lottery-section-fragment52">
+                      <span class="sport-lottery-section-text55">
+                        Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox67"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox68"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox69"
+                  />
+                </div>
+                <div class="test-sport-card-container-button3">
+                  <div class="test-sport-card-price3">
+                    <span class="test-sport-card-text55">
+                      <fragment class="sport-lottery-section-fragment57">
+                        <span class="sport-lottery-section-text60">
+                          Цена билета
+                        </span>
+                      </fragment>
+                    </span>
+                    <span class="test-sport-card-text56">
+                      <fragment class="sport-lottery-section-fragment47">
+                        <span class="sport-lottery-section-text50">100</span>
+                      </fragment>
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    class="test-sport-card-button3 thq-button-animated thq-button-filled button"
+                  >
+                    <span class="test-sport-card-text57">
+                      <fragment class="sport-lottery-section-fragment48">
+                        <span class="sport-lottery-section-text51">
+                          Сделать прогноз
+                        </span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </test-sport-card-wrapper-k4ps>
+          <test-sport-card-wrapper-wa0t
+            class="test-sport-card-wrapper-wa0t"
+            rootclassname="test-sport-cardundefined"
+          >
+            <!--TestSportCard component-->
+            <div
+              class="test-sport-card-container4 test-sport-cardroot-class-name12"
+            >
+              <div class="test-sport-card-container-event4">
+                <div class="test-sport-card-title-event4">
+                  <span class="test-sport-card-text58">
+                    <fragment class="sport-lottery-section-fragment58">
+                      <span class="sport-lottery-section-text61">Регби</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text59">
+                    <fragment class="sport-lottery-section-fragment61">
+                      <span class="sport-lottery-section-text64">1</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text60">
+                    <fragment class="sport-lottery-section-fragment63">
+                      <span class="sport-lottery-section-text66">Х</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text61">
+                    <fragment class="sport-lottery-section-fragment68">
+                      <span class="sport-lottery-section-text71">2</span>
+                    </fragment>
+                  </span>
+                </div>
+                <div class="test-sport-card-event21">
+                  <span class="test-sport-card-text62">
+                    <fragment class="sport-lottery-section-fragment62">
+                      <span class="sport-lottery-section-text65">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox70"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox71"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox72"
+                  />
+                </div>
+                <div class="test-sport-card-event22">
+                  <span class="test-sport-card-text63">
+                    <fragment class="sport-lottery-section-fragment67">
+                      <span class="sport-lottery-section-text70">
+                        Barbora Krejcikova - Alexandra Eala 15:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox73"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox74"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox75"
+                  />
+                </div>
+                <div class="test-sport-card-event23">
+                  <span class="test-sport-card-text64">
+                    <fragment class="sport-lottery-section-fragment66">
+                      <span class="sport-lottery-section-text69">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox76"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox77"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox78"
+                  />
+                </div>
+                <div class="test-sport-card-event24">
+                  <span class="test-sport-card-text65">
+                    <fragment class="sport-lottery-section-fragment65">
+                      <span class="sport-lottery-section-text68">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox79"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox80"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox81"
+                  />
+                </div>
+                <div class="test-sport-card-event25">
+                  <span class="test-sport-card-text66">
+                    <fragment class="sport-lottery-section-fragment64">
+                      <span class="sport-lottery-section-text67">
+                        Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox82"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox83"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox84"
+                  />
+                </div>
+                <div class="test-sport-card-container-button4">
+                  <div class="test-sport-card-price4">
+                    <span class="test-sport-card-text67">
+                      <fragment class="sport-lottery-section-fragment69">
+                        <span class="sport-lottery-section-text72">
+                          Цена билета
+                        </span>
+                      </fragment>
+                    </span>
+                    <span class="test-sport-card-text68">
+                      <fragment class="sport-lottery-section-fragment59">
+                        <span class="sport-lottery-section-text62">100</span>
+                      </fragment>
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    class="test-sport-card-button4 thq-button-animated thq-button-filled button"
+                  >
+                    <span class="test-sport-card-text69">
+                      <fragment class="sport-lottery-section-fragment60">
+                        <span class="sport-lottery-section-text63">
+                          Сделать прогноз
+                        </span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </test-sport-card-wrapper-wa0t>
+          <test-sport-card-wrapper-0icn
+            class="test-sport-card-wrapper-0icn"
+            rootclassname="test-sport-cardundefined"
+          >
+            <!--TestSportCard component-->
+            <div
+              class="test-sport-card-container5 test-sport-cardroot-class-name10"
+            >
+              <div class="test-sport-card-container-event5">
+                <div class="test-sport-card-title-event5">
+                  <span class="test-sport-card-text70">
+                    <fragment class="sport-lottery-section-fragment70">
+                      <span class="sport-lottery-section-text73">Волейбол</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text71">
+                    <fragment class="sport-lottery-section-fragment73">
+                      <span class="sport-lottery-section-text76">1</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text72">
+                    <fragment class="sport-lottery-section-fragment75">
+                      <span class="sport-lottery-section-text78">Х</span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text73">
+                    <fragment class="sport-lottery-section-fragment80">
+                      <span class="sport-lottery-section-text83">2</span>
+                    </fragment>
+                  </span>
+                </div>
+                <div class="test-sport-card-event26">
+                  <span class="test-sport-card-text74">
+                    <fragment class="sport-lottery-section-fragment74">
+                      <span class="sport-lottery-section-text77">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox85"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox86"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox87"
+                  />
+                </div>
+                <div class="test-sport-card-event27">
+                  <span class="test-sport-card-text75">
+                    <fragment class="sport-lottery-section-fragment79">
+                      <span class="sport-lottery-section-text82">
+                        Barbora Krejcikova - Alexandra Eala 15:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox88"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox89"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox90"
+                  />
+                </div>
+                <div class="test-sport-card-event28">
+                  <span class="test-sport-card-text76">
+                    <fragment class="sport-lottery-section-fragment78">
+                      <span class="sport-lottery-section-text81">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox91"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox92"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox93"
+                  />
+                </div>
+                <div class="test-sport-card-event29">
+                  <span class="test-sport-card-text77">
+                    <fragment class="sport-lottery-section-fragment77">
+                      <span class="sport-lottery-section-text80">
+                        VfB Stuttgart - Bayern Munich 21:30
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox94"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox95"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox96"
+                  />
+                </div>
+                <div class="test-sport-card-event30">
+                  <span class="test-sport-card-text78">
+                    <fragment class="sport-lottery-section-fragment76">
+                      <span class="sport-lottery-section-text79">
+                        Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                      </span>
+                    </fragment>
+                  </span>
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox97"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox98"
+                  />
+                  <input
+                    type="checkbox"
+                    checked="true"
+                    class="test-sport-card-checkbox99"
+                  />
+                </div>
+                <div class="test-sport-card-container-button5">
+                  <div class="test-sport-card-price5">
+                    <span class="test-sport-card-text79">
+                      <fragment class="sport-lottery-section-fragment81">
+                        <span class="sport-lottery-section-text84">
+                          Цена билета
+                        </span>
+                      </fragment>
+                    </span>
+                    <span class="test-sport-card-text80">
+                      <fragment class="sport-lottery-section-fragment71">
+                        <span class="sport-lottery-section-text74">100</span>
+                      </fragment>
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    class="test-sport-card-button5 thq-button-animated thq-button-filled button"
+                  >
+                    <span class="test-sport-card-text81">
+                      <fragment class="sport-lottery-section-fragment72">
+                        <span class="sport-lottery-section-text75">
+                          Сделать прогноз
+                        </span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </test-sport-card-wrapper-0icn>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

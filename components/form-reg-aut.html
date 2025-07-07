@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lottery ver.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      #phone-error {
+        display: none;
+        color: red;
+        font-size: 14px;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./form-reg-aut.css" rel="stylesheet" />
+      <div class="form-reg-aut-container10 form-reg-aut">
+        <div class="form-reg-aut-container11">
+          <div class="form-reg-aut-container12">
+            <style>
+              body {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+              }
+              .container {
+                max-width: 420px;
+                margin: 40px auto;
+                background: #fff;
+                padding: 24px;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+              }
+              .tabs {
+                display: flex;
+                margin-bottom: 24px;
+              }
+              .tab {
+                flex: 1;
+                text-align: center;
+                padding: 12px;
+                cursor: pointer;
+                font-weight: 600;
+                border-bottom: 2px solid transparent;
+              }
+              .tab.active {
+                border-color: #0ea5e9;
+                color: #0ea5e9;
+              }
+              label {
+                display: block;
+                margin-top: 16px;
+                font-weight: 500;
+              }
+              input {
+                width: 100%;
+                padding: 10px;
+                margin-top: 6px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 14px;
+              }
+              input[readonly] {
+                background-color: #f0f0f0;
+                color: #888;
+              }
+              .button, .link-button {
+                margin-top: 20px;
+                padding: 12px;
+                width: 100%;
+                background-color: #0ea5e9;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 16px;
+              }
+              .link-button {
+                background: none;
+                color: #0ea5e9;
+                text-decoration: underline;
+              }
+              .hidden {
+                display: none;
+              }
+              .message {
+                font-size: 14px;
+                color: #dc2626;
+                margin-top: 12px;
+              }
+            </style>
+            <script src="https://unpkg.com/imask"></script>
+
+            <script>
+                          (function(){
+                let smsAttempts = 0;
+                let smsTimeout;
+
+                const phoneMask = IMask(document.getElementById('regPhone'), {
+                  mask: '+{7} (000) 000-00-00'
+                });
+
+                IMask(document.getElementById('loginPhone'), {
+                  mask: '+{7} (000) 000-00-00'
+                });
+
+                function switchTab(tab) {
+                  document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+                  document.getElementById('registerForm').classList.add('hidden');
+                  document.getElementById('loginForm').classList.add('hidden');
+                  document.getElementById('recoveryForm').classList.add('hidden');
+
+                  if (tab === 'register') {
+                    document.querySelectorAll('.tab')[0].classList.add('active');
+                    document.getElementById('registerForm').classList.remove('hidden');
+                  } else {
+                    document.querySelectorAll('.tab')[1].classList.add('active');
+                    document.getElementById('loginForm').classList.remove('hidden');
+                  }
+                }
+
+                function showRecovery() {
+                  const phone = document.getElementById('loginPhone').value;
+                  document.getElementById('loginForm').classList.add('hidden');
+                  document.getElementById('recoveryForm').classList.remove('hidden');
+                  document.getElementById('recPhone').value = phone;
+                }
+
+                function sendSMS() {
+                  const phone = document.getElementById('regPhone');
+                  const email = document.getElementById('regEmail');
+                  const name = document.getElementById('regName');
+                  const dob = document.getElementById('regDob');
+                  const password = document.getElementById('regPassword');
+                  const repeat = document.getElementById('regPasswordRepeat');
+                  const regError = document.getElementById('regError');
+
+                  regError.textContent = '';
+
+                  if (!phone.value || phone.value.length < 18) {
+                    regError.textContent = 'Введите корректный номер телефона';
+                    return;
+                  }
+                  if (!email.checkValidity()) {
+                    regError.textContent = 'Введите корректный email';
+                    return;
+                  }
+                  if (!name.value || !dob.value || !password.value || !repeat.value) {
+                    regError.textContent = 'Пожалуйста, заполните все поля';
+                    return;
+                  }
+                  if (password.value !== repeat.value) {
+                    regError.textContent = 'Пароли не совпадают';
+                    return;
+                  }
+
+                  if (smsAttempts >= 3) {
+                    regError.textContent = 'Превышено количество попыток. Попробуйте позже.';
+                    return;
+                  }
+
+                  smsAttempts++;
+                  document.getElementById('smsVerification').classList.remove('hidden');
+                  document.getElementById('registerFields').classList.add('hidden');
+
+                  let timeLeft = 180;
+                  const timer = document.getElementById('smsTimer');
+                  timer.textContent = `Можно повторно отправить через ${timeLeft} сек.`;
+                  smsTimeout = setInterval(() => {
+                    timeLeft--;
+                    timer.textContent = `Можно повторно отправить через ${timeLeft} сек.`;
+                    if (timeLeft <= 0) clearInterval(smsTimeout);
+                  }, 1000);
+                }
+
+                function validateRegisterForm() {
+                  const code = document.getElementById('smsCode');
+                  const smsError = document.getElementById('smsError');
+
+                  smsError.textContent = '';
+
+                  if (!code.value) {
+                    smsError.textContent = 'Введите код из СМС';
+                    return false;
+                  }
+
+                  return true;
+                }
+              })()
+            </script>
+          </div>
+        </div>
+        <div class="form-reg-aut-container13 container">
+          <div class="tabs">
+            <div onclick="switchTab('register')" class="tab active">
+              <span>
+                <fragment class="form-reg-aut-fragment16">
+                  <span class="form-reg-aut-text39">Регистрация</span>
+                </fragment>
+              </span>
+            </div>
+            <div onclick="switchTab('login')" class="tab">
+              <span>
+                <fragment class="form-reg-aut-fragment27">
+                  <span class="form-reg-aut-text50">Войти</span>
+                </fragment>
+              </span>
+            </div>
+          </div>
+          <form id="registerForm" onsubmit="return validateRegisterForm()">
+            <div id="registerFields">
+              <label>
+                <fragment class="form-reg-aut-fragment13">
+                  <span class="form-reg-aut-text36">📱 Телефон</span>
+                </fragment>
+              </label>
+              <input
+                type="tel"
+                id="regPhone"
+                required=""
+                placeholder="+7 (___) ___-__-__"
+                class="input"
+              />
+              <label>
+                <fragment class="form-reg-aut-fragment30">
+                  <span class="form-reg-aut-text53">Email</span>
+                </fragment>
+              </label>
+              <input
+                type="email"
+                id="regEmail"
+                title="Введите корректный email"
+                pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                required=""
+                class="input"
+              />
+              <label>
+                <fragment class="form-reg-aut-fragment18">
+                  <span class="form-reg-aut-text41">Имя</span>
+                </fragment>
+              </label>
+              <input type="text" id="regName" required="" class="input" />
+              <label>
+                <fragment class="form-reg-aut-fragment26">
+                  <span class="form-reg-aut-text49">Дата рождения</span>
+                </fragment>
+              </label>
+              <input type="date" id="regDob" required="" class="input" />
+              <label>
+                <fragment class="form-reg-aut-fragment21">
+                  <span class="form-reg-aut-text44">Пароль</span>
+                </fragment>
+              </label>
+              <input
+                type="password"
+                id="regPassword"
+                required=""
+                class="input"
+              />
+              <label>
+                <fragment class="form-reg-aut-fragment25">
+                  <span class="form-reg-aut-text48">Повторить пароль</span>
+                </fragment>
+              </label>
+              <input
+                type="password"
+                id="regPasswordRepeat"
+                required=""
+                class="input"
+              />
+              <div id="regError" class="message"></div>
+              <button type="button" onclick="sendSMS()" class="button">
+                <span>
+                  <fragment class="form-reg-aut-fragment14">
+                    <span class="form-reg-aut-text37">Отправить СМС</span>
+                  </fragment>
+                </span>
+              </button>
+            </div>
+            <div id="smsVerification" class="hidden">
+              <label>
+                <fragment class="form-reg-aut-fragment17">
+                  <span class="form-reg-aut-text40">Код из СМС</span>
+                </fragment>
+              </label>
+              <input
+                type="text"
+                id="smsCode"
+                required=""
+                maxlength="6"
+                class="input"
+              />
+              <div id="smsTimer" class="message"></div>
+              <div id="smsError" class="message"></div>
+              <button type="submit" class="button">
+                <span>
+                  <fragment class="form-reg-aut-fragment11">
+                    <span class="form-reg-aut-text34">Регистрация</span>
+                  </fragment>
+                </span>
+              </button>
+            </div>
+          </form>
+          <form id="loginForm" class="hidden">
+            <label>
+              <fragment class="form-reg-aut-fragment15">
+                <span class="form-reg-aut-text38">📱 Телефон</span>
+              </fragment>
+            </label>
+            <input
+              type="tel"
+              id="loginPhone"
+              required=""
+              placeholder="+7 (___) ___-__-__"
+              class="input"
+            />
+            <label>
+              <fragment class="form-reg-aut-fragment12">
+                <span class="form-reg-aut-text35">Пароль</span>
+              </fragment>
+            </label>
+            <input
+              type="password"
+              id="loginPassword"
+              required=""
+              class="input"
+            />
+            <button type="submit" class="button">
+              <span>
+                <fragment class="form-reg-aut-fragment31">
+                  <span class="form-reg-aut-text54">Войти</span>
+                </fragment>
+              </span>
+            </button>
+            <button
+              type="button"
+              onclick="showRecovery()"
+              class="link-button button"
+            >
+              <span>
+                <fragment class="form-reg-aut-fragment29">
+                  <span class="form-reg-aut-text52">Забыл пароль</span>
+                </fragment>
+              </span>
+            </button>
+          </form>
+          <form id="recoveryForm" class="hidden">
+            <h3>
+              <fragment class="form-reg-aut-fragment32">
+                <span class="form-reg-aut-text55">Восстановление пароля</span>
+              </fragment>
+            </h3>
+            <label>
+              <fragment class="form-reg-aut-fragment24">
+                <span class="form-reg-aut-text47">📱 Телефон</span>
+              </fragment>
+            </label>
+            <input type="tel" id="recPhone" readonly="" class="input" />
+            <label>
+              <fragment class="form-reg-aut-fragment19">
+                <span class="form-reg-aut-text42">Имя</span>
+              </fragment>
+            </label>
+            <input type="text" id="recName" required="" class="input" />
+            <label>
+              <fragment class="form-reg-aut-fragment28">
+                <span class="form-reg-aut-text51">Дата рождения</span>
+              </fragment>
+            </label>
+            <input type="date" id="recDob" required="" class="input" />
+            <div class="message">
+              <span>
+                <fragment class="form-reg-aut-fragment20">
+                  <span class="form-reg-aut-text43">
+                    Ссылка для восстановления пароля будет отправлена на e-mail:
+                  </span>
+                </fragment>
+              </span>
+              <b>
+                <fragment class="form-reg-aut-fragment22">
+                  <span class="form-reg-aut-text45">ivan***@mail.ru</span>
+                </fragment>
+              </b>
+            </div>
+            <button type="submit" class="button">
+              <span>
+                <fragment class="form-reg-aut-fragment10">
+                  <span class="form-reg-aut-text33">Восстановить пароль</span>
+                </fragment>
+              </span>
+            </button>
+          </form>
+          <button class="form-reg-aut-button6 button">
+            <span>
+              <fragment class="form-reg-aut-fragment23">
+                <span class="form-reg-aut-text46">Регистрация/Войти с ЕСА</span>
+              </fragment>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

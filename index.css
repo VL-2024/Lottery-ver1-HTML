@@ -1,0 +1,7426 @@
+.navbar8-wrapper {
+  display: contents;
+}
+ 
+.navbar8-container1 {
+  top: 0px;
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  position: sticky;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+ 
+.navbar8-navbar-interactive {
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  max-width: var(--dl-layout-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-layout-space-oneandhalfunits);
+  padding-left: var(--dl-layout-space-threeunits);
+  padding-right: var(--dl-layout-space-threeunits);
+  padding-bottom: var(--dl-layout-space-oneandhalfunits);
+  justify-content: space-between;
+}
+ 
+.navbar8-navlink {
+  display: contents;
+}
+ 
+.navbar8-image1 {
+  width: 134px;
+  height: auto;
+  text-decoration: none;
+}
+ 
+.navbar8-desktop-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.navbar8-links1 {
+  gap: var(--dl-layout-space-twounits);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: var(--dl-layout-space-twounits);
+  flex-direction: row;
+  justify-content: flex-start;
+}
+ 
+.navbar8-link11 {
+  text-decoration: none;
+}
+ 
+.navbar8-link31 {
+  text-decoration: none;
+}
+ 
+.navbar8-link32 {
+  text-decoration: none;
+}
+ 
+.navbar8-link4-dropdown-trigger {
+  gap: 4px;
+  cursor: pointer;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+ 
+.navbar8-icon-container1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+ 
+.navbar8-container2 {
+  display: flex;
+  align-items: center;
+  animation-name: rotateInDownLeft;
+  flex-direction: row;
+  animation-delay: 0s;
+  justify-content: flex-end;
+  animation-duration: 500ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.navbar8-icon10 {
+  width: 24px;
+  height: 24px;
+}
+ 
+.navbar8-container3 {
+  display: flex;
+  align-items: center;
+  animation-name: rotateInDownRight;
+  flex-direction: row;
+  animation-delay: 0s;
+  justify-content: flex-end;
+  animation-duration: 500ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.navbar8-icon12 {
+  width: 24px;
+  height: 24px;
+}
+ 
+.navbar8-buttons1 {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+ 
+.navbar8-action11 {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+ 
+.navbar8-action21 {
+  display: flex;
+  flex-direction: row;
+}
+ 
+.navbar8-burger-menu {
+  display: none;
+}
+ 
+.navbar8-icon14 {
+  width: var(--dl-layout-size-xsmall);
+  height: var(--dl-layout-size-xsmall);
+}
+ 
+.navbar8-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: var(--dl-layout-space-twounits);
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+ 
+.navbar8-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.navbar8-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-layout-space-threeunits);
+  justify-content: space-between;
+}
+ 
+.navbar8-logo {
+  height: 3rem;
+}
+ 
+.navbar8-close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.navbar8-icon16 {
+  width: var(--dl-layout-size-xsmall);
+  height: var(--dl-layout-size-xsmall);
+}
+ 
+.navbar8-links2 {
+  gap: var(--dl-layout-space-unit);
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+ 
+.navbar8-link12 {
+  text-decoration: none;
+}
+ 
+.navbar8-link33 {
+  text-decoration: none;
+}
+ 
+.navbar8-link4-accordion {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.navbar8-trigger {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.navbar8-icon-container2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+ 
+.navbar8-container4 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+ 
+.navbar8-icon18 {
+  width: 24px;
+  height: 24px;
+}
+ 
+.navbar8-container5 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+ 
+.navbar8-icon20 {
+  width: 24px;
+  height: 24px;
+}
+ 
+.navbar8-container6 {
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-layout-space-halfunit);
+  grid-template-columns: 1fr;
+}
+ 
+.navbar8-menu-item1 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-layout-space-oneandhalfunits);
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+}
+ 
+.navbar8-page1-image1 {
+  width: 50px;
+  height: 50px;
+}
+ 
+.navbar8-content1 {
+  width: 340px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.navbar8-page11 {
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+.navbar8-menu-item2 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-layout-space-oneandhalfunits);
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+}
+ 
+.navbar8-page2-image1 {
+  width: 50px;
+  height: 50px;
+}
+ 
+.navbar8-content2 {
+  width: 340px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.navbar8-page21 {
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+.navbar8-menu-item3 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-layout-space-oneandhalfunits);
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+}
+ 
+.navbar8-page3-image1 {
+  width: 50px;
+  height: 50px;
+}
+ 
+.navbar8-content3 {
+  width: 340px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.navbar8-page31 {
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+.navbar8-menu-item4 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-layout-space-oneandhalfunits);
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+}
+ 
+.navbar8-page4-image1 {
+  width: 50px;
+  height: 50px;
+}
+ 
+.navbar8-content4 {
+  width: 340px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.navbar8-page41 {
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+.navbar8-buttons2 {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  margin-top: var(--dl-layout-space-twounits);
+  align-items: center;
+  flex-direction: row;
+}
+ 
+.navbar8-action12 {
+  text-decoration: none;
+}
+ 
+.navbar8-icon-group {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+}
+ 
+.navbar8-container7 {
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  animation-name: fadeInDownBig;
+  animation-delay: 0s;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light);
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.navbar8-link5-menu-list {
+  width: 100%;
+  display: grid;
+  padding: var(--dl-layout-space-oneandhalfunits);
+  grid-gap: var(--dl-layout-space-halfunit);
+  max-width: var(--dl-layout-size-maxwidth);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+ 
+.navbar8-menu-item5 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-layout-space-oneandhalfunits);
+  align-self: stretch;
+  align-items: center;
+  text-decoration: none;
+}
+ 
+.navbar8-page1-image2 {
+  width: 30px;
+  height: 30px;
+}
+ 
+.navbar8-content5 {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.navbar8-page12 {
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+.navbar8-menu-item6 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-layout-space-oneandhalfunits);
+  align-self: stretch;
+  align-items: center;
+  text-decoration: none;
+}
+ 
+.navbar8-page2-image2 {
+  width: 30px;
+  height: 30px;
+}
+ 
+.navbar8-content6 {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.navbar8-page22 {
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+.navbar8-menu-item7 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-layout-space-oneandhalfunits);
+  align-self: stretch;
+  align-items: center;
+  text-decoration: none;
+}
+ 
+.navbar8-page3-image2 {
+  width: 30px;
+  height: 30px;
+}
+ 
+.navbar8-content7 {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.navbar8-page32 {
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+.navbar8-menu-item8 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-layout-space-oneandhalfunits);
+  align-self: stretch;
+  align-items: center;
+  text-decoration: none;
+}
+ 
+.navbar8-page4-image2 {
+  width: 30px;
+  height: 30px;
+}
+ 
+.navbar8-content8 {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.navbar8-page42 {
+  font-style: normal;
+  font-weight: 600;
+}
+ 
+.navbar8-container8 {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.home-fragment11 {
+  display: contents;
+}
+ 
+.home-text11 {
+  display: inline-block;
+}
+ 
+.home-fragment21 {
+  display: contents;
+}
+ 
+.home-text21 {
+  display: inline-block;
+}
+ 
+.home-fragment18 {
+  display: contents;
+}
+ 
+.home-text18 {
+  display: inline-block;
+}
+ 
+.home-fragment23 {
+  display: contents;
+}
+ 
+.home-text23 {
+  display: inline-block;
+}
+ 
+.home-fragment22 {
+  display: contents;
+}
+ 
+.home-text22 {
+  display: inline-block;
+}
+ 
+.home-fragment19 {
+  display: contents;
+}
+ 
+.home-text19 {
+  display: inline-block;
+}
+ 
+.home-fragment15 {
+  display: contents;
+}
+ 
+.home-text15 {
+  display: inline-block;
+}
+ 
+.home-fragment24 {
+  display: contents;
+}
+ 
+.home-text24 {
+  display: inline-block;
+}
+ 
+.home-fragment10 {
+  display: contents;
+}
+ 
+.home-text10 {
+  display: inline-block;
+}
+ 
+.home-fragment20 {
+  display: contents;
+}
+ 
+.home-text20 {
+  display: inline-block;
+}
+ 
+.home-fragment12 {
+  display: contents;
+}
+ 
+.home-text12 {
+  display: inline-block;
+}
+ 
+.home-fragment14 {
+  display: contents;
+}
+ 
+.home-text14 {
+  display: inline-block;
+}
+ 
+.home-fragment16 {
+  display: contents;
+}
+ 
+.home-text16 {
+  display: inline-block;
+}
+ 
+.home-fragment17 {
+  display: contents;
+}
+ 
+.home-text17 {
+  display: inline-block;
+}
+ 
+.home-fragment13 {
+  display: contents;
+}
+ 
+.home-text13 {
+  display: inline-block;
+}
+ 
+
+ 
+
+ 
+
+ 
+.navbar8root-class-name3 {
+  max-width: 100%;
+}
+ 
+@media(max-width: 991px) {
+  .navbar8-container1 {
+    width: auto;
+  }
+  .navbar8-logo {
+    width: var(--dl-layout-size-large);
+    height: auto;
+  }
+  .navbar8-icon16 {
+    width: var(--dl-layout-size-medium);
+    height: auto;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .navbar8-container1 {
+    width: 100%;
+  }
+  .navbar8-navbar-interactive {
+    width: 100%;
+    max-width: var(--dl-layout-size-maxwidth);
+    padding-left: var(--dl-layout-space-twounits);
+    padding-right: var(--dl-layout-space-twounits);
+  }
+  .navbar8-desktop-menu {
+    display: none;
+  }
+  .navbar8-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar8-icon14 {
+    width: var(--dl-layout-size-small);
+    height: auto;
+  }
+  .navbar8-mobile-menu {
+    padding-top: var(--dl-layout-space-oneandhalfunits);
+    padding-bottom: var(--dl-layout-space-oneandhalfunits);
+  }
+  .navbar8-container6 {
+    grid-gap: 0;
+  }
+  .navbar8-link5-menu-list {
+    display: none;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .navbar8-navbar-interactive {
+    padding: var(--dl-layout-space-unit);
+  }
+  .navbar8-image1 {
+    width: var(--dl-layout-size-medium);
+  }
+  .navbar8-icon14 {
+    width: var(--dl-layout-size-medium);
+    height: var(--dl-layout-size-small);
+  }
+  .navbar8-mobile-menu {
+    padding: var(--dl-layout-space-unit);
+  }
+  .navbar8-logo {
+    width: var(--dl-layout-size-large);
+    height: auto;
+  }
+  .navbar8-icon16 {
+    width: var(--dl-layout-size-small);
+    height: auto;
+  }
+  .navbar8root-class-name3 {
+    flex: 1;
+    max-width: 100%;
+  }
+}
+
+.banner21-wrapper {
+  display: contents;
+}
+ 
+.banner21-container {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.banner21-max-width {
+  height: var(--dl-layout-size-xxlarge);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+.banner21-video {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+ 
+
+ 
+@media(max-width: 479px) {
+  .banner21-container {
+    margin-top: var(--dl-layout-space-unit);
+    margin-bottom: var(--dl-layout-space-unit);
+  }
+  .banner21-max-width {
+    margin-top: 0px;
+  }
+}
+
+.banner1-wrapper {
+  display: contents;
+}
+ 
+.banner1-container1 {
+  gap: var(--dl-layout-space-unit);
+  height: var(--dl-layout-size-xlarge);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.banner1-max-width {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.banner1-container2 {
+  gap: var(--dl-layout-space-halfunit);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.banner1-title {
+  font-size: 50px;
+  text-align: center;
+}
+ 
+.banner1-text1 {
+  text-align: center;
+}
+ 
+.project-desacription-fragment1 {
+  display: contents;
+}
+ 
+.project-desacription-text1 {
+  display: inline-block;
+}
+ 
+.project-desacription-fragment2 {
+  display: contents;
+}
+ 
+.project-desacription-text2 {
+  display: inline-block;
+}
+ 
+.banner1root-class-name {
+  height: auto;
+}
+ 
+@media(max-width: 991px) {
+  .banner1root-class-name {
+    height: auto;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .banner1root-class-name {
+    height: auto;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .banner1-container1 {
+    width: 479px;
+    height: 289px;
+  }
+  .banner1-title {
+    font-size: 32px;
+  }
+  .banner1-text1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .banner1root-class-name {
+    height: auto;
+  }
+}
+
+.project-desacription-wrapper {
+  display: contents;
+}
+ 
+.project-desacription-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.project-desacription-fragment1 {
+  display: contents;
+}
+ 
+.project-desacription-text1 {
+  display: inline-block;
+}
+ 
+.project-desacription-fragment2 {
+  display: contents;
+}
+ 
+.project-desacription-text2 {
+  display: inline-block;
+}
+ 
+
+
+.lottery-type-section-wrapper {
+  display: contents;
+}
+ 
+.lottery-type-section-layout251 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: var(--dl-layout-space-halfunit);
+  padding-left: var(--dl-layout-space-oneandhalfunits);
+  padding-right: var(--dl-layout-space-halfunit);
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-halfunit);
+}
+ 
+.lottery-type-section-max-width {
+  gap: var(--dl-layout-space-threeunits);
+  width: auto;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.lottery-type-section-section-title {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+}
+ 
+.lottery-type-section-content1 {
+  gap: 48px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.lottery-type-section-row {
+  width: 100%;
+  max-width: auto;
+  min-width: 0px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.lottery-type-section-feature1 {
+  flex: 1 1 33.33%;
+  width: auto;
+  min-width: 0px;
+}
+ 
+.lottery-type-section-content2 {
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.lottery-type-section-feature1-title {
+  align-self: center;
+  text-align: center;
+}
+ 
+.lottery-type-section-feature1-description {
+  align-self: center;
+  text-align: center;
+}
+ 
+.lottery-type-section-feature2 {
+  flex: 1 1 33.33%;
+  width: auto;
+  min-width: 0px;
+}
+ 
+.lottery-type-section-content3 {
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.lottery-type-section-feature2-title {
+  align-self: center;
+  text-align: center;
+}
+ 
+.lottery-type-section-feature2-description {
+  align-self: center;
+  text-align: center;
+}
+ 
+.lottery-type-section-feature3 {
+  flex: 1 1 33.33%;
+  width: auto;
+  min-width: 0px;
+}
+ 
+.lottery-type-section-content4 {
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.lottery-type-section-feature3-title {
+  align-self: center;
+  text-align: center;
+}
+ 
+.lottery-type-section-feature3-description {
+  align-self: center;
+  text-align: center;
+}
+ 
+.home-fragment30 {
+  display: contents;
+}
+ 
+.home-text30 {
+  display: inline-block;
+}
+ 
+.home-fragment27 {
+  display: contents;
+}
+ 
+.home-text27 {
+  display: inline-block;
+}
+ 
+.home-fragment28 {
+  display: contents;
+}
+ 
+.home-text28 {
+  display: inline-block;
+}
+ 
+.home-fragment25 {
+  display: contents;
+}
+ 
+.home-text25 {
+  display: inline-block;
+}
+ 
+.home-fragment26 {
+  display: contents;
+}
+ 
+.home-text26 {
+  display: inline-block;
+}
+ 
+.home-fragment29 {
+  display: contents;
+}
+ 
+.home-text29 {
+  display: inline-block;
+}
+ 
+.lottery-type-sectionroot-class-name {
+  height: auto;
+}
+ 
+@media(max-width: 991px) {
+  .lottery-type-section-section-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .lottery-type-section-content1 {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .lottery-type-section-row {
+    align-self: flex-start;
+    padding-top: var(--dl-layout-space-halfunit);
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .lottery-type-section-feature1 {
+    align-self: flex-start;
+  }
+  .lottery-type-section-feature1-image {
+    height: 260px;
+  }
+  .lottery-type-section-feature2 {
+    align-self: flex-start;
+  }
+  .lottery-type-section-feature2-image {
+    height: 260px;
+  }
+  .lottery-type-section-feature3 {
+    align-self: flex-start;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .lottery-type-section-layout251 {
+    align-items: center;
+  }
+  .lottery-type-section-max-width {
+    align-self: center;
+  }
+  .lottery-type-section-row {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .lottery-type-section-feature1-image {
+    width: 100%;
+  }
+  .lottery-type-section-feature2 {
+    width: auto;
+  }
+  .lottery-type-section-feature2-image {
+    width: 100%;
+    height: auto;
+  }
+  .lottery-type-section-feature3 {
+    width: auto;
+  }
+  .lottery-type-section-feature3-image {
+    width: 100%;
+    height: auto;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .lottery-type-section-layout251 {
+    padding: var(--dl-layout-space-halfunit);
+    align-items: center;
+  }
+  .lottery-type-section-max-width {
+    gap: var(--dl-layout-space-halfunit);
+    align-self: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .lottery-type-section-row {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .lottery-type-section-feature1 {
+    align-self: flex-start;
+  }
+  .lottery-type-section-feature1-image {
+    height: auto;
+  }
+  .lottery-type-section-feature1-title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .lottery-type-section-feature2 {
+    align-self: flex-start;
+  }
+  .lottery-type-section-feature2-image {
+    height: auto;
+  }
+  .lottery-type-section-feature2-title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .lottery-type-section-feature3 {
+    align-self: flex-start;
+    flex-direction: column;
+  }
+  .lottery-type-section-feature3-title {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.asia-jackpot-section-wrapper {
+  display: contents;
+}
+ 
+.asia-jackpot-section-container2 {
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-layout-space-fiveunits);
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+}
+ 
+.asia-jackpot-section-tabs-menu {
+  gap: var(--dl-layout-space-twounits);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.asia-jackpot-section-tab-horizontal1 {
+  gap: var(--dl-layout-space-twounits);
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.asia-jackpot-section-divider-container1 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.asia-jackpot-section-container3 {
+  width: 2px;
+  align-self: stretch;
+  background-color: var(--dl-color-theme-neutral-dark);
+}
+ 
+.asia-jackpot-section-content1 {
+  gap: 16px;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.asia-jackpot-section-feature1-title {
+  font-size: 28px;
+}
+ 
+.asia-jackpot-section-tab-horizontal2 {
+  gap: var(--dl-layout-space-twounits);
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.asia-jackpot-section-divider-container2 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.asia-jackpot-section-container4 {
+  width: 2px;
+  align-self: stretch;
+  background-color: var(--dl-color-theme-neutral-dark);
+}
+ 
+.asia-jackpot-section-content2 {
+  gap: 16px;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.asia-jackpot-section-feature2-title {
+  font-size: 28px;
+}
+ 
+.asia-jackpot-section-tab-horizontal3 {
+  gap: var(--dl-layout-space-twounits);
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.asia-jackpot-section-divider-container3 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.asia-jackpot-section-container5 {
+  width: 2px;
+  align-self: stretch;
+  background-color: var(--dl-color-theme-neutral-dark);
+}
+ 
+.asia-jackpot-section-content3 {
+  gap: 16px;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.asia-jackpot-section-feature3-title {
+  font-size: 28px;
+}
+ 
+.asia-jackpot-section-image-container {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+ 
+.asia-jackpot-section-image1 {
+  width: 100%;
+  display: flex;
+  animation-name: fadeIn;
+  flex-direction: row;
+  animation-delay: 0s;
+  justify-content: center;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.asia-jackpot-section-image2 {
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.asia-jackpot-section-image3 {
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.home-fragment35 {
+  display: contents;
+}
+ 
+.home-text40 {
+  display: inline-block;
+}
+ 
+.home-fragment31 {
+  display: contents;
+}
+ 
+.home-text31 {
+  display: inline-block;
+}
+ 
+.home-fragment34 {
+  display: contents;
+}
+ 
+.home-text36 {
+  display: inline-block;
+}
+ 
+.home-fragment33 {
+  display: contents;
+}
+ 
+.home-text33 {
+  display: inline-block;
+}
+ 
+.home-fragment32 {
+  display: contents;
+}
+ 
+.home-text32 {
+  display: inline-block;
+}
+ 
+.home-fragment36 {
+  display: contents;
+}
+ 
+.home-text43 {
+  display: inline-block;
+}
+ 
+@media(max-width: 991px) {
+  .asia-jackpot-section-container2 {
+    grid-gap: var(--dl-layout-space-twounits);
+    grid-template-columns: 1fr;
+  }
+  .asia-jackpot-section-tabs-menu {
+    order: 2;
+  }
+}
+
+.slider-action-wrapper {
+  display: contents;
+}
+ 
+.slider-action-container1 {
+  width: 100%;
+  height: 235px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.slider-action-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.slider-action-slider {
+  width: 90%;
+  height: 180px;
+  display: inline-block;
+  padding: 0px;
+  border-radius: var(--dl-layout-radius-imageradius);
+}
+ 
+.slider-action-slider-slide1 {
+  display: flex;
+  border-radius: var(--dl-layout-radius-imageradius);
+  background-size: cover;
+  background-image: url("public/ImageFastGames/postersora1-1400w.png");
+}
+ 
+.slider-action-slider-slide2 {
+  display: flex;
+  border-radius: var(--dl-layout-radius-imageradius);
+  background-size: 100%;
+  background-image: url('https://images.unsplash.com/photo-1697384333613-de519c7367c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTk3NzAzN3w&ixlib=rb-4.0.3&q=80&w=1400');
+}
+ 
+.slider-action-slider-slide3 {
+  display: flex;
+  border-radius: var(--dl-layout-radius-imageradius);
+  background-size: 100%;
+  background-image: url('https://images.unsplash.com/photo-1698180687511-bd6c0104ee98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTk3NzQ5NXw&ixlib=rb-4.0.3&q=80&w=1400');
+}
+ 
+.slider-action-slider-pagination {
+  display: block;
+}
+ 
+.slider-action-slider-button-prev {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: #ffffff;
+}
+ 
+.slider-action-slider-button-next {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: #ffffff;
+}
+ 
+.slider-actionroot-class-name {
+  margin-bottom: var(--dl-layout-space-halfunit);
+}
+ 
+@media(max-width: 479px) {
+  .slider-action-slider {
+    border-radius: var(--dl-layout-radius-imageradius);
+  }
+  .slider-action-slider-slide1 {
+    border-radius: var(--dl-layout-radius-radius4);
+    background-size: cover;
+    background-image: url("public/ImageFastGames/wheel%20magic-1400w.jpg");
+  }
+}
+
+.fast-games-section-wrapper {
+  display: contents;
+}
+ 
+.fast-games-section-header78 {
+  gap: var(--dl-layout-space-threeunits);
+  width: 90%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+.fast-games-section-column {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: auto;
+  display: flex;
+  padding: 0px;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+.fast-games-section-content1 {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.fast-games-section-text1 {
+  font-size: 35px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+ 
+.fast-games-section-text2 {
+  width: 100%;
+  font-size: 22px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+}
+ 
+.fast-games-section-navlink {
+  display: contents;
+}
+ 
+.fast-games-section-content2 {
+  gap: var(--dl-layout-space-halfunit);
+  flex: 1;
+  width: 95%;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+ 
+.fast-games-section-row-container1 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: stretch;
+  animation-name: none;
+  flex-direction: row;
+  animation-delay: 0s;
+  justify-content: flex-start;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.fast-games-section-strip1 {
+  height: 180px;
+  align-self: flex-start;
+}
+ 
+.fast-games-section-placeholder-image10 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image11 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image12 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image13 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image14 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image15 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-strip2 {
+  height: 180px;
+}
+ 
+.fast-games-section-placeholder-image16 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image17 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image18 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image19 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image20 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image21 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-row-container2 {
+  width: 100%;
+  height: 200px;
+  align-self: flex-start;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-content: flex-start;
+}
+ 
+.fast-games-section-strip3 {
+  height: 180px;
+  align-self: flex-start;
+}
+ 
+.fast-games-section-placeholder-image22 {
+  width: 300px;
+  height: 168px;
+  min-width: auto;
+}
+ 
+.fast-games-section-placeholder-image23 {
+  width: 300px;
+  height: 168px;
+  min-width: auto;
+}
+ 
+.fast-games-section-placeholder-image24 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image25 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image26 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image27 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-strip4 {
+  height: 180px;
+}
+ 
+.fast-games-section-placeholder-image28 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image29 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image30 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image31 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image32 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-placeholder-image33 {
+  width: 300px;
+  height: 168px;
+}
+ 
+.fast-games-section-container2 {
+  display: contents;
+}
+ 
+.home-fragment38 {
+  display: contents;
+}
+ 
+.home-text47 {
+  display: inline-block;
+}
+ 
+.home-fragment37 {
+  display: contents;
+}
+ 
+.home-text46 {
+  display: inline-block;
+  font-style: normal;
+}
+ 
+.fast-games-sectionroot-class-name {
+  width: 100%;
+}
+ 
+@media(max-width: 767px) {
+  .fast-games-section-content2 {
+    width: 100%;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .fast-games-section-content1 {
+    width: 90%;
+    align-self: center;
+  }
+  .fast-games-section-text1 {
+    font-size: 35px;
+  }
+  .fast-games-section-text2 {
+    font-style: normal;
+    font-weight: 400;
+  }
+  .fast-games-section-content2 {
+    width: 95%;
+  }
+}
+
+.test-sport-card-wrapper {
+  display: contents;
+}
+ 
+.test-sport-card-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.test-sport-card-container-event {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  box-shadow: 5px 5px 5px 5px #7e7e7e;
+  align-items: flex-start;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  border-radius: var(--dl-layout-radius-radius4);
+  flex-direction: column;
+}
+ 
+.test-sport-card-title-event {
+  flex: 0 0 auto;
+  width: 100%;
+  height: var(--dl-layout-size-small);
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text10 {
+  width: 200px;
+  height: auto;
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+}
+ 
+.test-sport-card-text11 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+  border-width: 0px;
+}
+ 
+.test-sport-card-text12 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-text13 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-event1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text14 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox10 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox11 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox12 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text15 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox13 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox14 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox15 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event3 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text16 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox16 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox17 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox18 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event4 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text17 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox19 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox20 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox21 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event5 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text18 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox22 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox23 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox24 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-container-button {
+  flex: 0;
+  display: flex;
+  align-self: center;
+  margin-top: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.test-sport-card-price {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text19 {
+  width: auto;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-text20 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-card-button {
+  margin: var(--dl-layout-space-halfunit);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  background-color: #bf4408;
+}
+ 
+.test-sport-card-text21 {
+  color: #ffffff;
+}
+ 
+.home-fragment40 {
+  display: contents;
+}
+ 
+.home-text49 {
+  display: inline-block;
+}
+ 
+.home-fragment39 {
+  display: contents;
+}
+ 
+.home-text48 {
+  display: inline-block;
+  font-size: 22px;
+}
+ 
+.home-fragment41 {
+  display: contents;
+}
+ 
+.home-text50 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment20 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text23 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment17 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text20 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment18 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text21 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment13 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text16 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment11 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text14 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment16 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text19 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment10 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text13 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment21 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text24 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment14 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text17 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment12 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text15 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment19 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text22 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment15 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text18 {
+  display: inline-block;
+}
+ 
+.test-sport-cardroot-class-name {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name1 {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name2 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name3 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name4 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name5 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name6 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name7 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name8 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name9 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name10 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name11 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name12 {
+  width: auto;
+  align-self: center;
+}
+ 
+@media(max-width: 991px) {
+  .home-text49 {
+    font-size: 22px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .test-sport-card-text10 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text48 {
+    font-size: 22px;
+  }
+  .sport-lottery-section-text13 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .test-sport-cardroot-class-name2 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name10 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name11 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name12 {
+    align-self: flex-start;
+  }
+}
+
+.test-sport-card-wrapper-wc73 {
+  display: contents;
+}
+ 
+.test-sport-card-container1 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.test-sport-card-container-event1 {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  box-shadow: 5px 5px 5px 5px #7e7e7e;
+  align-items: flex-start;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  border-radius: var(--dl-layout-radius-radius4);
+  flex-direction: column;
+}
+ 
+.test-sport-card-title-event1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: var(--dl-layout-size-small);
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text22 {
+  width: 200px;
+  height: auto;
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+}
+ 
+.test-sport-card-text23 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+  border-width: 0px;
+}
+ 
+.test-sport-card-text24 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-text25 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-event6 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text26 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox25 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox26 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox27 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event7 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text27 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox28 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox29 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox30 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event8 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text28 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox31 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox32 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox33 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event9 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text29 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox34 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox35 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox36 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event10 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text30 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox37 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox38 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox39 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-container-button1 {
+  flex: 0;
+  display: flex;
+  align-self: center;
+  margin-top: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.test-sport-card-price1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text31 {
+  width: auto;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-text32 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-card-button1 {
+  margin: var(--dl-layout-space-halfunit);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  background-color: #bf4408;
+}
+ 
+.test-sport-card-text33 {
+  color: #ffffff;
+}
+ 
+.home-fragment40 {
+  display: contents;
+}
+ 
+.home-text49 {
+  display: inline-block;
+}
+ 
+.home-fragment39 {
+  display: contents;
+}
+ 
+.home-text48 {
+  display: inline-block;
+  font-size: 22px;
+}
+ 
+.home-fragment41 {
+  display: contents;
+}
+ 
+.home-text50 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment32 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text35 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment29 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text32 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment30 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text33 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment25 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text28 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment23 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text26 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment28 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text31 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment22 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text25 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment33 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text36 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment26 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text29 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment24 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text27 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment31 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text34 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment27 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text30 {
+  display: inline-block;
+}
+ 
+.test-sport-cardroot-class-name {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name1 {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name2 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name3 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name4 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name5 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name6 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name7 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name8 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name9 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name10 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name11 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name12 {
+  width: auto;
+  align-self: center;
+}
+ 
+@media(max-width: 991px) {
+  .home-text49 {
+    font-size: 22px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .test-sport-card-text22 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text48 {
+    font-size: 22px;
+  }
+  .sport-lottery-section-text25 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .test-sport-cardroot-class-name2 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name10 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name11 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name12 {
+    align-self: flex-start;
+  }
+}
+
+.test-sport-card-wrapper-3bdm {
+  display: contents;
+}
+ 
+.test-sport-card-container2 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.test-sport-card-container-event2 {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  box-shadow: 5px 5px 5px 5px #7e7e7e;
+  align-items: flex-start;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  border-radius: var(--dl-layout-radius-radius4);
+  flex-direction: column;
+}
+ 
+.test-sport-card-title-event2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: var(--dl-layout-size-small);
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text34 {
+  width: 200px;
+  height: auto;
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+}
+ 
+.test-sport-card-text35 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+  border-width: 0px;
+}
+ 
+.test-sport-card-text36 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-text37 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-event11 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text38 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox40 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox41 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox42 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event12 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text39 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox43 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox44 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox45 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event13 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text40 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox46 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox47 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox48 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event14 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text41 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox49 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox50 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox51 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event15 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text42 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox52 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox53 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox54 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-container-button2 {
+  flex: 0;
+  display: flex;
+  align-self: center;
+  margin-top: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.test-sport-card-price2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text43 {
+  width: auto;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-text44 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-card-button2 {
+  margin: var(--dl-layout-space-halfunit);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  background-color: #bf4408;
+}
+ 
+.test-sport-card-text45 {
+  color: #ffffff;
+}
+ 
+.home-fragment40 {
+  display: contents;
+}
+ 
+.home-text49 {
+  display: inline-block;
+}
+ 
+.home-fragment39 {
+  display: contents;
+}
+ 
+.home-text48 {
+  display: inline-block;
+  font-size: 22px;
+}
+ 
+.home-fragment41 {
+  display: contents;
+}
+ 
+.home-text50 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment44 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text47 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment41 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text44 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment42 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text45 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment37 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text40 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment35 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text38 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment40 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text43 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment34 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text37 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment45 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text48 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment38 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text41 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment36 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text39 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment43 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text46 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment39 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text42 {
+  display: inline-block;
+}
+ 
+.test-sport-cardroot-class-name {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name1 {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name2 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name3 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name4 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name5 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name6 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name7 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name8 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name9 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name10 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name11 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name12 {
+  width: auto;
+  align-self: center;
+}
+ 
+@media(max-width: 991px) {
+  .home-text49 {
+    font-size: 22px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .test-sport-card-text34 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text48 {
+    font-size: 22px;
+  }
+  .sport-lottery-section-text37 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .test-sport-cardroot-class-name2 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name10 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name11 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name12 {
+    align-self: flex-start;
+  }
+}
+
+.test-sport-card-wrapper-jzob {
+  display: contents;
+}
+ 
+.test-sport-card-container3 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.test-sport-card-container-event3 {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  box-shadow: 5px 5px 5px 5px #7e7e7e;
+  align-items: flex-start;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  border-radius: var(--dl-layout-radius-radius4);
+  flex-direction: column;
+}
+ 
+.test-sport-card-title-event3 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: var(--dl-layout-size-small);
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text46 {
+  width: 200px;
+  height: auto;
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+}
+ 
+.test-sport-card-text47 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+  border-width: 0px;
+}
+ 
+.test-sport-card-text48 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-text49 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-event16 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text50 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox55 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox56 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox57 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event17 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text51 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox58 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox59 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox60 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event18 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text52 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox61 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox62 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox63 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event19 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text53 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox64 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox65 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox66 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event20 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text54 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox67 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox68 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox69 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-container-button3 {
+  flex: 0;
+  display: flex;
+  align-self: center;
+  margin-top: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.test-sport-card-price3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text55 {
+  width: auto;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-text56 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-card-button3 {
+  margin: var(--dl-layout-space-halfunit);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  background-color: #bf4408;
+}
+ 
+.test-sport-card-text57 {
+  color: #ffffff;
+}
+ 
+.home-fragment40 {
+  display: contents;
+}
+ 
+.home-text49 {
+  display: inline-block;
+}
+ 
+.home-fragment39 {
+  display: contents;
+}
+ 
+.home-text48 {
+  display: inline-block;
+  font-size: 22px;
+}
+ 
+.home-fragment41 {
+  display: contents;
+}
+ 
+.home-text50 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment56 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text59 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment53 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text56 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment54 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text57 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment49 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text52 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment47 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text50 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment52 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text55 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment46 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text49 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment57 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text60 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment50 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text53 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment48 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text51 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment55 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text58 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment51 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text54 {
+  display: inline-block;
+}
+ 
+.test-sport-cardroot-class-name {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name1 {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name2 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name3 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name4 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name5 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name6 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name7 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name8 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name9 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name10 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name11 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name12 {
+  width: auto;
+  align-self: center;
+}
+ 
+@media(max-width: 991px) {
+  .home-text49 {
+    font-size: 22px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .test-sport-card-text46 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text48 {
+    font-size: 22px;
+  }
+  .sport-lottery-section-text49 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .test-sport-cardroot-class-name2 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name10 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name11 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name12 {
+    align-self: flex-start;
+  }
+}
+
+.test-sport-card-wrapper-mjod {
+  display: contents;
+}
+ 
+.test-sport-card-container4 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.test-sport-card-container-event4 {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  box-shadow: 5px 5px 5px 5px #7e7e7e;
+  align-items: flex-start;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  border-radius: var(--dl-layout-radius-radius4);
+  flex-direction: column;
+}
+ 
+.test-sport-card-title-event4 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: var(--dl-layout-size-small);
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text58 {
+  width: 200px;
+  height: auto;
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+}
+ 
+.test-sport-card-text59 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+  border-width: 0px;
+}
+ 
+.test-sport-card-text60 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-text61 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-event21 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text62 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox70 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox71 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox72 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event22 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text63 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox73 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox74 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox75 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event23 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text64 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox76 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox77 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox78 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event24 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text65 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox79 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox80 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox81 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event25 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text66 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox82 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox83 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox84 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-container-button4 {
+  flex: 0;
+  display: flex;
+  align-self: center;
+  margin-top: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.test-sport-card-price4 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text67 {
+  width: auto;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-text68 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-card-button4 {
+  margin: var(--dl-layout-space-halfunit);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  background-color: #bf4408;
+}
+ 
+.test-sport-card-text69 {
+  color: #ffffff;
+}
+ 
+.home-fragment40 {
+  display: contents;
+}
+ 
+.home-text49 {
+  display: inline-block;
+}
+ 
+.home-fragment39 {
+  display: contents;
+}
+ 
+.home-text48 {
+  display: inline-block;
+  font-size: 22px;
+}
+ 
+.home-fragment41 {
+  display: contents;
+}
+ 
+.home-text50 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment68 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text71 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment65 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text68 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment66 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text69 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment61 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text64 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment59 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text62 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment64 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text67 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment58 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text61 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment69 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text72 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment62 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text65 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment60 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text63 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment67 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text70 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment63 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text66 {
+  display: inline-block;
+}
+ 
+.test-sport-cardroot-class-name {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name1 {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name2 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name3 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name4 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name5 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name6 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name7 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name8 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name9 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name10 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name11 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name12 {
+  width: auto;
+  align-self: center;
+}
+ 
+@media(max-width: 991px) {
+  .home-text49 {
+    font-size: 22px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .test-sport-card-text58 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text48 {
+    font-size: 22px;
+  }
+  .sport-lottery-section-text61 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .test-sport-cardroot-class-name2 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name10 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name11 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name12 {
+    align-self: flex-start;
+  }
+}
+
+.test-sport-card-wrapper-vo8p {
+  display: contents;
+}
+ 
+.test-sport-card-container5 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.test-sport-card-container-event5 {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  box-shadow: 5px 5px 5px 5px #7e7e7e;
+  align-items: flex-start;
+  border-color: #7e7e7e;
+  border-width: 1px;
+  border-radius: var(--dl-layout-radius-radius4);
+  flex-direction: column;
+}
+ 
+.test-sport-card-title-event5 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: var(--dl-layout-size-small);
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text70 {
+  width: 200px;
+  height: auto;
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+}
+ 
+.test-sport-card-text71 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+  border-width: 0px;
+}
+ 
+.test-sport-card-text72 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-text73 {
+  width: var(--dl-layout-size-small);
+  height: auto;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  border-color: #000000;
+}
+ 
+.test-sport-card-event26 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text74 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox85 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox86 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox87 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event27 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text75 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox88 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox89 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox90 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event28 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text76 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox91 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox92 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox93 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event29 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text77 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox94 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox95 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox96 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-event30 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  min-height: 24px;
+  align-items: flex-start;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text78 {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-checkbox97 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox98 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-checkbox99 {
+  flex: 1;
+  align-self: center;
+}
+ 
+.test-sport-card-container-button5 {
+  flex: 0;
+  display: flex;
+  align-self: center;
+  margin-top: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.test-sport-card-price5 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text79 {
+  width: auto;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-text80 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-card-button5 {
+  margin: var(--dl-layout-space-halfunit);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-buttonradius);
+  background-color: #bf4408;
+}
+ 
+.test-sport-card-text81 {
+  color: #ffffff;
+}
+ 
+.home-fragment40 {
+  display: contents;
+}
+ 
+.home-text49 {
+  display: inline-block;
+}
+ 
+.home-fragment39 {
+  display: contents;
+}
+ 
+.home-text48 {
+  display: inline-block;
+  font-size: 22px;
+}
+ 
+.home-fragment41 {
+  display: contents;
+}
+ 
+.home-text50 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment80 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text83 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment77 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text80 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment78 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text81 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment73 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text76 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment71 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text74 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment76 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text79 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment70 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text73 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment81 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text84 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment74 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text77 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment72 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text75 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment79 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text82 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment75 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text78 {
+  display: inline-block;
+}
+ 
+.test-sport-cardroot-class-name {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name1 {
+  width: auto;
+}
+ 
+.test-sport-cardroot-class-name2 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name3 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name4 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name5 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name6 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name7 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name8 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name9 {
+  flex: 1 1 calc(25% - 16px);
+}
+ 
+.test-sport-cardroot-class-name10 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name11 {
+  width: auto;
+  align-self: center;
+}
+ 
+.test-sport-cardroot-class-name12 {
+  width: auto;
+  align-self: center;
+}
+ 
+@media(max-width: 991px) {
+  .home-text49 {
+    font-size: 22px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .test-sport-card-text70 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text48 {
+    font-size: 22px;
+  }
+  .sport-lottery-section-text73 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .test-sport-cardroot-class-name2 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name10 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name11 {
+    align-self: flex-start;
+  }
+  .test-sport-cardroot-class-name12 {
+    align-self: flex-start;
+  }
+}
+
+.sport-lottery-section-wrapper {
+  display: contents;
+}
+ 
+.sport-lottery-section-container1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: flex-start;
+  margin-bottom: var(--dl-layout-space-twounits);
+  flex-direction: column;
+}
+ 
+.sport-lottery-section-container2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  margin-bottom: var(--dl-layout-space-unit);
+  flex-direction: column;
+}
+ 
+.sport-lottery-section-text10 {
+  align-self: center;
+  text-align: center;
+}
+ 
+.sport-lottery-section-text11 {
+  align-self: center;
+  text-align: center;
+}
+ 
+.sport-lottery-section-text12 {
+  align-self: center;
+  text-align: center;
+}
+ 
+.sport-lottery-section-container3 {
+  gap: var(--dl-layout-space-twounits);
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: center;
+}
+ 
+.sport-lottery-section-fragment10 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text13 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment11 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text14 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment12 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text15 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment13 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text16 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment14 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text17 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment15 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text18 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment16 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text19 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment17 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text20 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment18 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text21 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment19 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text22 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment20 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text23 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment21 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text24 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment22 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text25 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment23 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text26 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment24 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text27 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment25 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text28 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment26 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text29 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment27 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text30 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment28 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text31 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment29 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text32 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment30 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text33 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment31 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text34 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment32 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text35 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment33 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text36 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment34 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text37 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment35 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text38 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment36 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text39 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment37 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text40 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment38 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text41 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment39 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text42 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment40 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text43 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment41 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text44 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment42 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text45 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment43 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text46 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment44 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text47 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment45 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text48 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment46 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text49 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment47 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text50 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment48 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text51 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment49 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text52 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment50 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text53 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment51 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text54 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment52 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text55 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment53 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text56 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment54 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text57 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment55 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text58 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment56 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text59 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment57 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text60 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment58 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text61 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment59 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text62 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment60 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text63 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment61 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text64 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment62 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text65 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment63 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text66 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment64 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text67 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment65 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text68 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment66 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text69 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment67 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text70 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment68 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text71 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment69 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text72 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment70 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text73 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment71 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text74 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment72 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text75 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment73 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text76 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment74 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text77 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment75 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text78 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment76 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text79 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment77 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text80 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment78 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text81 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment79 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text82 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment80 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text83 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment81 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text84 {
+  display: inline-block;
+}
+ 
+.home-fragment40 {
+  display: contents;
+}
+ 
+.home-text49 {
+  display: inline-block;
+}
+ 
+.home-fragment39 {
+  display: contents;
+}
+ 
+.home-text48 {
+  display: inline-block;
+  font-size: 22px;
+}
+ 
+.home-fragment41 {
+  display: contents;
+}
+ 
+.home-text50 {
+  display: inline-block;
+}
+ 
+
+ 
+@media(max-width: 991px) {
+  .sport-lottery-section-container2 {
+    margin-bottom: var(--dl-layout-space-unit);
+  }
+  .sport-lottery-section-text11 {
+    font-size: 22px;
+  }
+  .sport-lottery-section-text12 {
+    width: 90%;
+    font-size: 22px;
+  }
+  .home-text49 {
+    font-size: 22px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .sport-lottery-section-container2 {
+    width: 90%;
+    margin-bottom: var(--dl-layout-space-unit);
+  }
+  .sport-lottery-section-text12 {
+    font-size: 22px;
+  }
+  .sport-lottery-section-text13 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .sport-lottery-section-text25 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .sport-lottery-section-text37 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .sport-lottery-section-text49 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .sport-lottery-section-text61 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .sport-lottery-section-text73 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text48 {
+    font-size: 22px;
+  }
+}
+
+.classic-lottery-section-wrapper {
+  display: contents;
+}
+ 
+.classic-lottery-section-container1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.classic-lottery-section-container2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+}
+ 
+.classic-lottery-section-content {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.classic-lottery-section-text1 {
+  text-align: center;
+}
+ 
+.classic-lottery-section-text2 {
+  width: 100%;
+  font-size: 22px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+ 
+.classic-lottery-section-container3 {
+  height: auto;
+  padding: var(--dl-layout-space-halfunit);
+  align-self: center;
+  margin-top: var(--dl-layout-space-oneandhalfunits);
+  margin-bottom: var(--dl-layout-space-oneandhalfunits);
+  justify-content: center;
+}
+ 
+.classic-lottery-section-container4 {
+  width: 95%;
+}
+ 
+.classic-lottery-section-image1 {
+  width: calc(25% - 6.4px);
+}
+ 
+.classic-lottery-section-image2 {
+  width: calc(25% - 6.4px);
+}
+ 
+.classic-lottery-section-image3 {
+  width: calc(25% - 6.4px);
+}
+ 
+.classic-lottery-section-image4 {
+  width: calc(25% - 6.4px);
+}
+ 
+.classic-lottery-section-container5 {
+  width: 95%;
+}
+ 
+.classic-lottery-section-image5 {
+  width: calc(25% - 6.4px);
+}
+ 
+.classic-lottery-section-image6 {
+  width: calc(25% - 6.4px);
+}
+ 
+.classic-lottery-section-image7 {
+  width: calc(25% - 6.4px);
+}
+ 
+.classic-lottery-section-image8 {
+  width: calc(25% - 6.4px);
+}
+ 
+.home-fragment42 {
+  display: contents;
+}
+ 
+.home-text51 {
+  display: inline-block;
+  font-style: normal;
+}
+ 
+.home-fragment43 {
+  display: contents;
+}
+ 
+.home-text55 {
+  display: inline-block;
+}
+ 
+.classic-lottery-sectionroot-class-name {
+  margin-top: var(--dl-layout-space-halfunit);
+}
+ 
+@media(max-width: 991px) {
+  .classic-lottery-section-text1 {
+    font-size: 35px;
+  }
+  .classic-lottery-section-text2 {
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .classic-lottery-section-text1 {
+    width: 100%;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .classic-lottery-section-text2 {
+    width: 90%;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .classic-lottery-section-image1 {
+    width: 48%;
+  }
+  .classic-lottery-section-image2 {
+    width: 48%;
+  }
+  .classic-lottery-section-image3 {
+    width: 48%;
+  }
+  .classic-lottery-section-image4 {
+    width: 48%;
+  }
+  .classic-lottery-section-image5 {
+    width: 48%;
+  }
+  .classic-lottery-section-image6 {
+    width: 48%;
+  }
+  .classic-lottery-section-image7 {
+    width: 48%;
+  }
+  .classic-lottery-section-image8 {
+    width: 48%;
+  }
+}
+
+.testimonial17-wrapper {
+  display: contents;
+}
+ 
+.testimonial17-max-width {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.testimonial17-container10 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  margin-bottom: var(--dl-layout-space-fourunits);
+  flex-direction: column;
+}
+ 
+.testimonial17-text11 {
+  text-align: center;
+}
+ 
+.testimonial17-container12 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.testimonial17-image1 {
+  width: var(--dl-layout-size-small);
+  height: var(--dl-layout-size-small);
+  object-fit: cover;
+  border-radius: var(--dl-layout-radius-round);
+}
+ 
+.testimonial17-container13 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.testimonial17-text14 {
+  text-align: left;
+}
+ 
+.testimonial17-container14 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.testimonial17-image2 {
+  width: var(--dl-layout-size-small);
+  height: var(--dl-layout-size-small);
+  object-fit: cover;
+  border-radius: var(--dl-layout-radius-round);
+}
+ 
+.testimonial17-container15 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.testimonial17-text17 {
+  text-align: left;
+}
+ 
+.testimonial17-container16 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.testimonial17-image3 {
+  width: var(--dl-layout-size-small);
+  height: var(--dl-layout-size-small);
+  object-fit: cover;
+  border-radius: var(--dl-layout-radius-round);
+}
+ 
+.testimonial17-container17 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.testimonial17-text20 {
+  text-align: left;
+}
+ 
+.testimonial17-container18 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.testimonial17-image4 {
+  width: var(--dl-layout-size-small);
+  height: var(--dl-layout-size-small);
+  object-fit: cover;
+  border-radius: var(--dl-layout-radius-round);
+}
+ 
+.testimonial17-container19 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.testimonial17-text23 {
+  text-align: left;
+}
+ 
+.home-fragment49 {
+  display: contents;
+}
+ 
+.home-text61 {
+  display: inline-block;
+}
+ 
+.home-fragment45 {
+  display: contents;
+}
+ 
+.home-text57 {
+  display: inline-block;
+}
+ 
+.home-fragment56 {
+  display: contents;
+}
+ 
+.home-text68 {
+  display: inline-block;
+}
+ 
+.home-fragment54 {
+  display: contents;
+}
+ 
+.home-text66 {
+  display: inline-block;
+}
+ 
+.home-fragment47 {
+  display: contents;
+}
+ 
+.home-text59 {
+  display: inline-block;
+}
+ 
+.home-fragment53 {
+  display: contents;
+}
+ 
+.home-text65 {
+  display: inline-block;
+}
+ 
+.home-fragment57 {
+  display: contents;
+}
+ 
+.home-text69 {
+  display: inline-block;
+}
+ 
+.home-fragment52 {
+  display: contents;
+}
+ 
+.home-text64 {
+  display: inline-block;
+}
+ 
+.home-fragment55 {
+  display: contents;
+}
+ 
+.home-text67 {
+  display: inline-block;
+}
+ 
+.home-fragment48 {
+  display: contents;
+}
+ 
+.home-text60 {
+  display: inline-block;
+}
+ 
+.home-fragment51 {
+  display: contents;
+}
+ 
+.home-text63 {
+  display: inline-block;
+}
+ 
+.home-fragment44 {
+  display: contents;
+}
+ 
+.home-text56 {
+  display: inline-block;
+}
+ 
+.home-fragment50 {
+  display: contents;
+}
+ 
+.home-text62 {
+  display: inline-block;
+}
+ 
+.home-fragment46 {
+  display: contents;
+}
+ 
+.home-text58 {
+  display: inline-block;
+}
+ 
+@media(max-width: 991px) {
+  .testimonial17-container10 {
+    margin-bottom: var(--dl-layout-space-threeunits);
+  }
+}
+ 
+@media(max-width: 767px) {
+  .testimonial17-container10 {
+    margin-bottom: var(--dl-layout-space-oneandhalfunits);
+  }
+  .testimonial17-card1 {
+    width: 100%;
+  }
+  .testimonial17-card2 {
+    width: 100%;
+  }
+  .testimonial17-card3 {
+    width: 100%;
+  }
+  .testimonial17-card4 {
+    width: 100%;
+  }
+}
+
+.features24-wrapper {
+  display: contents;
+}
+ 
+.features24-container2 {
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-layout-space-fiveunits);
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+}
+ 
+.features24-image-container {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+ 
+.features24-image1 {
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.features24-image2 {
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.features24-image3 {
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.features24-tabs-menu {
+  gap: var(--dl-layout-space-twounits);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.features24-tab-horizontal1 {
+  gap: var(--dl-layout-space-twounits);
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.features24-divider-container1 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.features24-container3 {
+  width: 2px;
+  align-self: stretch;
+  background-color: var(--dl-color-theme-neutral-dark);
+}
+ 
+.features24-content1 {
+  gap: 16px;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.features24-tab-horizontal2 {
+  gap: var(--dl-layout-space-twounits);
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.features24-divider-container2 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.features24-container4 {
+  width: 2px;
+  align-self: stretch;
+  background-color: var(--dl-color-theme-neutral-dark);
+}
+ 
+.features24-content2 {
+  gap: 16px;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.features24-tab-horizontal3 {
+  gap: var(--dl-layout-space-twounits);
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.features24-divider-container3 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+}
+ 
+.features24-container5 {
+  width: 2px;
+  align-self: stretch;
+  background-color: var(--dl-color-theme-neutral-dark);
+}
+ 
+.features24-content3 {
+  gap: 16px;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.home-fragment59 {
+  display: contents;
+}
+ 
+.home-text71 {
+  display: inline-block;
+}
+ 
+.home-fragment60 {
+  display: contents;
+}
+ 
+.home-text72 {
+  display: inline-block;
+}
+ 
+.home-fragment63 {
+  display: contents;
+}
+ 
+.home-text75 {
+  display: inline-block;
+}
+ 
+.home-fragment61 {
+  display: contents;
+}
+ 
+.home-text73 {
+  display: inline-block;
+}
+ 
+.home-fragment58 {
+  display: contents;
+}
+ 
+.home-text70 {
+  display: inline-block;
+}
+ 
+.home-fragment62 {
+  display: contents;
+}
+ 
+.home-text74 {
+  display: inline-block;
+}
+ 
+
+ 
+@media(max-width: 991px) {
+  .features24-container2 {
+    grid-gap: var(--dl-layout-space-twounits);
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer4-wrapper {
+  display: contents;
+}
+ 
+.footer4-footer7 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.footer4-max-width {
+  gap: var(--dl-layout-space-threeunits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.footer4-content {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.footer4-logo1 {
+  gap: 24px;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.footer4-logo2 {
+  height: 2rem;
+}
+ 
+.footer4-links {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.footer4-credits {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.footer4-row {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+ 
+.footer4-container {
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.footer4-footer-links {
+  gap: 24px;
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.footer4-text11 {
+  fill: var(--dl-color-theme-neutral-dark);
+  color: var(--dl-color-theme-neutral-dark);
+}
+ 
+.home-fragment68 {
+  display: contents;
+}
+ 
+.home-text80 {
+  display: inline-block;
+}
+ 
+.home-fragment71 {
+  display: contents;
+}
+ 
+.home-text83 {
+  display: inline-block;
+}
+ 
+.home-fragment70 {
+  display: contents;
+}
+ 
+.home-text82 {
+  display: inline-block;
+}
+ 
+.home-fragment67 {
+  display: contents;
+}
+ 
+.home-text79 {
+  display: inline-block;
+}
+ 
+.home-fragment66 {
+  display: contents;
+}
+ 
+.home-text78 {
+  display: inline-block;
+}
+ 
+.home-fragment69 {
+  display: contents;
+}
+ 
+.home-text81 {
+  display: inline-block;
+}
+ 
+.home-fragment64 {
+  display: contents;
+}
+ 
+.home-text76 {
+  display: inline-block;
+}
+ 
+.home-fragment65 {
+  display: contents;
+}
+ 
+.home-text77 {
+  display: inline-block;
+}
+ 
+@media(max-width: 767px) {
+  .footer4-row {
+    gap: var(--dl-layout-space-oneandhalfunits);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .footer4-max-width {
+    gap: var(--dl-layout-space-oneandhalfunits);
+  }
+  .footer4-links {
+    flex-direction: column;
+  }
+  .footer4-footer-links {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.sign-in3-wrapper {
+  display: contents;
+}
+ 
+.sign-in3-container1 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.sign-in3-max-width {
+  gap: var(--dl-layout-space-twounits);
+  width: auto;
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  border-radius: var(--dl-layout-radius-cardradius);
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+ 
+.sign-in3-form-root {
+  gap: var(--dl-layout-space-unit);
+  width: 600px;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  max-width: 600px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--dl-layout-radius-radius4);
+  justify-content: center;
+}
+ 
+.sign-in3-form1 {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+ 
+.sign-in3-text10 {
+  align-self: center;
+}
+ 
+.sign-in3-form2 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.sign-in3-email {
+  gap: var(--dl-layout-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.sign-in3-textinput1 {
+  width: 100%;
+  border-color: var(--dl-color-theme-primary1);
+  background-color: transparent;
+}
+ 
+.sign-in3-password {
+  gap: var(--dl-layout-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.sign-in3-container2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.sign-in3-hide-password {
+  gap: var(--dl-layout-space-halfunit);
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  justify-content: center;
+}
+ 
+.sign-in3-icon1 {
+  fill: var(--dl-color-theme-neutral-dark);
+  width: 24px;
+  height: 24px;
+}
+ 
+.sign-in3-textinput2 {
+  width: 100%;
+  border-color: var(--dl-color-theme-primary1);
+  background-color: transparent;
+}
+ 
+.sign-in3-link {
+  align-self: flex-end;
+  text-decoration:  underline none;
+}
+ 
+.sign-in3-container3 {
+  gap: var(--dl-layout-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+ 
+.sign-in3-button1 {
+  width: 100%;
+  align-self: center;
+}
+ 
+.sign-in3-text14 {
+  text-align: center;
+}
+ 
+.sign-in3-container4 {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.sign-in3-divider1 {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+ 
+.sign-in3-divider2 {
+  flex: 1;
+  width: var(--dl-layout-size-medium);
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-theme-primary1);
+}
+ 
+.sign-in3-divider3 {
+  flex: 1;
+  width: var(--dl-layout-size-medium);
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-theme-primary1);
+}
+ 
+.sign-in3-button2 {
+  width: 100%;
+  align-self: center;
+}
+ 
+.sign-in3-text16 {
+  text-align: center;
+}
+ 
+.sign-in3-sign-up-image {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 100%;
+  position: absolute;
+}
+ 
+.sign-in3-container5 {
+  top: 0px;
+  flex: 0 0 auto;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  bottom: 0px;
+  height: 100%;
+  display: flex;
+  z-index: 10;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.4);
+}
+ 
+.login-modal-fragment1 {
+  display: contents;
+}
+ 
+.login-modal-text1 {
+  display: inline-block;
+}
+ 
+.login-modal-fragment4 {
+  display: contents;
+}
+ 
+.login-modal-text4 {
+  display: inline-block;
+}
+ 
+.login-modal-fragment3 {
+  display: contents;
+}
+ 
+.login-modal-text3 {
+  display: inline-block;
+}
+ 
+.login-modal-fragment2 {
+  display: contents;
+}
+ 
+.login-modal-text2 {
+  display: inline-block;
+}
+ 
+@media(max-width: 991px) {
+  .sign-in3-form-root {
+    width: 100%;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .sign-in3-form-root {
+    padding: 0px;
+  }
+  .sign-in3-button1 {
+    width: 100%;
+  }
+  .sign-in3-button2 {
+    width: 100%;
+  }
+}
+
+.login-modal-wrapper {
+  display: contents;
+}
+ 
+.login-modal-login-modal {
+  top: 0;
+  flex: 1;
+  left: 0;
+  width: 100%;
+  height: 100vx;
+  display: flex;
+  z-index: 9999;
+  position: fixed;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+ 
+.login-modal-fragment1 {
+  display: contents;
+}
+ 
+.login-modal-text1 {
+  display: inline-block;
+}
+ 
+.login-modal-fragment2 {
+  display: contents;
+}
+ 
+.login-modal-text2 {
+  display: inline-block;
+}
+ 
+.login-modal-fragment3 {
+  display: contents;
+}
+ 
+.login-modal-text3 {
+  display: inline-block;
+}
+ 
+.login-modal-fragment4 {
+  display: contents;
+}
+ 
+.login-modal-text4 {
+  display: inline-block;
+}
+ 
+.login-modal-container2 {
+  display: contents;
+}
+
+.home-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+.home-fragment10 {
+  display: contents;
+}
+ 
+.home-text10 {
+  display: inline-block;
+}
+ 
+.home-fragment11 {
+  display: contents;
+}
+ 
+.home-text11 {
+  display: inline-block;
+}
+ 
+.home-fragment12 {
+  display: contents;
+}
+ 
+.home-text12 {
+  display: inline-block;
+}
+ 
+.home-fragment13 {
+  display: contents;
+}
+ 
+.home-text13 {
+  display: inline-block;
+}
+ 
+.home-fragment14 {
+  display: contents;
+}
+ 
+.home-text14 {
+  display: inline-block;
+}
+ 
+.home-fragment15 {
+  display: contents;
+}
+ 
+.home-text15 {
+  display: inline-block;
+}
+ 
+.home-fragment16 {
+  display: contents;
+}
+ 
+.home-text16 {
+  display: inline-block;
+}
+ 
+.home-fragment17 {
+  display: contents;
+}
+ 
+.home-text17 {
+  display: inline-block;
+}
+ 
+.home-fragment18 {
+  display: contents;
+}
+ 
+.home-text18 {
+  display: inline-block;
+}
+ 
+.home-fragment19 {
+  display: contents;
+}
+ 
+.home-text19 {
+  display: inline-block;
+}
+ 
+.home-fragment20 {
+  display: contents;
+}
+ 
+.home-text20 {
+  display: inline-block;
+}
+ 
+.home-fragment21 {
+  display: contents;
+}
+ 
+.home-text21 {
+  display: inline-block;
+}
+ 
+.home-fragment22 {
+  display: contents;
+}
+ 
+.home-text22 {
+  display: inline-block;
+}
+ 
+.home-fragment23 {
+  display: contents;
+}
+ 
+.home-text23 {
+  display: inline-block;
+}
+ 
+.home-fragment24 {
+  display: contents;
+}
+ 
+.home-text24 {
+  display: inline-block;
+}
+ 
+.home-separator1 {
+  width: 90%;
+  height: 1px;
+  background-color: #595959;
+}
+ 
+.home-fragment25 {
+  display: contents;
+}
+ 
+.home-text25 {
+  display: inline-block;
+}
+ 
+.home-fragment26 {
+  display: contents;
+}
+ 
+.home-text26 {
+  display: inline-block;
+}
+ 
+.home-fragment27 {
+  display: contents;
+}
+ 
+.home-text27 {
+  display: inline-block;
+}
+ 
+.home-fragment28 {
+  display: contents;
+}
+ 
+.home-text28 {
+  display: inline-block;
+}
+ 
+.home-fragment29 {
+  display: contents;
+}
+ 
+.home-text29 {
+  display: inline-block;
+}
+ 
+.home-fragment30 {
+  display: contents;
+}
+ 
+.home-text30 {
+  display: inline-block;
+}
+ 
+.home-separator2 {
+  width: 90%;
+  height: 1px;
+  background-color: #595959;
+}
+ 
+.home-fragment31 {
+  display: contents;
+}
+ 
+.home-text31 {
+  display: inline-block;
+}
+ 
+.home-fragment32 {
+  display: contents;
+}
+ 
+.home-text32 {
+  display: inline-block;
+}
+ 
+.home-fragment33 {
+  display: contents;
+}
+ 
+.home-text33 {
+  display: inline-block;
+}
+ 
+.home-fragment34 {
+  display: contents;
+}
+ 
+.home-text36 {
+  display: inline-block;
+}
+ 
+.home-fragment35 {
+  display: contents;
+}
+ 
+.home-text40 {
+  display: inline-block;
+}
+ 
+.home-fragment36 {
+  display: contents;
+}
+ 
+.home-text43 {
+  display: inline-block;
+}
+ 
+.home-separator3 {
+  width: 90%;
+  height: 1px;
+  background-color: #595959;
+}
+ 
+.home-separator4 {
+  width: 90%;
+  height: 1px;
+  background-color: #595959;
+}
+ 
+.home-fragment37 {
+  display: contents;
+}
+ 
+.home-text46 {
+  display: inline-block;
+  font-style: normal;
+}
+ 
+.home-fragment38 {
+  display: contents;
+}
+ 
+.home-text47 {
+  display: inline-block;
+}
+ 
+.home-separator5 {
+  width: 90%;
+  height: 1px;
+  background-color: #595959;
+}
+ 
+.home-fragment39 {
+  display: contents;
+}
+ 
+.home-text48 {
+  display: inline-block;
+  font-size: 22px;
+}
+ 
+.home-fragment40 {
+  display: contents;
+}
+ 
+.home-text49 {
+  display: inline-block;
+}
+ 
+.home-fragment41 {
+  display: contents;
+}
+ 
+.home-text50 {
+  display: inline-block;
+}
+ 
+.home-separator6 {
+  width: 90%;
+  height: 1px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #595959;
+}
+ 
+.home-fragment42 {
+  display: contents;
+}
+ 
+.home-text51 {
+  display: inline-block;
+  font-style: normal;
+}
+ 
+.home-fragment43 {
+  display: contents;
+}
+ 
+.home-text55 {
+  display: inline-block;
+}
+ 
+.home-separator7 {
+  width: 90%;
+  height: 1px;
+  background-color: #595959;
+}
+ 
+.home-fragment44 {
+  display: contents;
+}
+ 
+.home-text56 {
+  display: inline-block;
+}
+ 
+.home-fragment45 {
+  display: contents;
+}
+ 
+.home-text57 {
+  display: inline-block;
+}
+ 
+.home-fragment46 {
+  display: contents;
+}
+ 
+.home-text58 {
+  display: inline-block;
+}
+ 
+.home-fragment47 {
+  display: contents;
+}
+ 
+.home-text59 {
+  display: inline-block;
+}
+ 
+.home-fragment48 {
+  display: contents;
+}
+ 
+.home-text60 {
+  display: inline-block;
+}
+ 
+.home-fragment49 {
+  display: contents;
+}
+ 
+.home-text61 {
+  display: inline-block;
+}
+ 
+.home-fragment50 {
+  display: contents;
+}
+ 
+.home-text62 {
+  display: inline-block;
+}
+ 
+.home-fragment51 {
+  display: contents;
+}
+ 
+.home-text63 {
+  display: inline-block;
+}
+ 
+.home-fragment52 {
+  display: contents;
+}
+ 
+.home-text64 {
+  display: inline-block;
+}
+ 
+.home-fragment53 {
+  display: contents;
+}
+ 
+.home-text65 {
+  display: inline-block;
+}
+ 
+.home-fragment54 {
+  display: contents;
+}
+ 
+.home-text66 {
+  display: inline-block;
+}
+ 
+.home-fragment55 {
+  display: contents;
+}
+ 
+.home-text67 {
+  display: inline-block;
+}
+ 
+.home-fragment56 {
+  display: contents;
+}
+ 
+.home-text68 {
+  display: inline-block;
+}
+ 
+.home-fragment57 {
+  display: contents;
+}
+ 
+.home-text69 {
+  display: inline-block;
+}
+ 
+.home-fragment58 {
+  display: contents;
+}
+ 
+.home-text70 {
+  display: inline-block;
+}
+ 
+.home-fragment59 {
+  display: contents;
+}
+ 
+.home-text71 {
+  display: inline-block;
+}
+ 
+.home-fragment60 {
+  display: contents;
+}
+ 
+.home-text72 {
+  display: inline-block;
+}
+ 
+.home-fragment61 {
+  display: contents;
+}
+ 
+.home-text73 {
+  display: inline-block;
+}
+ 
+.home-fragment62 {
+  display: contents;
+}
+ 
+.home-text74 {
+  display: inline-block;
+}
+ 
+.home-fragment63 {
+  display: contents;
+}
+ 
+.home-text75 {
+  display: inline-block;
+}
+ 
+.home-fragment64 {
+  display: contents;
+}
+ 
+.home-text76 {
+  display: inline-block;
+}
+ 
+.home-fragment65 {
+  display: contents;
+}
+ 
+.home-text77 {
+  display: inline-block;
+}
+ 
+.home-fragment66 {
+  display: contents;
+}
+ 
+.home-text78 {
+  display: inline-block;
+}
+ 
+.home-fragment67 {
+  display: contents;
+}
+ 
+.home-text79 {
+  display: inline-block;
+}
+ 
+.home-fragment68 {
+  display: contents;
+}
+ 
+.home-text80 {
+  display: inline-block;
+}
+ 
+.home-fragment69 {
+  display: contents;
+}
+ 
+.home-text81 {
+  display: inline-block;
+}
+ 
+.home-fragment70 {
+  display: contents;
+}
+ 
+.home-text82 {
+  display: inline-block;
+}
+ 
+.home-fragment71 {
+  display: contents;
+}
+ 
+.home-text83 {
+  display: inline-block;
+}
+ 
+.home-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+ 
+.home-container4 {
+  display: contents;
+}
+ 
+@media(max-width: 991px) {
+  .home-text49 {
+    font-size: 22px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .home-text48 {
+    font-size: 22px;
+  }
+}

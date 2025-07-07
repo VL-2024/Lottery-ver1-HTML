@@ -1,0 +1,3046 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lottery ver.1</title>
+    <meta property="og:title" content="Lottery ver.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      #phone-error {
+        display: none;
+        color: red;
+        font-size: 14px;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container1">
+        <navbar8-wrapper class="navbar8-wrapper">
+          <!--Navbar8 component-->
+          <header class="navbar8-container1 navbar8">
+            <header data-thq="thq-navbar" class="navbar8-navbar-interactive">
+              <a href="index.html" class="navbar8-navlink">
+                <img
+                  alt="LotteryInfo Logo"
+                  src="public/Logo/20250630_2007_%C3%B0%C2%9D%C3%B0%C2%B0%C3%B1%C2%86%C3%B0%C2%B8%C3%B0%C2%BE%C3%B0%C2%BD%C3%B0%C2%B0%C3%B0%C2%BB%C3%B1%C2%8C%C3%B0%C2%BD%C3%B0%C2%B0%C3%B1%C2%8F%20%C3%B0%C2%9B%C3%B0%C2%BE%C3%B1%C2%82%C3%B0%C2%B5%C3%B1%C2%80%C3%B0%C2%B5%C3%B0%C2%B9%C3%B0%C2%BD%C3%B0%C2%B0%C3%B1%C2%8F%20%C3%B0%C2%A1%C3%B0%C2%B8%C3%B1%C2%81%C3%B1%C2%82%C3%B0%C2%B5%C3%B0%C2%BC%C3%B0%C2%B0_remix_01jz0wv23kfs0v0ge4npe4e296-1500h.png"
+                  class="navbar8-image1"
+                />
+              </a>
+              <div data-thq="thq-navbar-nav" class="navbar8-desktop-menu">
+                <nav class="navbar8-links1">
+                  <a
+                    href="index.html"
+                    class="navbar8-link11 thq-link thq-body-small"
+                  >
+                    <fragment class="home-fragment10">
+                      <span class="home-text10">Главная</span>
+                    </fragment>
+                  </a>
+                  <span class="thq-link thq-body-small">
+                    <fragment class="home-fragment11">
+                      <span class="home-text11">Лотереи</span>
+                    </fragment>
+                  </span>
+                  <span class="navbar8-link31 thq-link thq-body-small">
+                    <fragment class="home-fragment12">
+                      <span class="home-text12">Контакты</span>
+                    </fragment>
+                  </span>
+                  <a
+                    href="test-page.html"
+                    class="navbar8-link32 thq-link thq-body-small"
+                  >
+                    <fragment class="home-fragment18">
+                      <span class="home-text18">Акции</span>
+                    </fragment>
+                  </a>
+                  <div class="navbar8-link4-dropdown-trigger">
+                    <span class="thq-link thq-body-small">
+                      <fragment class="home-fragment13">
+                        <span class="home-text13">Результаты</span>
+                      </fragment>
+                    </span>
+                    <div class="navbar8-icon-container1">
+                      <div class="navbar8-container2">
+                        <svg viewBox="0 0 1024 1024" class="navbar8-icon10">
+                          <path d="M298 426h428l-214 214z"></path>
+                        </svg>
+                      </div>
+                      <div class="navbar8-container3">
+                        <svg viewBox="0 0 1024 1024" class="navbar8-icon12">
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+                <div class="navbar8-buttons1">
+                  <a
+                    href="registration.html"
+                    class="navbar8-action11 login-button thq-button-animated thq-button-filled"
+                  >
+                    <span>
+                      <fragment class="home-fragment19">
+                        <span class="home-text19">Регистрация</span>
+                      </fragment>
+                    </span>
+                  </a>
+                  <button
+                    class="navbar8-action21 login-button thq-button-animated thq-button-outline"
+                  >
+                    <span>
+                      <fragment class="home-fragment20">
+                        <span class="home-text20">Войти</span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div data-thq="thq-burger-menu" class="navbar8-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="navbar8-icon14">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+              <div data-thq="thq-mobile-menu" class="navbar8-mobile-menu">
+                <div class="navbar8-nav">
+                  <div class="navbar8-top">
+                    <img
+                      alt="LotteryInfo Logo"
+                      src="public/Logo/20250630_2007_%C3%B0%C2%9D%C3%B0%C2%B0%C3%B1%C2%86%C3%B0%C2%B8%C3%B0%C2%BE%C3%B0%C2%BD%C3%B0%C2%B0%C3%B0%C2%BB%C3%B1%C2%8C%C3%B0%C2%BD%C3%B0%C2%B0%C3%B1%C2%8F%20%C3%B0%C2%9B%C3%B0%C2%BE%C3%B1%C2%82%C3%B0%C2%B5%C3%B1%C2%80%C3%B0%C2%B5%C3%B0%C2%B9%C3%B0%C2%BD%C3%B0%C2%B0%C3%B1%C2%8F%20%C3%B0%C2%A1%C3%B0%C2%B8%C3%B1%C2%81%C3%B1%C2%82%C3%B0%C2%B5%C3%B0%C2%BC%C3%B0%C2%B0_remix_01jz0wv23kfs0v0ge4npe4e296-1500h.png"
+                      class="navbar8-logo"
+                    />
+                    <div data-thq="thq-close-menu" class="navbar8-close-menu">
+                      <svg viewBox="0 0 1024 1024" class="navbar8-icon16">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="navbar8-links2">
+                    <a
+                      href="index.html"
+                      class="navbar8-link12 thq-link thq-body-small"
+                    >
+                      <fragment class="home-fragment10">
+                        <span class="home-text10">Главная</span>
+                      </fragment>
+                    </a>
+                    <span class="thq-link thq-body-small">
+                      <fragment class="home-fragment11">
+                        <span class="home-text11">Лотереи</span>
+                      </fragment>
+                    </span>
+                    <span class="navbar8-link33 thq-link thq-body-small">
+                      <fragment class="home-fragment12">
+                        <span class="home-text12">Контакты</span>
+                      </fragment>
+                    </span>
+                    <div class="navbar8-link4-accordion">
+                      <div class="navbar8-trigger">
+                        <span class="thq-link thq-body-small">
+                          <fragment class="home-fragment13">
+                            <span class="home-text13">Результаты</span>
+                          </fragment>
+                        </span>
+                        <div class="navbar8-icon-container2">
+                          <div class="navbar8-container4">
+                            <svg viewBox="0 0 1024 1024" class="navbar8-icon18">
+                              <path d="M298 426h428l-214 214z"></path>
+                            </svg>
+                          </div>
+                          <div class="navbar8-container5">
+                            <svg viewBox="0 0 1024 1024" class="navbar8-icon20">
+                              <path d="M426 726v-428l214 214z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="navbar8-container6">
+                        <a href="https://www.teleporthq.io">
+                          <div class="navbar8-menu-item1">
+                            <img
+                              alt="image"
+                              src="https://images.unsplash.com/photo-1518688248740-7c31f1a945c4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyNXw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=200"
+                              class="navbar8-page1-image1"
+                            />
+                            <div class="navbar8-content1">
+                              <span class="navbar8-page11 thq-body-large">
+                                <fragment class="home-fragment14">
+                                  <span class="home-text14">Home</span>
+                                </fragment>
+                              </span>
+                              <span class="thq-body-small">
+                                <fragment class="home-fragment21">
+                                  <span class="home-text21">
+                                    Page One Description
+                                  </span>
+                                </fragment>
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="https://www.teleporthq.io">
+                          <div class="navbar8-menu-item2">
+                            <img
+                              alt="image"
+                              src="https://images.unsplash.com/photo-1717054373388-b405bfd27707?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyNnw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=200"
+                              class="navbar8-page2-image1"
+                            />
+                            <div class="navbar8-content2">
+                              <span class="navbar8-page21 thq-body-large">
+                                <fragment class="home-fragment15">
+                                  <span class="home-text15">Lotteries</span>
+                                </fragment>
+                              </span>
+                              <span class="thq-body-small">
+                                <fragment class="home-fragment22">
+                                  <span class="home-text22">
+                                    Page Two Description
+                                  </span>
+                                </fragment>
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="https://www.teleporthq.io">
+                          <div class="navbar8-menu-item3">
+                            <img
+                              alt="image"
+                              src="https://images.unsplash.com/photo-1614605008553-d98daabfa5b6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyN3w&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=200"
+                              class="navbar8-page3-image1"
+                            />
+                            <div class="navbar8-content3">
+                              <span class="navbar8-page31 thq-body-large">
+                                <fragment class="home-fragment16">
+                                  <span class="home-text16">Games</span>
+                                </fragment>
+                              </span>
+                              <span class="thq-body-small">
+                                <fragment class="home-fragment23">
+                                  <span class="home-text23">
+                                    Page Three Description
+                                  </span>
+                                </fragment>
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="https://www.teleporthq.io">
+                          <div class="navbar8-menu-item4">
+                            <img
+                              alt="image"
+                              src="https://images.unsplash.com/photo-1593453917438-14f60d0d2357?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyNnw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=200"
+                              class="navbar8-page4-image1"
+                            />
+                            <div class="navbar8-content4">
+                              <span class="navbar8-page41 thq-body-large">
+                                <fragment class="home-fragment17">
+                                  <span class="home-text17">
+                                    Winning Numbers
+                                  </span>
+                                </fragment>
+                              </span>
+                              <span class="thq-body-small">
+                                <fragment class="home-fragment24">
+                                  <span class="home-text24">
+                                    Page Four Description
+                                  </span>
+                                </fragment>
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </nav>
+                  <div class="navbar8-buttons2">
+                    <a
+                      href="registration.html"
+                      class="navbar8-action12 login-button thq-button-filled"
+                    >
+                      <span>
+                        <fragment class="home-fragment19">
+                          <span class="home-text19">Регистрация</span>
+                        </fragment>
+                      </span>
+                    </a>
+                    <button class="login-button thq-button-outline">
+                      <span>
+                        <fragment class="home-fragment20">
+                          <span class="home-text20">Войти</span>
+                        </fragment>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div class="navbar8-icon-group">
+                  <svg
+                    viewBox="0 0 950.8571428571428 1024"
+                    class="thq-icon-x-small"
+                  >
+                    <path
+                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="thq-icon-x-small"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 602.2582857142856 1024"
+                    class="thq-icon-small"
+                  >
+                    <path
+                      d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="navbar8-container7 thq-box-shadow">
+                <div class="navbar8-link5-menu-list">
+                  <a href="https://www.teleporthq.io">
+                    <div class="navbar8-menu-item5">
+                      <img
+                        alt="image"
+                        src="https://images.unsplash.com/photo-1518688248740-7c31f1a945c4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyNXw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=200"
+                        class="navbar8-page1-image2 thq-img-ratio-1-1"
+                      />
+                      <div class="navbar8-content5">
+                        <span class="navbar8-page12 thq-body-large">
+                          <fragment class="home-fragment14">
+                            <span class="home-text14">Home</span>
+                          </fragment>
+                        </span>
+                        <span class="thq-body-small">
+                          <fragment class="home-fragment21">
+                            <span class="home-text21">
+                              Page One Description
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://www.teleporthq.io">
+                    <div class="navbar8-menu-item6">
+                      <img
+                        alt="image"
+                        src="https://images.unsplash.com/photo-1717054373388-b405bfd27707?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyNnw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=200"
+                        class="navbar8-page2-image2 thq-img-ratio-1-1"
+                      />
+                      <div class="navbar8-content6">
+                        <span class="navbar8-page22 thq-body-large">
+                          <fragment class="home-fragment15">
+                            <span class="home-text15">Lotteries</span>
+                          </fragment>
+                        </span>
+                        <span class="thq-body-small">
+                          <fragment class="home-fragment22">
+                            <span class="home-text22">
+                              Page Two Description
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://www.teleporthq.io">
+                    <div class="navbar8-menu-item7">
+                      <img
+                        alt="image"
+                        src="https://images.unsplash.com/photo-1614605008553-d98daabfa5b6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyN3w&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=200"
+                        class="navbar8-page3-image2 thq-img-ratio-1-1"
+                      />
+                      <div class="navbar8-content7">
+                        <span class="navbar8-page32 thq-body-large">
+                          <fragment class="home-fragment16">
+                            <span class="home-text16">Games</span>
+                          </fragment>
+                        </span>
+                        <span class="thq-body-small">
+                          <fragment class="home-fragment23">
+                            <span class="home-text23">
+                              Page Three Description
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://www.teleporthq.io">
+                    <div class="navbar8-menu-item8">
+                      <img
+                        alt="image"
+                        src="https://images.unsplash.com/photo-1593453917438-14f60d0d2357?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyNnw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=200"
+                        class="navbar8-page4-image2 thq-img-ratio-1-1"
+                      />
+                      <div class="navbar8-content8">
+                        <span class="navbar8-page42 thq-body-large">
+                          <fragment class="home-fragment17">
+                            <span class="home-text17">Winning Numbers</span>
+                          </fragment>
+                        </span>
+                        <span class="thq-body-small">
+                          <fragment class="home-fragment24">
+                            <span class="home-text24">
+                              Page Four Description
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </header>
+            <div class="navbar8-container8"></div>
+          </header>
+        </navbar8-wrapper>
+        <banner21-wrapper
+          class="banner21-wrapper"
+          rootclassname="banner21undefined"
+        >
+          <!--Banner21 component-->
+          <div
+            class="banner21-container thq-section-padding banner21root-class-name"
+          >
+            <div class="banner21-max-width thq-section-max-width">
+              <video
+                src="public/Video/20250627_1305_enchanting%20lottery%20moment_remix_01jyrdhqfreb1addyj472z0bz0.mp4"
+                loop="true"
+                muted="true"
+                poster="public/Video/20250627_1305_enchanting%20lottery%20moment_remix_01jyrdhqfreb1addyj472z0bz0.mp4"
+                autoplay="true"
+                playsinline="true"
+                class="banner21-video"
+              ></video>
+            </div>
+          </div>
+        </banner21-wrapper>
+        <project-desacription-wrapper
+          class="project-desacription-wrapper"
+          rootclassname="project-desacriptionundefined"
+        >
+          <!--ProjectDesacription component-->
+          <div
+            class="project-desacription-container project-desacriptionroot-class-name"
+          >
+            <banner1-wrapper
+              class="banner1-wrapper"
+              rootclassname="banner1undefined"
+            >
+              <!--Banner1 component-->
+              <div
+                class="banner1-container1 thq-section-padding banner1root-class-name"
+              >
+                <div class="banner1-max-width thq-section-max-width">
+                  <div class="banner1-container2">
+                    <h2 class="banner1-title thq-heading-1">
+                      <fragment class="project-desacription-fragment2">
+                        <span class="project-desacription-text2">
+                          Национальная игровая экосистема
+                        </span>
+                      </fragment>
+                    </h2>
+                    <h3 class="banner1-text1 thq-heading-2">
+                      <fragment class="project-desacription-fragment1">
+                        <span class="project-desacription-text1">
+                          Исследуйте мир захватывающих лотерей, игр и огромных
+                          джекпотов. Приготовьтесь играть и выигрывать!
+                        </span>
+                      </fragment>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </banner1-wrapper>
+          </div>
+        </project-desacription-wrapper>
+        <hr class="home-separator1" />
+        <lottery-type-section-wrapper
+          class="lottery-type-section-wrapper"
+          rootclassname="lottery-type-sectionundefined"
+        >
+          <!--LotteryTypeSection component-->
+          <div
+            class="lottery-type-section-layout251 thq-section-padding lottery-type-sectionroot-class-name"
+          >
+            <div class="lottery-type-section-max-width thq-section-max-width">
+              <div
+                class="lottery-type-section-section-title thq-flex-row"
+              ></div>
+              <div class="lottery-type-section-content1">
+                <div class="lottery-type-section-row thq-flex-row">
+                  <div class="lottery-type-section-feature1 thq-flex-column">
+                    <img
+                      alt="Instant Lotteries Image"
+                      src="https://images.unsplash.com/photo-1700085663927-d223c604fb57?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MTExMTkxNXw&amp;ixlib=rb-4.1.0&amp;q=80&amp;h=300"
+                      class="thq-img-ratio-4-3 lottery-type-section-feature1-image"
+                    />
+                    <div class="lottery-type-section-content2 thq-flex-column">
+                      <h3
+                        class="lottery-type-section-feature1-title thq-heading-3"
+                      >
+                        <fragment class="home-fragment25">
+                          <span class="home-text25">Мгновенные лотереи</span>
+                        </fragment>
+                      </h3>
+                      <span
+                        class="lottery-type-section-feature1-description thq-body-small"
+                      >
+                        <fragment class="home-fragment28">
+                          <span class="home-text28">
+                            Играй и выигрывай за секунды
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="lottery-type-section-feature2 thq-flex-column">
+                    <img
+                      alt="Classic Draw Lotteries Image"
+                      src="public/imagePopularLottery/20250630_1906_dynamic%20lottery%20display_simple_compose_01jz0sbc4rfj4r2d23neeqzd30-300h.png"
+                      class="thq-img-ratio-4-3 lottery-type-section-feature2-image"
+                    />
+                    <div class="lottery-type-section-content3 thq-flex-column">
+                      <h3
+                        class="lottery-type-section-feature2-title thq-heading-3"
+                      >
+                        <fragment class="home-fragment26">
+                          <span class="home-text26">Тиражные лотереи</span>
+                        </fragment>
+                      </h3>
+                      <span
+                        class="lottery-type-section-feature2-description thq-body-small"
+                      >
+                        <fragment class="home-fragment29">
+                          <span class="home-text29">Классические лотереи</span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="lottery-type-section-feature3 thq-flex-column">
+                    <img
+                      alt="Sports Lotteries Image"
+                      src="public/imagePopularLottery/20250630_1931_sports%20and%20events_remix_01jz0trjc7fp2veqrsqzstrmca-300h.png"
+                      class="thq-img-ratio-4-3 inline-card-text lottery-type-section-feature3-image"
+                    />
+                    <div class="lottery-type-section-content4 thq-flex-column">
+                      <h3
+                        class="lottery-type-section-feature3-title thq-heading-3"
+                      >
+                        <fragment class="home-fragment27">
+                          <span class="home-text27">Спортивные лотереи</span>
+                        </fragment>
+                      </h3>
+                      <span
+                        class="lottery-type-section-feature3-description thq-body-small"
+                      >
+                        <fragment class="home-fragment30">
+                          <span class="home-text30">
+                            Прогнозируй спортивные результаты
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </lottery-type-section-wrapper>
+        <hr class="home-separator2" />
+        <asia-jackpot-section-wrapper class="asia-jackpot-section-wrapper">
+          <!--AsiaJackpotSection component-->
+          <div class="thq-section-padding">
+            <div class="asia-jackpot-section-container2 thq-section-max-width">
+              <div class="asia-jackpot-section-tabs-menu">
+                <div class="asia-jackpot-section-tab-horizontal1">
+                  <div class="asia-jackpot-section-divider-container1">
+                    <div class="asia-jackpot-section-container3"></div>
+                  </div>
+                  <div class="asia-jackpot-section-content1">
+                    <h2
+                      class="asia-jackpot-section-feature1-title thq-heading-2"
+                    >
+                      <fragment class="home-fragment31">
+                        <span class="home-text31">
+                          Азия Джекпот - твой шанс на миллионы!
+                        </span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment34">
+                        <span class="home-text36">
+                          <span>
+                            Минимальный джекпот — 10 миллионов, максимальный — 1
+                            миллиард!
+                          </span>
+                          <br />
+                          <br />
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="asia-jackpot-section-tab-horizontal2">
+                  <div class="asia-jackpot-section-divider-container2">
+                    <div class="asia-jackpot-section-container4"></div>
+                  </div>
+                  <div class="asia-jackpot-section-content2">
+                    <h2
+                      class="asia-jackpot-section-feature2-title thq-heading-2"
+                    >
+                      <fragment class="home-fragment32">
+                        <span class="home-text32">
+                          Заполни билет легко и быстро
+                        </span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment35">
+                        <span class="home-text40">
+                          <span>
+                            Выбери 5 основных чисел и 2 бонусных — вручную или
+                            нажмите «Счастливый выбор».
+                          </span>
+                          <br />
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="asia-jackpot-section-tab-horizontal3">
+                  <div class="asia-jackpot-section-divider-container3">
+                    <div class="asia-jackpot-section-container5"></div>
+                  </div>
+                  <div class="asia-jackpot-section-content3">
+                    <h2
+                      class="asia-jackpot-section-feature3-title thq-heading-2"
+                    >
+                      <fragment class="home-fragment33">
+                        <span class="home-text33">
+                          <span>Следи за розыгрышем</span>
+                          <br />
+                        </span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment36">
+                        <span class="home-text43">
+                          <span>
+                            Смотри прямую трансляцию тиража или проверяй
+                            результаты онлайн.&nbsp;Выигрыши зачисляются
+                            автоматически.
+                          </span>
+                          <br />
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="asia-jackpot-section-image-container">
+                <img
+                  alt="Image depicting jackpot prizes"
+                  src="public/imageForSection/20250701_1600_elegant%20jackpot%20banner_simple_compose_01jz313n0ne03ty7qn2jpqv2zr-1400w.png"
+                  class="asia-jackpot-section-image1 thq-img-ratio-16-9"
+                />
+                <img
+                  alt="Image showing winning numbers"
+                  src="public/imageForSection/20250701_1700_digital%20lottery%20experience_simple_compose_01jz34kph0eakr2a4bsyb302ch-1400w.png"
+                  class="asia-jackpot-section-image2 thq-img-ratio-16-9"
+                />
+                <img
+                  alt="Image illustrating game information"
+                  src="public/imageForSection/20250701_1716_golden%20lottery%20draw_simple_compose_01jz35fhw7eqm9fg14xy38nna4-1400w.png"
+                  class="asia-jackpot-section-image3 thq-img-ratio-16-9"
+                />
+              </div>
+            </div>
+          </div>
+        </asia-jackpot-section-wrapper>
+        <hr class="home-separator3" />
+        <slider-action-wrapper
+          class="slider-action-wrapper"
+          rootclassname="slider-actionundefined"
+        >
+          <!--SliderAction component-->
+          <div class="slider-action-container1 slider-actionroot-class-name">
+            <div class="slider-action-container2">
+              <div
+                data-thq="slider"
+                data-loop="true"
+                data-autoplay="true"
+                data-navigation="true"
+                data-pagination="true"
+                data-pause-autoplay-on-mouse-enter="true"
+                class="slider-action-slider swiper"
+              >
+                <div data-thq="slider-wrapper" class="swiper-wrapper">
+                  <div
+                    data-thq="slider-slide"
+                    class="slider-action-slider-slide1 swiper-slide"
+                  ></div>
+                  <div
+                    data-thq="slider-slide"
+                    class="slider-action-slider-slide2 swiper-slide"
+                  ></div>
+                  <div
+                    data-thq="slider-slide"
+                    class="slider-action-slider-slide3 swiper-slide"
+                  ></div>
+                </div>
+                <div
+                  data-thq="slider-pagination"
+                  class="slider-action-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+                >
+                  <div
+                    data-thq="slider-pagination-bullet"
+                    class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                  ></div>
+                  <div
+                    data-thq="slider-pagination-bullet"
+                    class="swiper-pagination-bullet"
+                  ></div>
+                  <div
+                    data-thq="slider-pagination-bullet"
+                    class="swiper-pagination-bullet"
+                  ></div>
+                </div>
+                <div
+                  data-thq="slider-button-prev"
+                  class="slider-action-slider-button-prev swiper-button-prev"
+                ></div>
+                <div
+                  data-thq="slider-button-next"
+                  class="slider-action-slider-button-next swiper-button-next"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </slider-action-wrapper>
+        <hr class="home-separator4" />
+        <fast-games-section-wrapper
+          class="fast-games-section-wrapper"
+          rootclassname="fast-games-sectionundefined"
+        >
+          <!--FastGamesSection component-->
+          <div
+            id="fastgames"
+            class="fast-games-section-header78 fast-games-sectionroot-class-name"
+          >
+            <div
+              class="fast-games-section-column thq-section-max-width thq-section-padding"
+            >
+              <div class="fast-games-section-content1">
+                <h1 class="fast-games-section-text1 thq-heading-1">
+                  <fragment class="home-fragment38">
+                    <span class="home-text47">Мгновенные лотереи</span>
+                  </fragment>
+                </h1>
+                <span class="fast-games-section-text2">
+                  <fragment class="home-fragment37">
+                    <span class="home-text46">
+                      Быстрые лотереи — моментальные результаты и шанс на
+                      выигрыш в один клик.
+                    </span>
+                  </fragment>
+                </span>
+              </div>
+            </div>
+            <a href="fast-games.html" class="fast-games-section-navlink">
+              <div class="fast-games-section-content2">
+                <div
+                  class="fast-games-section-row-container1 thq-animated-group-container-horizontal thq-mask-image-horizontal"
+                >
+                  <div
+                    class="fast-games-section-strip1 thq-animated-group-horizontal"
+                  >
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/bascetball-1500w.jpg"
+                      class="fast-games-section-placeholder-image10 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/winter%20night-1500w.jpg"
+                      class="fast-games-section-placeholder-image11 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/spaceship-1500w.jpg"
+                      class="fast-games-section-placeholder-image12 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Lottery Central Image"
+                      src="public/ImageFastGames/anibus-1500w.jpg"
+                      class="fast-games-section-placeholder-image13 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/el%20porco-1500w.jpg"
+                      class="fast-games-section-placeholder-image14 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="https://images.unsplash.com/photo-1611550082883-a65b37a8ea89?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyOXw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1400"
+                      class="fast-games-section-placeholder-image15 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                  </div>
+                  <div
+                    class="fast-games-section-strip2 thq-animated-group-horizontal"
+                  >
+                    <img
+                      alt="Lottery Central Image"
+                      src="public/ImageFastGames/anibus-1500w.jpg"
+                      class="fast-games-section-placeholder-image16 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/bascetball-1500w.jpg"
+                      class="fast-games-section-placeholder-image17 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/el%20porco-1500w.jpg"
+                      class="fast-games-section-placeholder-image18 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/spaceship-1500w.jpg"
+                      class="fast-games-section-placeholder-image19 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEzM3w&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1400"
+                      class="fast-games-section-placeholder-image20 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="https://images.unsplash.com/photo-1534312527009-56c7016453e6?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIxfHxhYnN0cmFjdHxlbnwwfHx8fDE3MTA4NzA5MzB8MA&amp;ixlib=rb-4.0.3&amp;w=1400"
+                      class="fast-games-section-placeholder-image21 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="fast-games-section-row-container2 thq-animated-group-container-horizontal thq-mask-image-horizontal"
+                >
+                  <div
+                    class="fast-games-section-strip3 thq-animated-group-horizontal-reverse"
+                  >
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/kleopatra-1500w.jpg"
+                      class="fast-games-section-placeholder-image22 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/golden%20bank-1400w.jpg"
+                      class="fast-games-section-placeholder-image23 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/shield-1400w.jpg"
+                      class="fast-games-section-placeholder-image24 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/flash-1500w.jpg"
+                      class="fast-games-section-placeholder-image25 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/superloto%20games-1400w.jpg"
+                      class="fast-games-section-placeholder-image26 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/football-1500w.jpg"
+                      class="fast-games-section-placeholder-image27 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                  </div>
+                  <div
+                    class="fast-games-section-strip4 thq-animated-group-horizontal-reverse"
+                  >
+                    <img
+                      alt="Hero Image"
+                      src="https://images.unsplash.com/photo-1611891487122-207579d67d98?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyOXw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1400"
+                      class="fast-games-section-placeholder-image28 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="public/ImageFastGames/anibus-1400w.jpg"
+                      class="fast-games-section-placeholder-image29 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="https://images.unsplash.com/photo-1617678280072-a00c15e86b0c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEzMHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1400"
+                      class="fast-games-section-placeholder-image30 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="https://images.unsplash.com/photo-1555864400-cc47dd93d427?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEzMHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1400"
+                      class="fast-games-section-placeholder-image31 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="https://images.unsplash.com/photo-1599826452316-c682f75d39e7?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEzNHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1400"
+                      class="fast-games-section-placeholder-image32 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                    <img
+                      alt="Hero Image"
+                      src="https://images.unsplash.com/photo-1555864400-cc47dd93d427?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEzMHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1400"
+                      class="fast-games-section-placeholder-image33 thq-img-ratio-1-1 thq-img-scale"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div>
+              <div class="fast-games-section-container2">
+                <style>
+                  @keyframes scroll-x {
+                    from {
+                      transform: translateX(0);
+                    }
+                    to {
+                      transform: translateX(calc(-100% - 16px));
+                    }
+                  }
+
+                  @keyframes scroll-y {
+                    from {
+                      transform: translateY(0);
+                    }
+                    to {
+                      transform: translateY(calc(-100% - 16px));
+                    }
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </fast-games-section-wrapper>
+        <hr class="home-separator5" />
+        <sport-lottery-section-wrapper
+          class="sport-lottery-section-wrapper"
+          rootclassname="sport-lottery-sectionundefined"
+        >
+          <!--SportLotterySection component-->
+          <div
+            id="sportlottery"
+            class="sport-lottery-section-container1 sport-lottery-sectionroot-class-name"
+          >
+            <div class="sport-lottery-section-container2">
+              <h1 class="sport-lottery-section-text10 thq-heading-2">
+                <fragment class="home-fragment41">
+                  <span class="home-text50">Спортивные лотереи</span>
+                </fragment>
+              </h1>
+              <span class="sport-lottery-section-text11">
+                <fragment class="home-fragment39">
+                  <span class="home-text48">
+                    Прогнозируй спорт — выигрывай как в лотерее
+                  </span>
+                </fragment>
+              </span>
+              <span class="sport-lottery-section-text12">
+                <fragment class="home-fragment40">
+                  <span class="home-text49">
+                    Выбери исходы спортивных матчей, используй интуицию и знание
+                    спорта, чтобы забрать главный приз
+                  </span>
+                </fragment>
+              </span>
+            </div>
+            <div class="sport-lottery-section-container3">
+              <test-sport-card-wrapper
+                class="test-sport-card-wrapper"
+                rootclassname="test-sport-cardundefined"
+              >
+                <!--TestSportCard component-->
+                <div
+                  class="test-sport-card-container test-sport-cardroot-class-name"
+                >
+                  <div class="test-sport-card-container-event">
+                    <div class="test-sport-card-title-event">
+                      <span class="test-sport-card-text10">
+                        <fragment class="sport-lottery-section-fragment10">
+                          <span class="sport-lottery-section-text13">
+                            Футбол
+                          </span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text11">
+                        <fragment class="sport-lottery-section-fragment13">
+                          <span class="sport-lottery-section-text16">1</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text12">
+                        <fragment class="sport-lottery-section-fragment15">
+                          <span class="sport-lottery-section-text18">Х</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text13">
+                        <fragment class="sport-lottery-section-fragment20">
+                          <span class="sport-lottery-section-text23">2</span>
+                        </fragment>
+                      </span>
+                    </div>
+                    <div class="test-sport-card-event1">
+                      <span class="test-sport-card-text14">
+                        <fragment class="sport-lottery-section-fragment14">
+                          <span class="sport-lottery-section-text17">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox10"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox11"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox12"
+                      />
+                    </div>
+                    <div class="test-sport-card-event2">
+                      <span class="test-sport-card-text15">
+                        <fragment class="sport-lottery-section-fragment19">
+                          <span class="sport-lottery-section-text22">
+                            fthfthfhfh fh t t ytyy eryt ee er&nbsp;
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox13"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox14"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox15"
+                      />
+                    </div>
+                    <div class="test-sport-card-event3">
+                      <span class="test-sport-card-text16">
+                        <fragment class="sport-lottery-section-fragment18">
+                          <span class="sport-lottery-section-text21">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox16"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox17"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox18"
+                      />
+                    </div>
+                    <div class="test-sport-card-event4">
+                      <span class="test-sport-card-text17">
+                        <fragment class="sport-lottery-section-fragment17">
+                          <span class="sport-lottery-section-text20">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox19"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox20"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox21"
+                      />
+                    </div>
+                    <div class="test-sport-card-event5">
+                      <span class="test-sport-card-text18">
+                        <fragment class="sport-lottery-section-fragment16">
+                          <span class="sport-lottery-section-text19">
+                            Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox22"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox23"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox24"
+                      />
+                    </div>
+                    <div class="test-sport-card-container-button">
+                      <div class="test-sport-card-price">
+                        <span class="test-sport-card-text19">
+                          <fragment class="sport-lottery-section-fragment21">
+                            <span class="sport-lottery-section-text24">
+                              Цена билета
+                            </span>
+                          </fragment>
+                        </span>
+                        <span class="test-sport-card-text20">
+                          <fragment class="sport-lottery-section-fragment11">
+                            <span class="sport-lottery-section-text14">
+                              100
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        class="test-sport-card-button thq-button-animated thq-button-filled button"
+                      >
+                        <span class="test-sport-card-text21">
+                          <fragment class="sport-lottery-section-fragment12">
+                            <span class="sport-lottery-section-text15">
+                              Сделать прогноз
+                            </span>
+                          </fragment>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </test-sport-card-wrapper>
+              <test-sport-card-wrapper-wc73
+                class="test-sport-card-wrapper-wc73"
+                rootclassname="test-sport-cardundefined"
+              >
+                <!--TestSportCard component-->
+                <div
+                  class="test-sport-card-container1 test-sport-cardroot-class-name1"
+                >
+                  <div class="test-sport-card-container-event1">
+                    <div class="test-sport-card-title-event1">
+                      <span class="test-sport-card-text22">
+                        <fragment class="sport-lottery-section-fragment22">
+                          <span class="sport-lottery-section-text25">
+                            Теннис
+                          </span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text23">
+                        <fragment class="sport-lottery-section-fragment25">
+                          <span class="sport-lottery-section-text28">1</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text24">
+                        <fragment class="sport-lottery-section-fragment27">
+                          <span class="sport-lottery-section-text30">Х</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text25">
+                        <fragment class="sport-lottery-section-fragment32">
+                          <span class="sport-lottery-section-text35">2</span>
+                        </fragment>
+                      </span>
+                    </div>
+                    <div class="test-sport-card-event6">
+                      <span class="test-sport-card-text26">
+                        <fragment class="sport-lottery-section-fragment26">
+                          <span class="sport-lottery-section-text29">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox25"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox26"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox27"
+                      />
+                    </div>
+                    <div class="test-sport-card-event7">
+                      <span class="test-sport-card-text27">
+                        <fragment class="sport-lottery-section-fragment31">
+                          <span class="sport-lottery-section-text34">
+                            Barbora Krejcikova - Alexandra Eala 15:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox28"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox29"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox30"
+                      />
+                    </div>
+                    <div class="test-sport-card-event8">
+                      <span class="test-sport-card-text28">
+                        <fragment class="sport-lottery-section-fragment30">
+                          <span class="sport-lottery-section-text33">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox31"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox32"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox33"
+                      />
+                    </div>
+                    <div class="test-sport-card-event9">
+                      <span class="test-sport-card-text29">
+                        <fragment class="sport-lottery-section-fragment29">
+                          <span class="sport-lottery-section-text32">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox34"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox35"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox36"
+                      />
+                    </div>
+                    <div class="test-sport-card-event10">
+                      <span class="test-sport-card-text30">
+                        <fragment class="sport-lottery-section-fragment28">
+                          <span class="sport-lottery-section-text31">
+                            Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox37"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox38"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox39"
+                      />
+                    </div>
+                    <div class="test-sport-card-container-button1">
+                      <div class="test-sport-card-price1">
+                        <span class="test-sport-card-text31">
+                          <fragment class="sport-lottery-section-fragment33">
+                            <span class="sport-lottery-section-text36">
+                              Цена билета
+                            </span>
+                          </fragment>
+                        </span>
+                        <span class="test-sport-card-text32">
+                          <fragment class="sport-lottery-section-fragment23">
+                            <span class="sport-lottery-section-text26">
+                              100
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        class="test-sport-card-button1 thq-button-animated thq-button-filled button"
+                      >
+                        <span class="test-sport-card-text33">
+                          <fragment class="sport-lottery-section-fragment24">
+                            <span class="sport-lottery-section-text27">
+                              Сделать прогноз
+                            </span>
+                          </fragment>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </test-sport-card-wrapper-wc73>
+              <test-sport-card-wrapper-3bdm
+                class="test-sport-card-wrapper-3bdm"
+                rootclassname="test-sport-cardundefined"
+              >
+                <!--TestSportCard component-->
+                <div
+                  class="test-sport-card-container2 test-sport-cardroot-class-name2"
+                >
+                  <div class="test-sport-card-container-event2">
+                    <div class="test-sport-card-title-event2">
+                      <span class="test-sport-card-text34">
+                        <fragment class="sport-lottery-section-fragment34">
+                          <span class="sport-lottery-section-text37">
+                            Баскетбол
+                          </span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text35">
+                        <fragment class="sport-lottery-section-fragment37">
+                          <span class="sport-lottery-section-text40">1</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text36">
+                        <fragment class="sport-lottery-section-fragment39">
+                          <span class="sport-lottery-section-text42">Х</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text37">
+                        <fragment class="sport-lottery-section-fragment44">
+                          <span class="sport-lottery-section-text47">2</span>
+                        </fragment>
+                      </span>
+                    </div>
+                    <div class="test-sport-card-event11">
+                      <span class="test-sport-card-text38">
+                        <fragment class="sport-lottery-section-fragment38">
+                          <span class="sport-lottery-section-text41">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox40"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox41"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox42"
+                      />
+                    </div>
+                    <div class="test-sport-card-event12">
+                      <span class="test-sport-card-text39">
+                        <fragment class="sport-lottery-section-fragment43">
+                          <span class="sport-lottery-section-text46">
+                            Barbora Krejcikova - Alexandra Eala 15:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox43"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox44"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox45"
+                      />
+                    </div>
+                    <div class="test-sport-card-event13">
+                      <span class="test-sport-card-text40">
+                        <fragment class="sport-lottery-section-fragment42">
+                          <span class="sport-lottery-section-text45">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox46"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox47"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox48"
+                      />
+                    </div>
+                    <div class="test-sport-card-event14">
+                      <span class="test-sport-card-text41">
+                        <fragment class="sport-lottery-section-fragment41">
+                          <span class="sport-lottery-section-text44">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox49"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox50"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox51"
+                      />
+                    </div>
+                    <div class="test-sport-card-event15">
+                      <span class="test-sport-card-text42">
+                        <fragment class="sport-lottery-section-fragment40">
+                          <span class="sport-lottery-section-text43">
+                            Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox52"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox53"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox54"
+                      />
+                    </div>
+                    <div class="test-sport-card-container-button2">
+                      <div class="test-sport-card-price2">
+                        <span class="test-sport-card-text43">
+                          <fragment class="sport-lottery-section-fragment45">
+                            <span class="sport-lottery-section-text48">
+                              Цена билета
+                            </span>
+                          </fragment>
+                        </span>
+                        <span class="test-sport-card-text44">
+                          <fragment class="sport-lottery-section-fragment35">
+                            <span class="sport-lottery-section-text38">
+                              100
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        class="test-sport-card-button2 thq-button-animated thq-button-filled button"
+                      >
+                        <span class="test-sport-card-text45">
+                          <fragment class="sport-lottery-section-fragment36">
+                            <span class="sport-lottery-section-text39">
+                              Сделать прогноз
+                            </span>
+                          </fragment>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </test-sport-card-wrapper-3bdm>
+              <test-sport-card-wrapper-jzob
+                class="test-sport-card-wrapper-jzob"
+                rootclassname="test-sport-cardundefined"
+              >
+                <!--TestSportCard component-->
+                <div
+                  class="test-sport-card-container3 test-sport-cardroot-class-name11"
+                >
+                  <div class="test-sport-card-container-event3">
+                    <div class="test-sport-card-title-event3">
+                      <span class="test-sport-card-text46">
+                        <fragment class="sport-lottery-section-fragment46">
+                          <span class="sport-lottery-section-text49">
+                            Хоккей
+                          </span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text47">
+                        <fragment class="sport-lottery-section-fragment49">
+                          <span class="sport-lottery-section-text52">1</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text48">
+                        <fragment class="sport-lottery-section-fragment51">
+                          <span class="sport-lottery-section-text54">Х</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text49">
+                        <fragment class="sport-lottery-section-fragment56">
+                          <span class="sport-lottery-section-text59">2</span>
+                        </fragment>
+                      </span>
+                    </div>
+                    <div class="test-sport-card-event16">
+                      <span class="test-sport-card-text50">
+                        <fragment class="sport-lottery-section-fragment50">
+                          <span class="sport-lottery-section-text53">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox55"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox56"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox57"
+                      />
+                    </div>
+                    <div class="test-sport-card-event17">
+                      <span class="test-sport-card-text51">
+                        <fragment class="sport-lottery-section-fragment55">
+                          <span class="sport-lottery-section-text58">
+                            Barbora Krejcikova - Alexandra Eala 15:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox58"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox59"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox60"
+                      />
+                    </div>
+                    <div class="test-sport-card-event18">
+                      <span class="test-sport-card-text52">
+                        <fragment class="sport-lottery-section-fragment54">
+                          <span class="sport-lottery-section-text57">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox61"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox62"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox63"
+                      />
+                    </div>
+                    <div class="test-sport-card-event19">
+                      <span class="test-sport-card-text53">
+                        <fragment class="sport-lottery-section-fragment53">
+                          <span class="sport-lottery-section-text56">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox64"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox65"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox66"
+                      />
+                    </div>
+                    <div class="test-sport-card-event20">
+                      <span class="test-sport-card-text54">
+                        <fragment class="sport-lottery-section-fragment52">
+                          <span class="sport-lottery-section-text55">
+                            Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox67"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox68"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox69"
+                      />
+                    </div>
+                    <div class="test-sport-card-container-button3">
+                      <div class="test-sport-card-price3">
+                        <span class="test-sport-card-text55">
+                          <fragment class="sport-lottery-section-fragment57">
+                            <span class="sport-lottery-section-text60">
+                              Цена билета
+                            </span>
+                          </fragment>
+                        </span>
+                        <span class="test-sport-card-text56">
+                          <fragment class="sport-lottery-section-fragment47">
+                            <span class="sport-lottery-section-text50">
+                              100
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        class="test-sport-card-button3 thq-button-animated thq-button-filled button"
+                      >
+                        <span class="test-sport-card-text57">
+                          <fragment class="sport-lottery-section-fragment48">
+                            <span class="sport-lottery-section-text51">
+                              Сделать прогноз
+                            </span>
+                          </fragment>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </test-sport-card-wrapper-jzob>
+              <test-sport-card-wrapper-mjod
+                class="test-sport-card-wrapper-mjod"
+                rootclassname="test-sport-cardundefined"
+              >
+                <!--TestSportCard component-->
+                <div
+                  class="test-sport-card-container4 test-sport-cardroot-class-name12"
+                >
+                  <div class="test-sport-card-container-event4">
+                    <div class="test-sport-card-title-event4">
+                      <span class="test-sport-card-text58">
+                        <fragment class="sport-lottery-section-fragment58">
+                          <span class="sport-lottery-section-text61">
+                            Регби
+                          </span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text59">
+                        <fragment class="sport-lottery-section-fragment61">
+                          <span class="sport-lottery-section-text64">1</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text60">
+                        <fragment class="sport-lottery-section-fragment63">
+                          <span class="sport-lottery-section-text66">Х</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text61">
+                        <fragment class="sport-lottery-section-fragment68">
+                          <span class="sport-lottery-section-text71">2</span>
+                        </fragment>
+                      </span>
+                    </div>
+                    <div class="test-sport-card-event21">
+                      <span class="test-sport-card-text62">
+                        <fragment class="sport-lottery-section-fragment62">
+                          <span class="sport-lottery-section-text65">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox70"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox71"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox72"
+                      />
+                    </div>
+                    <div class="test-sport-card-event22">
+                      <span class="test-sport-card-text63">
+                        <fragment class="sport-lottery-section-fragment67">
+                          <span class="sport-lottery-section-text70">
+                            Barbora Krejcikova - Alexandra Eala 15:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox73"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox74"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox75"
+                      />
+                    </div>
+                    <div class="test-sport-card-event23">
+                      <span class="test-sport-card-text64">
+                        <fragment class="sport-lottery-section-fragment66">
+                          <span class="sport-lottery-section-text69">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox76"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox77"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox78"
+                      />
+                    </div>
+                    <div class="test-sport-card-event24">
+                      <span class="test-sport-card-text65">
+                        <fragment class="sport-lottery-section-fragment65">
+                          <span class="sport-lottery-section-text68">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox79"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox80"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox81"
+                      />
+                    </div>
+                    <div class="test-sport-card-event25">
+                      <span class="test-sport-card-text66">
+                        <fragment class="sport-lottery-section-fragment64">
+                          <span class="sport-lottery-section-text67">
+                            Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox82"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox83"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox84"
+                      />
+                    </div>
+                    <div class="test-sport-card-container-button4">
+                      <div class="test-sport-card-price4">
+                        <span class="test-sport-card-text67">
+                          <fragment class="sport-lottery-section-fragment69">
+                            <span class="sport-lottery-section-text72">
+                              Цена билета
+                            </span>
+                          </fragment>
+                        </span>
+                        <span class="test-sport-card-text68">
+                          <fragment class="sport-lottery-section-fragment59">
+                            <span class="sport-lottery-section-text62">
+                              100
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        class="test-sport-card-button4 thq-button-animated thq-button-filled button"
+                      >
+                        <span class="test-sport-card-text69">
+                          <fragment class="sport-lottery-section-fragment60">
+                            <span class="sport-lottery-section-text63">
+                              Сделать прогноз
+                            </span>
+                          </fragment>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </test-sport-card-wrapper-mjod>
+              <test-sport-card-wrapper-vo8p
+                class="test-sport-card-wrapper-vo8p"
+                rootclassname="test-sport-cardundefined"
+              >
+                <!--TestSportCard component-->
+                <div
+                  class="test-sport-card-container5 test-sport-cardroot-class-name10"
+                >
+                  <div class="test-sport-card-container-event5">
+                    <div class="test-sport-card-title-event5">
+                      <span class="test-sport-card-text70">
+                        <fragment class="sport-lottery-section-fragment70">
+                          <span class="sport-lottery-section-text73">
+                            Волейбол
+                          </span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text71">
+                        <fragment class="sport-lottery-section-fragment73">
+                          <span class="sport-lottery-section-text76">1</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text72">
+                        <fragment class="sport-lottery-section-fragment75">
+                          <span class="sport-lottery-section-text78">Х</span>
+                        </fragment>
+                      </span>
+                      <span class="test-sport-card-text73">
+                        <fragment class="sport-lottery-section-fragment80">
+                          <span class="sport-lottery-section-text83">2</span>
+                        </fragment>
+                      </span>
+                    </div>
+                    <div class="test-sport-card-event26">
+                      <span class="test-sport-card-text74">
+                        <fragment class="sport-lottery-section-fragment74">
+                          <span class="sport-lottery-section-text77">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox85"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox86"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox87"
+                      />
+                    </div>
+                    <div class="test-sport-card-event27">
+                      <span class="test-sport-card-text75">
+                        <fragment class="sport-lottery-section-fragment79">
+                          <span class="sport-lottery-section-text82">
+                            Barbora Krejcikova - Alexandra Eala 15:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox88"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox89"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox90"
+                      />
+                    </div>
+                    <div class="test-sport-card-event28">
+                      <span class="test-sport-card-text76">
+                        <fragment class="sport-lottery-section-fragment78">
+                          <span class="sport-lottery-section-text81">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox91"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox92"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox93"
+                      />
+                    </div>
+                    <div class="test-sport-card-event29">
+                      <span class="test-sport-card-text77">
+                        <fragment class="sport-lottery-section-fragment77">
+                          <span class="sport-lottery-section-text80">
+                            VfB Stuttgart - Bayern Munich 21:30
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox94"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox95"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox96"
+                      />
+                    </div>
+                    <div class="test-sport-card-event30">
+                      <span class="test-sport-card-text78">
+                        <fragment class="sport-lottery-section-fragment76">
+                          <span class="sport-lottery-section-text79">
+                            Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                          </span>
+                        </fragment>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox97"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox98"
+                      />
+                      <input
+                        type="checkbox"
+                        checked="true"
+                        class="test-sport-card-checkbox99"
+                      />
+                    </div>
+                    <div class="test-sport-card-container-button5">
+                      <div class="test-sport-card-price5">
+                        <span class="test-sport-card-text79">
+                          <fragment class="sport-lottery-section-fragment81">
+                            <span class="sport-lottery-section-text84">
+                              Цена билета
+                            </span>
+                          </fragment>
+                        </span>
+                        <span class="test-sport-card-text80">
+                          <fragment class="sport-lottery-section-fragment71">
+                            <span class="sport-lottery-section-text74">
+                              100
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        class="test-sport-card-button5 thq-button-animated thq-button-filled button"
+                      >
+                        <span class="test-sport-card-text81">
+                          <fragment class="sport-lottery-section-fragment72">
+                            <span class="sport-lottery-section-text75">
+                              Сделать прогноз
+                            </span>
+                          </fragment>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </test-sport-card-wrapper-vo8p>
+            </div>
+          </div>
+        </sport-lottery-section-wrapper>
+        <hr class="home-separator6" />
+        <classic-lottery-section-wrapper
+          class="classic-lottery-section-wrapper"
+          rootclassname="classic-lottery-sectionundefined"
+        >
+          <!--ClassicLotterySection component-->
+          <div
+            id="classic-lottery"
+            class="classic-lottery-section-container1 classic-lottery-sectionroot-class-name"
+          >
+            <div class="classic-lottery-section-container2">
+              <div class="classic-lottery-section-content">
+                <h1 class="classic-lottery-section-text1 thq-heading-1">
+                  <fragment class="home-fragment43">
+                    <span class="home-text55">Классические лотереи</span>
+                  </fragment>
+                </h1>
+                <span class="classic-lottery-section-text2">
+                  <fragment class="home-fragment42">
+                    <span class="home-text51">
+                      <span>
+                        Классика лотерей — большие розыгрыши каждую неделю.
+                      </span>
+                      <br />
+                      <span>
+                        Участвуй в регулярных тиражах, следи за датами и борись
+                        за крупные джекпоты.
+                      </span>
+                    </span>
+                  </fragment>
+                </span>
+              </div>
+            </div>
+            <div class="classic-lottery-section-container3 image-grid">
+              <div class="classic-lottery-section-container4 row">
+                <img
+                  alt="image"
+                  src="public/imagePopularLottery/20250628_2104_vibrant%20lottery%20promotion_remix_01jyvv991hea090e438m4smh81-1500w.png"
+                  class="classic-lottery-section-image1 grid-img"
+                />
+                <img
+                  alt="image"
+                  src="public/imagePopularLottery/20250628_2101_lottery%20jackpot%20promotion_remix_01jyvv47hefwxbph1mv9xanttr-1500w.png"
+                  class="classic-lottery-section-image2 grid-img"
+                />
+                <img
+                  alt="image"
+                  src="public/imagePopularLottery/20250628_2104_vibrant%20lottery%20promotion_remix_01jyvv991jec1r8wanjrr090dq-1500w.png"
+                  class="classic-lottery-section-image3 grid-img"
+                />
+                <img
+                  alt="image"
+                  src="public/imagePopularLottery/20250628_2111_exciting%20lottery%20promotion_remix_01jyvvpn66e47a5p4z8f2pv9mt-1500w.png"
+                  class="classic-lottery-section-image4 grid-img"
+                />
+              </div>
+              <div class="classic-lottery-section-container5 row">
+                <img
+                  alt="image"
+                  src="public/imagePopularLottery/20250628_2111_exciting%20lottery%20promotion_remix_01jyvvpn65e9qt9qabvxsnmh37-1500w.png"
+                  class="classic-lottery-section-image5 grid-img"
+                />
+                <img
+                  alt="image"
+                  src="public/imagePopularLottery/20250628_2101_lottery%20jackpot%20promotion_remix_01jyvv47hffhxbv839d774a1qm-1500w.png"
+                  class="classic-lottery-section-image6 grid-img"
+                />
+                <img
+                  alt="image"
+                  src="public/imagePopularLottery/20250628_2056_exciting%20lottery%20banner_remix_01jyvtv6pxemb9y7brd2pnjrc2%20(1)-1500w.png"
+                  class="classic-lottery-section-image7 grid-img"
+                />
+                <img
+                  alt="image"
+                  src="public/imagePopularLottery/20250628_2056_exciting%20lottery%20banner_remix_01jyvtv6pyfqj944q2emj5y9t2-1500w.png"
+                  class="classic-lottery-section-image8 grid-img"
+                />
+              </div>
+            </div>
+          </div>
+        </classic-lottery-section-wrapper>
+        <hr class="home-separator7" />
+        <testimonial17-wrapper class="testimonial17-wrapper">
+          <!--Testimonial17 component-->
+          <div class="thq-section-padding testimonial17">
+            <div class="testimonial17-max-width thq-section-max-width">
+              <div class="testimonial17-container10">
+                <h2 class="thq-heading-2">
+                  <fragment class="home-fragment49">
+                    <span class="home-text61">Истории наших победителей</span>
+                  </fragment>
+                </h2>
+                <span class="testimonial17-text11 thq-body-small">
+                  <fragment class="home-fragment48">
+                    <span class="home-text60">
+                      Я пользуюсь этим сайтом уже много лет, чтобы выигрывать
+                      каждый день.
+                    </span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="thq-grid-2">
+                <div class="thq-animated-card-bg-2">
+                  <div class="thq-animated-card-bg-1">
+                    <div
+                      data-animated="true"
+                      class="thq-card testimonial17-card1"
+                    >
+                      <div class="testimonial17-container12">
+                        <img
+                          alt="Image of John Doe"
+                          src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyOHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                          class="testimonial17-image1"
+                        />
+                        <div class="testimonial17-container13">
+                          <strong class="thq-body-large">
+                            <fragment class="home-fragment50">
+                              <span class="home-text62">Сергей Катанаев</span>
+                            </fragment>
+                          </strong>
+                          <span class="thq-body-small">
+                            <fragment class="home-fragment54">
+                              <span class="home-text66">
+                                Lottery Enthusiast
+                              </span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                      <span class="testimonial17-text14 thq-body-small">
+                        <fragment class="home-fragment44">
+                          <span class="home-text56">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Suspendisse varius enim in eros elementum
+                            tristique. Duis cursus, mi quis viverra ornare, eros
+                            dolor interdum nulla.
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="thq-animated-card-bg-2">
+                  <div class="thq-animated-card-bg-1">
+                    <div
+                      data-animated="true"
+                      class="thq-card testimonial17-card2"
+                    >
+                      <div class="testimonial17-container14">
+                        <img
+                          alt="Image of Jane Smith"
+                          src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyOXw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                          class="testimonial17-image2"
+                        />
+                        <div class="testimonial17-container15">
+                          <strong class="thq-body-large">
+                            <fragment class="home-fragment51">
+                              <span class="home-text63">Игорь Антонов</span>
+                            </fragment>
+                          </strong>
+                          <span class="thq-body-small">
+                            <fragment class="home-fragment55">
+                              <span class="home-text67">Jackpot Winner</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                      <span class="testimonial17-text17 thq-body-small">
+                        <fragment class="home-fragment45">
+                          <span class="home-text57">
+                            Thanks to the information provided on this site, I
+                            was able to check my numbers quickly and claim my
+                            jackpot prize!
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="thq-animated-card-bg-2">
+                  <div class="thq-animated-card-bg-1">
+                    <div
+                      data-animated="true"
+                      class="thq-card testimonial17-card3"
+                    >
+                      <div class="testimonial17-container16">
+                        <img
+                          alt="Image of David Johnson"
+                          src="https://images.unsplash.com/photo-1529797228130-fe918ce6d915?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyOXw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                          class="testimonial17-image3"
+                        />
+                        <div class="testimonial17-container17">
+                          <strong class="thq-body-large">
+                            <fragment class="home-fragment52">
+                              <span class="home-text64">Трамп Дональд</span>
+                            </fragment>
+                          </strong>
+                          <span class="thq-body-small">
+                            <fragment class="home-fragment56">
+                              <span class="home-text68">Game Player</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                      <span class="testimonial17-text20 thq-body-small">
+                        <fragment class="home-fragment46">
+                          <span class="home-text58">
+                            I enjoy playing different games, and this website
+                            has all the information I need in one place. Highly
+                            recommended!
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="thq-animated-card-bg-2">
+                  <div class="thq-animated-card-bg-1">
+                    <div
+                      data-animated="true"
+                      class="thq-card testimonial17-card4"
+                    >
+                      <div class="testimonial17-container18">
+                        <img
+                          alt="Image of Emily Brown"
+                          src="https://images.unsplash.com/photo-1633239331793-32bb70b47e53?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEyOXw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                          class="testimonial17-image4"
+                        />
+                        <div class="testimonial17-container19">
+                          <strong class="thq-body-large">
+                            <fragment class="home-fragment53">
+                              <span class="home-text65">Трамп Мелания</span>
+                            </fragment>
+                          </strong>
+                          <span class="thq-body-small">
+                            <fragment class="home-fragment57">
+                              <span class="home-text69">Lottery Fan</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                      <span class="testimonial17-text23 thq-body-small">
+                        <fragment class="home-fragment47">
+                          <span class="home-text59">
+                            I love reading about the latest jackpot prizes and
+                            winners. This site keeps me informed and
+                            entertained.
+                          </span>
+                        </fragment>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </testimonial17-wrapper>
+        <features24-wrapper class="features24-wrapper">
+          <!--Features24 component-->
+          <div id="Features24" class="thq-section-padding features24">
+            <div class="features24-container2 thq-section-max-width">
+              <div class="features24-image-container">
+                <img
+                  alt="Lottery balls"
+                  src="https://images.unsplash.com/photo-1551615993-9ad2e3a5f3ff?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEzMHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                  class="features24-image1 thq-img-ratio-16-9"
+                />
+                <img
+                  alt="Lottery ticket"
+                  src="https://images.unsplash.com/photo-1676708061215-f5ece0fe215f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEzMnw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                  class="features24-image2 thq-img-ratio-16-9"
+                />
+                <img
+                  alt="Jackpot prize illustration"
+                  src="https://images.unsplash.com/photo-1553175536-c4a6cb24acb5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MDM1MDEzMHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                  class="features24-image3 thq-img-ratio-16-9"
+                />
+              </div>
+              <div class="features24-tabs-menu">
+                <div class="features24-tab-horizontal1">
+                  <div class="features24-divider-container1">
+                    <div class="features24-container3"></div>
+                  </div>
+                  <div class="features24-content1">
+                    <h2 class="thq-heading-2">
+                      <fragment class="home-fragment58">
+                        <span class="home-text70">Наши лицензии</span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment61">
+                        <span class="home-text73">
+                          Discover tips and strategies to improve your chances
+                          of winning.
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal2">
+                  <div class="features24-divider-container2">
+                    <div class="features24-container4"></div>
+                  </div>
+                  <div class="features24-content2">
+                    <h2 class="thq-heading-2">
+                      <fragment class="home-fragment59">
+                        <span class="home-text71">
+                          Правила и стратегия игры
+                        </span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment62">
+                        <span class="home-text74">
+                          Learn about different lottery games and their rules.
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="features24-tab-horizontal3">
+                  <div class="features24-divider-container3">
+                    <div class="features24-container5"></div>
+                  </div>
+                  <div class="features24-content3">
+                    <h2 class="thq-heading-2">
+                      <fragment class="home-fragment60">
+                        <span class="home-text72">
+                          Выигравшие номера и джекпоты
+                        </span>
+                      </fragment>
+                    </h2>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment63">
+                        <span class="home-text75">
+                          Stay updated with the latest winning numbers and
+                          jackpot prizes.
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </features24-wrapper>
+        <footer4-wrapper class="footer4-wrapper">
+          <!--Footer4 component-->
+          <footer class="footer4-footer7 thq-section-padding">
+            <div class="footer4-max-width thq-section-max-width">
+              <div class="footer4-content">
+                <div class="footer4-logo1">
+                  <img
+                    alt="Lottery Info Logo"
+                    src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                    class="footer4-logo2"
+                  />
+                </div>
+                <div class="footer4-links">
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="home-fragment64">
+                      <span class="home-text76">About Us</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="home-fragment65">
+                      <span class="home-text77">Contact Us</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="home-fragment66">
+                      <span class="home-text78">Privacy Policy</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="home-fragment67">
+                      <span class="home-text79">Terms and Conditions</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="thq-body-small"
+                  >
+                    <fragment class="home-fragment68">
+                      <span class="home-text80">FAQs</span>
+                    </fragment>
+                  </a>
+                </div>
+              </div>
+              <div class="footer4-credits">
+                <div class="thq-divider-horizontal"></div>
+                <div class="footer4-row">
+                  <div class="footer4-container">
+                    <span class="thq-body-small">© 2024 TeleportHQ</span>
+                  </div>
+                  <div class="footer4-footer-links">
+                    <span class="footer4-text11 thq-body-small">
+                      <fragment class="home-fragment71">
+                        <span class="home-text83">Privacy Policy</span>
+                      </fragment>
+                    </span>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment69">
+                        <span class="home-text81">Terms and Conditions</span>
+                      </fragment>
+                    </span>
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment70">
+                        <span class="home-text82">Cookie Policy</span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </footer4-wrapper>
+        <login-modal-wrapper class="login-modal-wrapper">
+          <!--LoginModal component-->
+          <div id="LoginModal" class="login-modal-login-modal">
+            <div class="modal-wrapper">
+              <sign-in3-wrapper class="sign-in3-wrapper">
+                <!--SignIn3 component-->
+                <div class="sign-in3-container1 thq-section-padding">
+                  <div
+                    class="sign-in3-max-width thq-section-max-width thq-section-padding"
+                  >
+                    <div class="sign-in3-form-root">
+                      <div class="sign-in3-form1">
+                        <h2 class="sign-in3-text10 thq-heading-2">
+                          <fragment class="login-modal-fragment4">
+                            <span class="login-modal-text4">
+                              Welcome back! Sign in to your account
+                            </span>
+                          </fragment>
+                        </h2>
+                        <form class="sign-in3-form2">
+                          <div class="sign-in3-email">
+                            <label
+                              for="thq-sign-in-1-password"
+                              class="thq-body-large"
+                            >
+                              Email
+                            </label>
+                            <input
+                              type="email"
+                              id="thq-sign-in-3-email"
+                              required="true"
+                              placeholder="Email address"
+                              class="sign-in3-textinput1 thq-input thq-body-large"
+                            />
+                          </div>
+                          <div class="sign-in3-password">
+                            <div class="sign-in3-container2">
+                              <label
+                                for="thq-sign-in-3-password"
+                                class="thq-body-large"
+                              >
+                                Password
+                              </label>
+                              <div class="sign-in3-hide-password">
+                                <svg
+                                  viewBox="0 0 1024 1024"
+                                  class="sign-in3-icon1"
+                                >
+                                  <path
+                                    d="M317.143 762.857l44.571-80.571c-66.286-48-105.714-125.143-105.714-206.857 0-45.143 12-89.714 34.857-128.571-89.143 45.714-163.429 117.714-217.714 201.714 59.429 92 143.429 169.143 244 214.286zM539.429 329.143c0-14.857-12.571-27.429-27.429-27.429-95.429 0-173.714 78.286-173.714 173.714 0 14.857 12.571 27.429 27.429 27.429s27.429-12.571 27.429-27.429c0-65.714 53.714-118.857 118.857-118.857 14.857 0 27.429-12.571 27.429-27.429zM746.857 220c0 1.143 0 4-0.571 5.143-120.571 215.429-240 432-360.571 647.429l-28 50.857c-3.429 5.714-9.714 9.143-16 9.143-10.286 0-64.571-33.143-76.571-40-5.714-3.429-9.143-9.143-9.143-16 0-9.143 19.429-40 25.143-49.714-110.857-50.286-204-136-269.714-238.857-7.429-11.429-11.429-25.143-11.429-39.429 0-13.714 4-28 11.429-39.429 113.143-173.714 289.714-289.714 500.571-289.714 34.286 0 69.143 3.429 102.857 9.714l30.857-55.429c3.429-5.714 9.143-9.143 16-9.143 10.286 0 64 33.143 76 40 5.714 3.429 9.143 9.143 9.143 15.429zM768 475.429c0 106.286-65.714 201.143-164.571 238.857l160-286.857c2.857 16 4.571 32 4.571 48zM1024 548.571c0 14.857-4 26.857-11.429 39.429-17.714 29.143-40 57.143-62.286 82.857-112 128.571-266.286 206.857-438.286 206.857l42.286-75.429c166.286-14.286 307.429-115.429 396.571-253.714-42.286-65.714-96.571-123.429-161.143-168l36-64c70.857 47.429 142.286 118.857 186.857 192.571 7.429 12.571 11.429 24.571 11.429 39.429z"
+                                  ></path>
+                                </svg>
+                                <span class="thq-body-small">Hide</span>
+                              </div>
+                            </div>
+                            <input
+                              type="password"
+                              id="thq-sign-in-3-password"
+                              required="true"
+                              placeholder="Password"
+                              class="sign-in3-textinput2 thq-input thq-body-large"
+                            />
+                            <a
+                              href="https://teleporthq.io/"
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              class="sign-in3-link thq-body-small"
+                            >
+                              Forgot password
+                            </a>
+                          </div>
+                        </form>
+                        <div class="sign-in3-container3">
+                          <button
+                            type="submit"
+                            class="sign-in3-button1 thq-button-filled"
+                          >
+                            <span class="sign-in3-text14 thq-body-small">
+                              <fragment class="login-modal-fragment1">
+                                <span class="login-modal-text1">Sign In</span>
+                              </fragment>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sign-in3-container4">
+                      <div class="sign-in3-divider1">
+                        <div class="sign-in3-divider2"></div>
+                        <p class="thq-body-large">
+                          <fragment class="login-modal-fragment3">
+                            <span class="login-modal-text3">
+                              Sign in to your account to start playing lottery
+                              games, making sports predictions, and tracking
+                              winning numbers.
+                            </span>
+                          </fragment>
+                        </p>
+                        <div class="sign-in3-divider3"></div>
+                      </div>
+                      <button
+                        type="button"
+                        class="sign-in3-button2 thq-button-outline"
+                      >
+                        <span class="sign-in3-text16 thq-body-small">
+                          <fragment class="login-modal-fragment2">
+                            <span class="login-modal-text2">
+                              Forgot Password?
+                            </span>
+                          </fragment>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <img
+                    alt="Lottery balls"
+                    src="https://images.unsplash.com/photo-1730263939244-cf09461b34e0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1MTgyNDMyOXw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                    class="sign-in3-sign-up-image thq-img-ratio-16-9"
+                  />
+                  <div class="sign-in3-container5"></div>
+                </div>
+              </sign-in3-wrapper>
+            </div>
+            <div>
+              <div class="login-modal-container2">
+                <style>
+                    body {
+                      overscroll-behavior: contain;
+                      touch-action: manipulation;
+                      margin: 0;
+                    }
+
+                    /* #LoginModal — внешний контейнер */
+                    #LoginModal {
+                      display: flex;
+                      position: fixed;
+                      background-color: rgba(0, 0, 0, 0.5);
+                      z-index: 9999;
+                      justify-content: center;
+                      align-items: center;
+                      overflow-y: auto;
+                      box-sizing: border-box;
+                      flex-direction: column;
+                    }
+
+                    /* ModalWrapper — внутренняя обёртка */
+                    .modal-wrapper {
+                      background: white;
+                      inset: 0;
+                      width: 90%;
+                      max-width: 620px;
+                      max-height: 90vh;
+                      overflow-y: auto;
+                      padding: 1rem;
+                      border-radius: 12px;
+                      box-sizing: border-box;
+                      display: flex;
+                      flex-direction: column;
+                      flex-grow: 1;
+                    }
+
+                    .modal-wrapper p {
+                      margin-bottom: 1rem;
+                    }
+
+                    .close-login {
+                      background: crimson;
+                      color: white;
+                      padding: 0.5rem 1rem;
+                      border: none;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      align-self: flex-end;
+                    }
+
+                    .login-button {
+                      margin: 2rem;
+                      padding: 0.75rem 1.5rem;
+                      background: #007bff;
+                      color: white;
+                      border: none;
+                      border-radius: 6px;
+                      cursor: pointer;
+                    }
+                    .tabs {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    border: 1px solid #ccc;
+                    font-size: 14px;
+                  }
+
+                  .tab {
+                    flex: 1;
+                    text-align: center;
+                    padding: 0.75rem;
+                    cursor: pointer;
+                    background-color: #f3f4f6;
+                    transition: 0.3s;
+                  }
+
+                  .tab.active {
+                    background-color: #10b981;
+                    color: white;
+                    font-weight: bold;
+                  }
+
+                  .tab-content {
+                    display: none;
+                    flex-direction: column;
+                    gap: 0.75rem;
+                  }
+
+                  .tab-content.active {
+                    display: flex;
+                  }
+
+                  .input {
+                    padding: 0.75rem;
+                    border: 1px solid #ccc;
+                    border-radius: 6px;
+                    font-size: 16px;
+                    width: 100%;
+                    box-sizing: border-box;
+                  }
+
+                  .button {
+                    padding: 0.75rem;
+                    background-color: #ef4444;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    transition: background-color 0.2s ease;
+                  }
+
+                  .button:hover {
+                    background-color: #dc2626;
+                  }
+                </style>
+
+                <script>
+                  function setupModalScript() {
+                    const modal = document.getElementById('LoginModal');
+                    if (!modal) return;
+
+                    const closeBtn = modal.querySelector('.close-login');
+                    const wrapper = modal.querySelector('.modal-wrapper');
+                    const loginButtons = document.querySelectorAll('.login-button');
+
+                    loginButtons.forEach(btn => {
+                      btn.addEventListener('click', () => {
+                        modal.style.display = 'flex';
+                      });
+                    });
+
+                    closeBtn?.addEventListener('click', () => {
+                      modal.style.display = 'none';
+                    });
+
+                    // Закрытие при клике вне модального окна
+                    modal.addEventListener('click', (event) => {
+                      if (!wrapper.contains(event.target)) {
+                        modal.style.display = 'none';
+                      }
+                    });
+                  }
+
+                  setTimeout(setupModalScript, 100);
+                  let smsAttempts = 0;
+                    let smsTimeout;
+
+                    const phoneMask = IMask(document.getElementById('regPhone'), {
+                      mask: '+{7} (000) 000-00-00'
+                    });
+
+                    IMask(document.getElementById('loginPhone'), {
+                      mask: '+{7} (000) 000-00-00'
+                    });
+
+                    function switchTab(tab) {
+                      document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+                      document.getElementById('registerForm').classList.add('hidden');
+                      document.getElementById('loginForm').classList.add('hidden');
+                      document.getElementById('recoveryForm').classList.add('hidden');
+
+                      if (tab === 'register') {
+                        document.querySelectorAll('.tab')[0].classList.add('active');
+                        document.getElementById('registerForm').classList.remove('hidden');
+                      } else {
+                        document.querySelectorAll('.tab')[1].classList.add('active');
+                        document.getElementById('loginForm').classList.remove('hidden');
+                      }
+                    }
+
+                    function showRecovery() {
+                      const phone = document.getElementById('loginPhone').value;
+                      document.getElementById('loginForm').classList.add('hidden');
+                      document.getElementById('recoveryForm').classList.remove('hidden');
+                      document.getElementById('recPhone').value = phone;
+                    }
+
+                    function sendSMS() {
+                      const phone = document.getElementById('regPhone');
+                      const email = document.getElementById('regEmail');
+                      const name = document.getElementById('regName');
+                      const dob = document.getElementById('regDob');
+                      const password = document.getElementById('regPassword');
+                      const repeat = document.getElementById('regPasswordRepeat');
+                      const regError = document.getElementById('regError');
+
+                      regError.textContent = '';
+
+                      if (!phone.value || phone.value.length < 18) {
+                        regError.textContent = 'Введите корректный номер телефона';
+                        return;
+                      }
+                      if (!email.checkValidity()) {
+                        regError.textContent = 'Введите корректный email';
+                        return;
+                      }
+                      if (!name.value || !dob.value || !password.value || !repeat.value) {
+                        regError.textContent = 'Пожалуйста, заполните все поля';
+                        return;
+                      }
+                      if (password.value !== repeat.value) {
+                        regError.textContent = 'Пароли не совпадают';
+                        return;
+                      }
+
+                      if (smsAttempts >= 3) {
+                        regError.textContent = 'Превышено количество попыток. Попробуйте позже.';
+                        return;
+                      }
+
+                      smsAttempts++;
+                      document.getElementById('smsVerification').classList.remove('hidden');
+                      document.getElementById('registerFields').classList.add('hidden');
+
+                      let timeLeft = 180;
+                      const timer = document.getElementById('smsTimer');
+                      timer.textContent = `Можно повторно отправить через ${timeLeft} сек.`;
+                      smsTimeout = setInterval(() => {
+                        timeLeft--;
+                        timer.textContent = `Можно повторно отправить через ${timeLeft} сек.`;
+                        if (timeLeft <= 0) clearInterval(smsTimeout);
+                      }, 1000);
+                    }
+
+                    function validateRegisterForm() {
+                      const code = document.getElementById('smsCode');
+                      const smsError = document.getElementById('smsError');
+
+                      smsError.textContent = '';
+
+                      if (!code.value) {
+                        smsError.textContent = 'Введите код из СМС';
+                        return false;
+                      }
+
+                      return true;
+                    }
+                </script>
+              </div>
+            </div>
+          </div>
+        </login-modal-wrapper>
+        <div class="home-container2">
+          <div>
+            <div class="home-container4">
+              <style>
+                body {
+                  overscroll-behavior: contain;
+                  touch-action: manipulation;
+                  margin: 0;
+                }
+
+                /* #LoginModal — внешний контейнер */
+                #LoginModal {
+                  display: none;
+                  position: fixed;
+                  background-color: rgba(0, 0, 0, 0.5);
+                  z-index: 9999;
+                  justify-content: center;
+                  align-items: center;
+                  overflow-y: auto;
+                  box-sizing: border-box;
+                  flex-direction: column;
+                }
+
+                /* ModalWrapper — внутренняя обёртка */
+                .modal-wrapper {
+                  background: white;
+                  inset: 0;
+                  width: 90%;
+                  max-width: 620px;
+                  max-height: 90vh;
+                  overflow-y: auto;
+                  padding: 1rem;
+                  border-radius: 12px;
+                  box-sizing: border-box;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                }
+
+                .modal-wrapper p {
+                  margin-bottom: 1rem;
+                }
+
+                .close-login {
+                  background: crimson;
+                  color: white;
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  align-self: flex-end;
+                }
+
+                .login-button {
+                  margin: 2rem;
+                  padding: 0.75rem 1.5rem;
+                  background: #007bff;
+                  color: white;
+                  border: none;
+                  border-radius: 6px;
+                  cursor: pointer;
+                }
+              </style>
+
+              <script>
+                function setupModalScript() {
+                  const modal = document.getElementById('LoginModal');
+                  if (!modal) return;
+
+                  const closeBtn = modal.querySelector('.close-login');
+                  const wrapper = modal.querySelector('.modal-wrapper');
+                  const loginButtons = document.querySelectorAll('.login-button');
+
+                  loginButtons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                      modal.style.display = 'flex';
+                    });
+                  });
+
+                  closeBtn?.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                  });
+
+                  // Закрытие при клике вне модального окна
+                  modal.addEventListener('click', (event) => {
+                    if (!wrapper.contains(event.target)) {
+                      modal.style.display = 'none';
+                    }
+                  });
+                }
+
+                setTimeout(setupModalScript, 100);
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

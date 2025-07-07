@@ -1,0 +1,24 @@
+.form-autorisation-wrapper {
+  display: contents;
+}
+ 
+.form-autorisation-container1 {
+  display: flex;
+  position: relative;
+}
+ 
+.form-autorisation-container2 {
+  height: 324px;
+}
+ 
+.form-autorisation-container3 {
+  display: contents;
+}
+
+.autorisation-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}

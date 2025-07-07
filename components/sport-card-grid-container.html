@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lottery ver.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      #phone-error {
+        display: none;
+        color: red;
+        font-size: 14px;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../style.css" />
+    <div>
+      <link href="./sport-card-grid-container.css" rel="stylesheet" />
+      <div
+        class="sport-card-grid-container-container sport-card-grid-container"
+      >
+        <test-sport-card-wrapper
+          class="test-sport-card-wrapper"
+          rootclassname="test-sport-cardundefined"
+        >
+          <!--TestSportCard component-->
+          <div
+            class="test-sport-card-container test-sport-cardroot-class-name4"
+          >
+            <div class="test-sport-card-container-event">
+              <div class="test-sport-card-title-event">
+                <span class="test-sport-card-text10">
+                  <fragment class="sport-card-grid-container-fragment10">
+                    <span class="sport-card-grid-container-text10">Футбол</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text11">
+                  <fragment class="sport-card-grid-container-fragment13">
+                    <span class="sport-card-grid-container-text13">1</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text12">
+                  <fragment class="sport-card-grid-container-fragment15">
+                    <span class="sport-card-grid-container-text15">Х</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text13">
+                  <fragment class="sport-card-grid-container-fragment20">
+                    <span class="sport-card-grid-container-text20">2</span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="test-sport-card-event1">
+                <span class="test-sport-card-text14">
+                  <fragment class="sport-card-grid-container-fragment14">
+                    <span class="sport-card-grid-container-text14">
+                      Реал (М) - Ювентус 22:00 01.07.2025
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox10"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox11"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox12"
+                />
+              </div>
+              <div class="test-sport-card-event2">
+                <span class="test-sport-card-text15">
+                  <fragment class="sport-card-grid-container-fragment19">
+                    <span class="sport-card-grid-container-text19">
+                      Borussia Dortmund - CF Monterrey 04:00 02.07.2025
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox13"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox14"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox15"
+                />
+              </div>
+              <div class="test-sport-card-event3">
+                <span class="test-sport-card-text16">
+                  <fragment class="sport-card-grid-container-fragment18">
+                    <span class="sport-card-grid-container-text18">
+                      Fluminense - Al Hilal Riyadh 22:00 04.07.25
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox16"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox17"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox18"
+                />
+              </div>
+              <div class="test-sport-card-event4">
+                <span class="test-sport-card-text17">
+                  <fragment class="sport-card-grid-container-fragment17">
+                    <span class="sport-card-grid-container-text17">
+                      SE Palmeiras - Chelsea 04:00 05.07.2025
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox19"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox20"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox21"
+                />
+              </div>
+              <div class="test-sport-card-event5">
+                <span class="test-sport-card-text18">
+                  <fragment class="sport-card-grid-container-fragment16">
+                    <span class="sport-card-grid-container-text16">
+                      Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox22"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox23"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox24"
+                />
+              </div>
+              <div class="test-sport-card-container-button">
+                <div class="test-sport-card-price">
+                  <span class="test-sport-card-text19">
+                    <fragment class="sport-card-grid-container-fragment21">
+                      <span class="sport-card-grid-container-text21">
+                        Цена билета
+                      </span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text20">
+                    <fragment class="sport-card-grid-container-fragment11">
+                      <span class="sport-card-grid-container-text11">100</span>
+                    </fragment>
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  class="test-sport-card-button thq-button-animated thq-button-filled button"
+                >
+                  <span class="test-sport-card-text21">
+                    <fragment class="sport-card-grid-container-fragment12">
+                      <span class="sport-card-grid-container-text12">
+                        Сделать прогноз
+                      </span>
+                    </fragment>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </test-sport-card-wrapper>
+        <test-sport-card-wrapper-v4v9
+          class="test-sport-card-wrapper-v4v9"
+          rootclassname="test-sport-cardundefined"
+        >
+          <!--TestSportCard component-->
+          <div
+            class="test-sport-card-container1 test-sport-cardroot-class-name3"
+          >
+            <div class="test-sport-card-container-event1">
+              <div class="test-sport-card-title-event1">
+                <span class="test-sport-card-text22">
+                  <fragment class="sport-card-grid-container-fragment22">
+                    <span class="sport-card-grid-container-text22">Теннис</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text23">
+                  <fragment class="sport-card-grid-container-fragment25">
+                    <span class="sport-card-grid-container-text25">1</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text24">
+                  <fragment class="sport-card-grid-container-fragment27">
+                    <span class="sport-card-grid-container-text27">Х</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text25">
+                  <fragment class="sport-card-grid-container-fragment32">
+                    <span class="sport-card-grid-container-text32">2</span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="test-sport-card-event6">
+                <span class="test-sport-card-text26">
+                  <fragment class="sport-card-grid-container-fragment26">
+                    <span class="sport-card-grid-container-text26">
+                      Maya Joint - Liudmila Samsonova 14:40
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox25"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox26"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox27"
+                />
+              </div>
+              <div class="test-sport-card-event7">
+                <span class="test-sport-card-text27">
+                  <fragment class="sport-card-grid-container-fragment31">
+                    <span class="sport-card-grid-container-text31">
+                      Suzan Lamens - Iva Jovic 13:00
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox28"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox29"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox30"
+                />
+              </div>
+              <div class="test-sport-card-event8">
+                <span class="test-sport-card-text28">
+                  <fragment class="sport-card-grid-container-fragment30">
+                    <span class="sport-card-grid-container-text30">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox31"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox32"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox33"
+                />
+              </div>
+              <div class="test-sport-card-event9">
+                <span class="test-sport-card-text29">
+                  <fragment class="sport-card-grid-container-fragment29">
+                    <span class="sport-card-grid-container-text29">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox34"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox35"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox36"
+                />
+              </div>
+              <div class="test-sport-card-event10">
+                <span class="test-sport-card-text30">
+                  <fragment class="sport-card-grid-container-fragment28">
+                    <span class="sport-card-grid-container-text28">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox37"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox38"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox39"
+                />
+              </div>
+              <div class="test-sport-card-container-button1">
+                <div class="test-sport-card-price1">
+                  <span class="test-sport-card-text31">
+                    <fragment class="sport-card-grid-container-fragment33">
+                      <span class="sport-card-grid-container-text33">
+                        Цена билета
+                      </span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text32">
+                    <fragment class="sport-card-grid-container-fragment23">
+                      <span class="sport-card-grid-container-text23">100</span>
+                    </fragment>
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  class="test-sport-card-button1 thq-button-animated thq-button-filled button"
+                >
+                  <span class="test-sport-card-text33">
+                    <fragment class="sport-card-grid-container-fragment24">
+                      <span class="sport-card-grid-container-text24">
+                        Сделать прогноз
+                      </span>
+                    </fragment>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </test-sport-card-wrapper-v4v9>
+        <test-sport-card-wrapper-qy14
+          class="test-sport-card-wrapper-qy14"
+          rootclassname="test-sport-cardundefined"
+        >
+          <!--TestSportCard component-->
+          <div
+            class="test-sport-card-container2 test-sport-cardroot-class-name5"
+          >
+            <div class="test-sport-card-container-event2">
+              <div class="test-sport-card-title-event2">
+                <span class="test-sport-card-text34">
+                  <fragment class="sport-card-grid-container-fragment34">
+                    <span class="sport-card-grid-container-text34">
+                      Баскетбол
+                    </span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text35">
+                  <fragment class="sport-card-grid-container-fragment37">
+                    <span class="sport-card-grid-container-text37">1</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text36">
+                  <fragment class="sport-card-grid-container-fragment39">
+                    <span class="sport-card-grid-container-text39">Х</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text37">
+                  <fragment class="sport-card-grid-container-fragment44">
+                    <span class="sport-card-grid-container-text44">2</span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="test-sport-card-event11">
+                <span class="test-sport-card-text38">
+                  <fragment class="sport-card-grid-container-fragment38">
+                    <span class="sport-card-grid-container-text38">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox40"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox41"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox42"
+                />
+              </div>
+              <div class="test-sport-card-event12">
+                <span class="test-sport-card-text39">
+                  <fragment class="sport-card-grid-container-fragment43">
+                    <span class="sport-card-grid-container-text43">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox43"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox44"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox45"
+                />
+              </div>
+              <div class="test-sport-card-event13">
+                <span class="test-sport-card-text40">
+                  <fragment class="sport-card-grid-container-fragment42">
+                    <span class="sport-card-grid-container-text42">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox46"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox47"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox48"
+                />
+              </div>
+              <div class="test-sport-card-event14">
+                <span class="test-sport-card-text41">
+                  <fragment class="sport-card-grid-container-fragment41">
+                    <span class="sport-card-grid-container-text41">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox49"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox50"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox51"
+                />
+              </div>
+              <div class="test-sport-card-event15">
+                <span class="test-sport-card-text42">
+                  <fragment class="sport-card-grid-container-fragment40">
+                    <span class="sport-card-grid-container-text40">
+                      Barbora Krejcikova - Alexandra Eala 15:30Barbora
+                      Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox52"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox53"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox54"
+                />
+              </div>
+              <div class="test-sport-card-container-button2">
+                <div class="test-sport-card-price2">
+                  <span class="test-sport-card-text43">
+                    <fragment class="sport-card-grid-container-fragment45">
+                      <span class="sport-card-grid-container-text45">
+                        Цена билета
+                      </span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text44">
+                    <fragment class="sport-card-grid-container-fragment35">
+                      <span class="sport-card-grid-container-text35">100</span>
+                    </fragment>
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  class="test-sport-card-button2 thq-button-animated thq-button-filled button"
+                >
+                  <span class="test-sport-card-text45">
+                    <fragment class="sport-card-grid-container-fragment36">
+                      <span class="sport-card-grid-container-text36">
+                        Сделать прогноз
+                      </span>
+                    </fragment>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </test-sport-card-wrapper-qy14>
+        <test-sport-card-wrapper-hbh6
+          class="test-sport-card-wrapper-hbh6"
+          rootclassname="test-sport-cardundefined"
+        >
+          <!--TestSportCard component-->
+          <div
+            class="test-sport-card-container3 test-sport-cardroot-class-name6"
+          >
+            <div class="test-sport-card-container-event3">
+              <div class="test-sport-card-title-event3">
+                <span class="test-sport-card-text46">
+                  <fragment class="sport-card-grid-container-fragment46">
+                    <span class="sport-card-grid-container-text46">Хоккей</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text47">
+                  <fragment class="sport-card-grid-container-fragment49">
+                    <span class="sport-card-grid-container-text49">1</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text48">
+                  <fragment class="sport-card-grid-container-fragment51">
+                    <span class="sport-card-grid-container-text51">Х</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text49">
+                  <fragment class="sport-card-grid-container-fragment56">
+                    <span class="sport-card-grid-container-text56">2</span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="test-sport-card-event16">
+                <span class="test-sport-card-text50">
+                  <fragment class="sport-card-grid-container-fragment50">
+                    <span class="sport-card-grid-container-text50">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox55"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox56"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox57"
+                />
+              </div>
+              <div class="test-sport-card-event17">
+                <span class="test-sport-card-text51">
+                  <fragment class="sport-card-grid-container-fragment55">
+                    <span class="sport-card-grid-container-text55">
+                      Barbora Krejcikova - Alexandra Eala 15:30Barbora
+                      Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox58"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox59"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox60"
+                />
+              </div>
+              <div class="test-sport-card-event18">
+                <span class="test-sport-card-text52">
+                  <fragment class="sport-card-grid-container-fragment54">
+                    <span class="sport-card-grid-container-text54">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox61"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox62"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox63"
+                />
+              </div>
+              <div class="test-sport-card-event19">
+                <span class="test-sport-card-text53">
+                  <fragment class="sport-card-grid-container-fragment53">
+                    <span class="sport-card-grid-container-text53">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox64"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox65"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox66"
+                />
+              </div>
+              <div class="test-sport-card-event20">
+                <span class="test-sport-card-text54">
+                  <fragment class="sport-card-grid-container-fragment52">
+                    <span class="sport-card-grid-container-text52">
+                      Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox67"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox68"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox69"
+                />
+              </div>
+              <div class="test-sport-card-container-button3">
+                <div class="test-sport-card-price3">
+                  <span class="test-sport-card-text55">
+                    <fragment class="sport-card-grid-container-fragment57">
+                      <span class="sport-card-grid-container-text57">
+                        Цена билета
+                      </span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text56">
+                    <fragment class="sport-card-grid-container-fragment47">
+                      <span class="sport-card-grid-container-text47">100</span>
+                    </fragment>
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  class="test-sport-card-button3 thq-button-animated thq-button-filled button"
+                >
+                  <span class="test-sport-card-text57">
+                    <fragment class="sport-card-grid-container-fragment48">
+                      <span class="sport-card-grid-container-text48">
+                        Сделать прогноз
+                      </span>
+                    </fragment>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </test-sport-card-wrapper-hbh6>
+        <test-sport-card-wrapper-o49l
+          class="test-sport-card-wrapper-o49l"
+          rootclassname="test-sport-cardundefined"
+        >
+          <!--TestSportCard component-->
+          <div
+            class="test-sport-card-container4 test-sport-cardroot-class-name9"
+          >
+            <div class="test-sport-card-container-event4">
+              <div class="test-sport-card-title-event4">
+                <span class="test-sport-card-text58">
+                  <fragment class="sport-card-grid-container-fragment58">
+                    <span class="sport-card-grid-container-text58">Рэгби</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text59">
+                  <fragment class="sport-card-grid-container-fragment61">
+                    <span class="sport-card-grid-container-text61">1</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text60">
+                  <fragment class="sport-card-grid-container-fragment63">
+                    <span class="sport-card-grid-container-text63">Х</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text61">
+                  <fragment class="sport-card-grid-container-fragment68">
+                    <span class="sport-card-grid-container-text68">2</span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="test-sport-card-event21">
+                <span class="test-sport-card-text62">
+                  <fragment class="sport-card-grid-container-fragment62">
+                    <span class="sport-card-grid-container-text62">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox70"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox71"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox72"
+                />
+              </div>
+              <div class="test-sport-card-event22">
+                <span class="test-sport-card-text63">
+                  <fragment class="sport-card-grid-container-fragment67">
+                    <span class="sport-card-grid-container-text67">
+                      VfB Stuttgart - Bayern Munich 21:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox73"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox74"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox75"
+                />
+              </div>
+              <div class="test-sport-card-event23">
+                <span class="test-sport-card-text64">
+                  <fragment class="sport-card-grid-container-fragment66">
+                    <span class="sport-card-grid-container-text66">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox76"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox77"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox78"
+                />
+              </div>
+              <div class="test-sport-card-event24">
+                <span class="test-sport-card-text65">
+                  <fragment class="sport-card-grid-container-fragment65">
+                    <span class="sport-card-grid-container-text65">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox79"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox80"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox81"
+                />
+              </div>
+              <div class="test-sport-card-event25">
+                <span class="test-sport-card-text66">
+                  <fragment class="sport-card-grid-container-fragment64">
+                    <span class="sport-card-grid-container-text64">
+                      Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox82"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox83"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox84"
+                />
+              </div>
+              <div class="test-sport-card-container-button4">
+                <div class="test-sport-card-price4">
+                  <span class="test-sport-card-text67">
+                    <fragment class="sport-card-grid-container-fragment69">
+                      <span class="sport-card-grid-container-text69">
+                        Цена билета
+                      </span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text68">
+                    <fragment class="sport-card-grid-container-fragment59">
+                      <span class="sport-card-grid-container-text59">100</span>
+                    </fragment>
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  class="test-sport-card-button4 thq-button-animated thq-button-filled button"
+                >
+                  <span class="test-sport-card-text69">
+                    <fragment class="sport-card-grid-container-fragment60">
+                      <span class="sport-card-grid-container-text60">
+                        Сделать прогноз
+                      </span>
+                    </fragment>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </test-sport-card-wrapper-o49l>
+        <test-sport-card-wrapper-kinu
+          class="test-sport-card-wrapper-kinu"
+          rootclassname="test-sport-cardundefined"
+        >
+          <!--TestSportCard component-->
+          <div
+            class="test-sport-card-container5 test-sport-cardroot-class-name7"
+          >
+            <div class="test-sport-card-container-event5">
+              <div class="test-sport-card-title-event5">
+                <span class="test-sport-card-text70">
+                  <fragment class="sport-card-grid-container-fragment70">
+                    <span class="sport-card-grid-container-text70">
+                      Волейбол
+                    </span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text71">
+                  <fragment class="sport-card-grid-container-fragment73">
+                    <span class="sport-card-grid-container-text73">1</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text72">
+                  <fragment class="sport-card-grid-container-fragment75">
+                    <span class="sport-card-grid-container-text75">Х</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text73">
+                  <fragment class="sport-card-grid-container-fragment80">
+                    <span class="sport-card-grid-container-text80">2</span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="test-sport-card-event26">
+                <span class="test-sport-card-text74">
+                  <fragment class="sport-card-grid-container-fragment74">
+                    <span class="sport-card-grid-container-text74">
+                      VfB Stuttgart - Bayern Munich 21:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox85"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox86"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox87"
+                />
+              </div>
+              <div class="test-sport-card-event27">
+                <span class="test-sport-card-text75">
+                  <fragment class="sport-card-grid-container-fragment79">
+                    <span class="sport-card-grid-container-text79">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox88"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox89"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox90"
+                />
+              </div>
+              <div class="test-sport-card-event28">
+                <span class="test-sport-card-text76">
+                  <fragment class="sport-card-grid-container-fragment78">
+                    <span class="sport-card-grid-container-text78">
+                      VfB Stuttgart - Bayern Munich 21:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox91"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox92"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox93"
+                />
+              </div>
+              <div class="test-sport-card-event29">
+                <span class="test-sport-card-text77">
+                  <fragment class="sport-card-grid-container-fragment77">
+                    <span class="sport-card-grid-container-text77">
+                      VfB Stuttgart - Bayern Munich 21:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox94"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox95"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox96"
+                />
+              </div>
+              <div class="test-sport-card-event30">
+                <span class="test-sport-card-text78">
+                  <fragment class="sport-card-grid-container-fragment76">
+                    <span class="sport-card-grid-container-text76">
+                      Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox97"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox98"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox99"
+                />
+              </div>
+              <div class="test-sport-card-container-button5">
+                <div class="test-sport-card-price5">
+                  <span class="test-sport-card-text79">
+                    <fragment class="sport-card-grid-container-fragment81">
+                      <span class="sport-card-grid-container-text81">
+                        Цена билета
+                      </span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text80">
+                    <fragment class="sport-card-grid-container-fragment71">
+                      <span class="sport-card-grid-container-text71">100</span>
+                    </fragment>
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  class="test-sport-card-button5 thq-button-animated thq-button-filled button"
+                >
+                  <span class="test-sport-card-text81">
+                    <fragment class="sport-card-grid-container-fragment72">
+                      <span class="sport-card-grid-container-text72">
+                        Сделать прогноз
+                      </span>
+                    </fragment>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </test-sport-card-wrapper-kinu>
+        <test-sport-card-wrapper-kzkt
+          class="test-sport-card-wrapper-kzkt"
+          rootclassname="test-sport-cardundefined"
+        >
+          <!--TestSportCard component-->
+          <div
+            class="test-sport-card-container6 test-sport-cardroot-class-name8"
+          >
+            <div class="test-sport-card-container-event6">
+              <div class="test-sport-card-title-event6">
+                <span class="test-sport-card-text82">
+                  <fragment class="sport-card-grid-container-fragment82">
+                    <span class="sport-card-grid-container-text82">
+                      Биатлон
+                    </span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text83">
+                  <fragment class="sport-card-grid-container-fragment85">
+                    <span class="sport-card-grid-container-text85">1</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text84">
+                  <fragment class="sport-card-grid-container-fragment87">
+                    <span class="sport-card-grid-container-text87">Х</span>
+                  </fragment>
+                </span>
+                <span class="test-sport-card-text85">
+                  <fragment class="sport-card-grid-container-fragment92">
+                    <span class="sport-card-grid-container-text92">2</span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="test-sport-card-event31">
+                <span class="test-sport-card-text86">
+                  <fragment class="sport-card-grid-container-fragment86">
+                    <span class="sport-card-grid-container-text86">
+                      VfB Stuttgart - Bayern Munich 21:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox100"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox101"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox102"
+                />
+              </div>
+              <div class="test-sport-card-event32">
+                <span class="test-sport-card-text87">
+                  <fragment class="sport-card-grid-container-fragment91">
+                    <span class="sport-card-grid-container-text91">
+                      Barbora Krejcikova - Alexandra Eala 15:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox103"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox104"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox105"
+                />
+              </div>
+              <div class="test-sport-card-event33">
+                <span class="test-sport-card-text88">
+                  <fragment class="sport-card-grid-container-fragment90">
+                    <span class="sport-card-grid-container-text90">
+                      VfB Stuttgart - Bayern Munich 21:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox106"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox107"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox108"
+                />
+              </div>
+              <div class="test-sport-card-event34">
+                <span class="test-sport-card-text89">
+                  <fragment class="sport-card-grid-container-fragment89">
+                    <span class="sport-card-grid-container-text89">
+                      VfB Stuttgart - Bayern Munich 21:30
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox109"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox110"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox111"
+                />
+              </div>
+              <div class="test-sport-card-event35">
+                <span class="test-sport-card-text90">
+                  <fragment class="sport-card-grid-container-fragment88">
+                    <span class="sport-card-grid-container-text88">
+                      Paris Saint-Germain - Bayern Munich 19:00 05.07.2025
+                    </span>
+                  </fragment>
+                </span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox112"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox113"
+                />
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="test-sport-card-checkbox114"
+                />
+              </div>
+              <div class="test-sport-card-container-button6">
+                <div class="test-sport-card-price6">
+                  <span class="test-sport-card-text91">
+                    <fragment class="sport-card-grid-container-fragment93">
+                      <span class="sport-card-grid-container-text93">
+                        Цена билета
+                      </span>
+                    </fragment>
+                  </span>
+                  <span class="test-sport-card-text92">
+                    <fragment class="sport-card-grid-container-fragment83">
+                      <span class="sport-card-grid-container-text83">100</span>
+                    </fragment>
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  class="test-sport-card-button6 thq-button-animated thq-button-filled button"
+                >
+                  <span class="test-sport-card-text93">
+                    <fragment class="sport-card-grid-container-fragment84">
+                      <span class="sport-card-grid-container-text84">
+                        Сделать прогноз
+                      </span>
+                    </fragment>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </test-sport-card-wrapper-kzkt>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
