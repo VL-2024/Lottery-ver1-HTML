@@ -77,7 +77,7 @@
               <a href="index.html" class="navbar8-navlink">
                 <img
                   alt="LotteryInfo Logo"
-                  src="public/Logo/20250630_2007_%C3%B0%C2%9D%C3%B0%C2%B0%C3%B1%C2%86%C3%B0%C2%B8%C3%B0%C2%BE%C3%B0%C2%BD%C3%B0%C2%B0%C3%B0%C2%BB%C3%B1%C2%8C%C3%B0%C2%BD%C3%B0%C2%B0%C3%B1%C2%8F%20%C3%B0%C2%9B%C3%B0%C2%BE%C3%B1%C2%82%C3%B0%C2%B5%C3%B1%C2%80%C3%B0%C2%B5%C3%B0%C2%B9%C3%B0%C2%BD%C3%B0%C2%B0%C3%B1%C2%8F%20%C3%B0%C2%A1%C3%B0%C2%B8%C3%B1%C2%81%C3%B1%C2%82%C3%B0%C2%B5%C3%B0%C2%BC%C3%B0%C2%B0_remix_01jz0wv23kfs0v0ge4npe4e296-1500h.png"
+                  src="public/Logo/logo_v1-1500h.png"
                   class="navbar8-image1"
                 />
               </a>
@@ -163,7 +163,7 @@
                   <div class="navbar8-top">
                     <img
                       alt="LotteryInfo Logo"
-                      src="public/Logo/20250630_2007_%C3%B0%C2%9D%C3%B0%C2%B0%C3%B1%C2%86%C3%B0%C2%B8%C3%B0%C2%BE%C3%B0%C2%BD%C3%B0%C2%B0%C3%B0%C2%BB%C3%B1%C2%8C%C3%B0%C2%BD%C3%B0%C2%B0%C3%B1%C2%8F%20%C3%B0%C2%9B%C3%B0%C2%BE%C3%B1%C2%82%C3%B0%C2%B5%C3%B1%C2%80%C3%B0%C2%B5%C3%B0%C2%B9%C3%B0%C2%BD%C3%B0%C2%B0%C3%B1%C2%8F%20%C3%B0%C2%A1%C3%B0%C2%B8%C3%B1%C2%81%C3%B1%C2%82%C3%B0%C2%B5%C3%B0%C2%BC%C3%B0%C2%B0_remix_01jz0wv23kfs0v0ge4npe4e296-1500h.png"
+                      src="public/Logo/logo_v1-1500h.png"
                       class="navbar8-logo"
                     />
                     <div data-thq="thq-close-menu" class="navbar8-close-menu">
@@ -625,41 +625,27 @@
         <div>
           <div class="registration-container3">
             <script>
-              document.addEventListener('DOMContentLoaded', function () {
+              function initSmsForm() {
                 const phoneInput = document.getElementById('signup-phone-reg');
                 const smsBtn = document.getElementById('signup-send-sms');
                 const smsCodeField = document.querySelector('.sms-code');
                 const phoneError = document.querySelector('.phone-error');
 
-                // Визуальный отладчик
-                const logDiv = document.createElement('div');
-                logDiv.style.cssText = 'position:fixed;bottom:10px;left:10px;background:#fefefe;padding:10px;border:1px solid #ccc;font-size:13px;z-index:9999;max-width:300px;color:#000';
-                logDiv.innerHTML = '<b>🧪 JS отладка:</b><br>';
-                document.body.appendChild(logDiv);
-                const log = (msg) => {
-                  console.log(msg);
-                  logDiv.innerHTML += msg + '<br>';
-                };
+                if (!phoneInput || !smsBtn || !smsCodeField || !phoneError) return;
+                if (phoneInput.dataset.smsInit === 'true') return; // уже инициализировано
+                phoneInput.dataset.smsInit = 'true';
 
-
-
-                    // Обработка ввода
-                    phoneInput.addEventListener('input', function () {
-                  let cleaned = phoneInput.value.replace(/[^0-9]/g, ''); // только цифры
+                phoneInput.addEventListener('input', function () {
+                  let cleaned = phoneInput.value.replace(/[^0-9]/g, '');
                   if (cleaned.startsWith('996')) {
-                    cleaned = cleaned.slice(3); // удаляем префикс
+                    cleaned = cleaned.slice(3);
                   }
                   phoneInput.value = '+996' + cleaned.slice(0, 9);
-
                 });
 
-
-                // Обработка клика
                 smsBtn.addEventListener('click', function () {
-
-
-                  let rawPhone = (phoneInput.value || '').trim();
-                  let phone = rawPhone.replace(/[^+\\d]/g, '');
+                  const rawPhone = (phoneInput.value || '').trim();
+                  const phone = rawPhone.replace(/[^+\\d]/g, '');
 
                   const pattern = new RegExp('^\\\\+996\\\\d{9}$');
                   const validPrefixes = [
@@ -668,14 +654,11 @@
                     '+996777', '+996770', '+996771'
                   ];
 
-
-
                   if (!pattern.test(phone)) {
                     phoneInput.classList.add('invalid');
                     phoneError.textContent = 'Введите номер в формате +996XXXXXXXXX';
                     phoneError.style.display = 'block';
                     smsCodeField.style.display = 'none';
-
                     return;
                   }
 
@@ -684,18 +667,14 @@
                     phoneError.textContent = 'Оператор не поддерживается.';
                     phoneError.style.display = 'block';
                     smsCodeField.style.display = 'none';
-
                     return;
                   }
 
-                  // Если всё верно
                   phoneInput.classList.remove('invalid');
                   phoneError.style.display = 'none';
                   smsCodeField.style.display = 'block';
                   smsCodeField.scrollIntoView({ behavior: 'smooth' });
 
-
-                  // Таймер повторной отправки
                   let timeLeft = 180;
                   smsBtn.disabled = true;
                   const originalText = smsBtn.textContent;
@@ -710,11 +689,18 @@
                       clearInterval(countdown);
                       smsBtn.disabled = false;
                       smsBtn.textContent = originalText;
-
                     }
                   }, 1000);
                 });
-              });
+              }
+
+              // ⏱ Проверка формы каждые 500мс (SPA-compatible)
+              setInterval(() => {
+                const phoneInput = document.getElementById('signup-phone-reg');
+                if (phoneInput && phoneInput.dataset.smsInit !== 'true') {
+                  initSmsForm();
+                }
+              }, 500);
             </script>
           </div>
         </div>
