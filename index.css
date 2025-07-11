@@ -59,10 +59,6 @@
   text-decoration: none;
 }
  
-.navbar8-link32 {
-  text-decoration: none;
-}
- 
 .navbar8-link4-dropdown-trigger {
   gap: 4px;
   cursor: pointer;
@@ -132,6 +128,7 @@
 .navbar8-action21 {
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
  
 .navbar8-burger-menu {
@@ -671,6 +668,8 @@
   max-width: 100%;
 }
  
+
+ 
 @media(max-width: 991px) {
   .navbar8-container1 {
     width: auto;
@@ -1182,6 +1181,31 @@
   }
 }
 
+.promo-game-wrapper {
+  display: contents;
+}
+ 
+.promo-game-container1 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.promo-game-container2 {
+  width: 90%;
+  height: auto;
+  align-self: center;
+}
+ 
+.promo-game-container3 {
+  display: contents;
+}
+ 
+
+
 .asia-jackpot-section-wrapper {
   display: contents;
 }
@@ -1377,35 +1401,11 @@
   animation-timing-function: ease;
 }
  
-.home-fragment35 {
+.home-fragment36 {
   display: contents;
 }
  
-.home-text40 {
-  display: inline-block;
-}
- 
-.home-fragment31 {
-  display: contents;
-}
- 
-.home-text31 {
-  display: inline-block;
-}
- 
-.home-fragment34 {
-  display: contents;
-}
- 
-.home-text36 {
-  display: inline-block;
-}
- 
-.home-fragment33 {
-  display: contents;
-}
- 
-.home-text33 {
+.home-text41 {
   display: inline-block;
 }
  
@@ -1417,11 +1417,27 @@
   display: inline-block;
 }
  
-.home-fragment36 {
+.home-fragment35 {
   display: contents;
 }
  
-.home-text43 {
+.home-text37 {
+  display: inline-block;
+}
+ 
+.home-fragment34 {
+  display: contents;
+}
+ 
+.home-text34 {
+  display: inline-block;
+}
+ 
+.home-fragment33 {
+  display: contents;
+}
+ 
+.home-text33 {
   display: inline-block;
 }
  
@@ -1429,7 +1445,15 @@
   display: contents;
 }
  
-.home-text46 {
+.home-text44 {
+  display: inline-block;
+}
+ 
+.home-fragment31 {
+  display: contents;
+}
+ 
+.home-text31 {
   display: inline-block;
 }
  
@@ -1458,7 +1482,7 @@
  
 .slider-action-container1 {
   width: 100%;
-  height: 235px;
+  height: auto;
   display: flex;
   position: relative;
   align-items: center;
@@ -1518,7 +1542,8 @@
 }
  
 .slider-actionroot-class-name {
-  margin-bottom: var(--dl-layout-space-halfunit);
+  margin-top: var(--dl-layout-space-oneandhalfunits);
+  margin-bottom: var(--dl-layout-space-oneandhalfunits);
 }
  
 @media(max-width: 479px) {
@@ -1818,7 +1843,7 @@
  
 .test-sport-card-container {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -1826,7 +1851,8 @@
 }
  
 .test-sport-card-container-event {
-  height: 100%;
+  width: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -2087,6 +2113,8 @@
  
 .test-sport-card-container-button {
   flex: 0;
+  width: 100%;
+  height: auto;
   display: flex;
   align-self: center;
   margin-top: auto;
@@ -2095,7 +2123,13 @@
   justify-content: center;
 }
  
-.test-sport-card-price {
+.test-sport-card-text19 {
+  width: 90%;
+  font-size: 12px;
+  margin-top: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-price1 {
   flex: 0 0 auto;
   width: auto;
   height: 24px;
@@ -2109,7 +2143,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text19 {
+.test-sport-card-text20 {
   width: auto;
   height: auto;
   align-self: center;
@@ -2119,9 +2153,42 @@
   padding-right: var(--dl-layout-space-halfunit);
 }
  
-.test-sport-card-text20 {
+.test-sport-card-text21 {
   width: auto;
   align-self: center;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.test-sport-card-price2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text22 {
+  width: auto;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-text23 {
+  width: auto;
+  align-self: center;
+  font-style: normal;
+  font-weight: 700;
 }
  
 .test-sport-card-button {
@@ -2133,7 +2200,7 @@
   background-color: #bf4408;
 }
  
-.test-sport-card-text21 {
+.test-sport-card-text24 {
   color: #ffffff;
 }
  
@@ -2162,6 +2229,22 @@
   display: inline-block;
 }
  
+.sport-lottery-section-fragment22 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text25 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment19 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text22 {
+  display: inline-block;
+}
+ 
 .sport-lottery-section-fragment20 {
   display: contents;
 }
@@ -2170,27 +2253,11 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment17 {
+.sport-lottery-section-fragment14 {
   display: contents;
 }
  
-.sport-lottery-section-text20 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment18 {
-  display: contents;
-}
- 
-.sport-lottery-section-text21 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment13 {
-  display: contents;
-}
- 
-.sport-lottery-section-text16 {
+.sport-lottery-section-text17 {
   display: inline-block;
 }
  
@@ -2202,11 +2269,11 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment16 {
+.sport-lottery-section-fragment18 {
   display: contents;
 }
  
-.sport-lottery-section-text19 {
+.sport-lottery-section-text21 {
   display: inline-block;
 }
  
@@ -2220,19 +2287,43 @@
   font-weight: 700;
 }
  
-.sport-lottery-section-fragment21 {
+.sport-lottery-section-fragment23 {
   display: contents;
 }
  
-.sport-lottery-section-text24 {
+.sport-lottery-section-text26 {
   display: inline-block;
 }
  
-.sport-lottery-section-fragment14 {
+.sport-lottery-section-fragment16 {
   display: contents;
 }
  
-.sport-lottery-section-text17 {
+.sport-lottery-section-text19 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment15 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text18 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment13 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text16 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment24 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text27 {
   display: inline-block;
 }
  
@@ -2244,19 +2335,19 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment19 {
+.sport-lottery-section-fragment21 {
   display: contents;
 }
  
-.sport-lottery-section-text22 {
+.sport-lottery-section-text24 {
   display: inline-block;
 }
  
-.sport-lottery-section-fragment15 {
+.sport-lottery-section-fragment17 {
   display: contents;
 }
  
-.sport-lottery-section-text18 {
+.sport-lottery-section-text20 {
   display: inline-block;
 }
  
@@ -2301,17 +2392,7 @@
   flex: 1 1 calc(25% - 16px);
 }
  
-.test-sport-cardroot-class-name10 {
-  width: auto;
-  align-self: center;
-}
- 
 .test-sport-cardroot-class-name11 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name12 {
   width: auto;
   align-self: center;
 }
@@ -2339,24 +2420,18 @@
   .test-sport-cardroot-class-name2 {
     align-self: flex-start;
   }
-  .test-sport-cardroot-class-name10 {
-    align-self: flex-start;
-  }
   .test-sport-cardroot-class-name11 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name12 {
     align-self: flex-start;
   }
 }
 
-.test-sport-card-wrapper-b7if {
+.test-sport-card-wrapper-l47x {
   display: contents;
 }
  
 .test-sport-card-container1 {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -2364,7 +2439,8 @@
 }
  
 .test-sport-card-container-event1 {
-  height: 100%;
+  width: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -2389,7 +2465,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text22 {
+.test-sport-card-text25 {
   width: 200px;
   height: auto;
   font-size: 30px;
@@ -2397,7 +2473,7 @@
   text-align: center;
 }
  
-.test-sport-card-text23 {
+.test-sport-card-text26 {
   width: var(--dl-layout-size-small);
   height: auto;
   align-self: center;
@@ -2408,7 +2484,7 @@
   border-width: 0px;
 }
  
-.test-sport-card-text24 {
+.test-sport-card-text27 {
   width: var(--dl-layout-size-small);
   height: auto;
   align-self: center;
@@ -2418,7 +2494,7 @@
   border-color: #000000;
 }
  
-.test-sport-card-text25 {
+.test-sport-card-text28 {
   width: var(--dl-layout-size-small);
   height: auto;
   align-self: center;
@@ -2442,7 +2518,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text26 {
+.test-sport-card-text29 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -2481,7 +2557,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text27 {
+.test-sport-card-text30 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -2520,7 +2596,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text28 {
+.test-sport-card-text31 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -2559,7 +2635,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text29 {
+.test-sport-card-text32 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -2598,7 +2674,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text30 {
+.test-sport-card-text33 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -2625,6 +2701,8 @@
  
 .test-sport-card-container-button1 {
   flex: 0;
+  width: 100%;
+  height: auto;
   display: flex;
   align-self: center;
   margin-top: auto;
@@ -2633,7 +2711,13 @@
   justify-content: center;
 }
  
-.test-sport-card-price1 {
+.test-sport-card-text34 {
+  width: 90%;
+  font-size: 12px;
+  margin-top: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-price3 {
   flex: 0 0 auto;
   width: auto;
   height: 24px;
@@ -2647,7 +2731,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text31 {
+.test-sport-card-text35 {
   width: auto;
   height: auto;
   align-self: center;
@@ -2657,9 +2741,42 @@
   padding-right: var(--dl-layout-space-halfunit);
 }
  
-.test-sport-card-text32 {
+.test-sport-card-text36 {
   width: auto;
   align-self: center;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.test-sport-card-price4 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text37 {
+  width: auto;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-text38 {
+  width: auto;
+  align-self: center;
+  font-style: normal;
+  font-weight: 700;
 }
  
 .test-sport-card-button1 {
@@ -2671,7 +2788,7 @@
   background-color: #bf4408;
 }
  
-.test-sport-card-text33 {
+.test-sport-card-text39 {
   color: #ffffff;
 }
  
@@ -2700,11 +2817,27 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment32 {
+.sport-lottery-section-fragment37 {
   display: contents;
 }
  
-.sport-lottery-section-text35 {
+.sport-lottery-section-text40 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment34 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text37 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment35 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text38 {
   display: inline-block;
 }
  
@@ -2716,46 +2849,12 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment30 {
+.sport-lottery-section-fragment26 {
   display: contents;
 }
  
-.sport-lottery-section-text33 {
+.sport-lottery-section-text29 {
   display: inline-block;
-}
- 
-.sport-lottery-section-fragment25 {
-  display: contents;
-}
- 
-.sport-lottery-section-text28 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment23 {
-  display: contents;
-}
- 
-.sport-lottery-section-text26 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment28 {
-  display: contents;
-}
- 
-.sport-lottery-section-text31 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment22 {
-  display: contents;
-}
- 
-.sport-lottery-section-text25 {
-  display: inline-block;
-  font-style: normal;
-  font-weight: 700;
 }
  
 .sport-lottery-section-fragment33 {
@@ -2766,19 +2865,21 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment26 {
+.sport-lottery-section-fragment25 {
   display: contents;
 }
  
-.sport-lottery-section-text29 {
+.sport-lottery-section-text28 {
   display: inline-block;
+  font-style: normal;
+  font-weight: 700;
 }
  
-.sport-lottery-section-fragment24 {
+.sport-lottery-section-fragment38 {
   display: contents;
 }
  
-.sport-lottery-section-text27 {
+.sport-lottery-section-text41 {
   display: inline-block;
 }
  
@@ -2790,11 +2891,51 @@
   display: inline-block;
 }
  
+.sport-lottery-section-fragment30 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text33 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment28 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text31 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment39 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text42 {
+  display: inline-block;
+}
+ 
 .sport-lottery-section-fragment27 {
   display: contents;
 }
  
 .sport-lottery-section-text30 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment36 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text39 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment32 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text35 {
   display: inline-block;
 }
  
@@ -2839,17 +2980,7 @@
   flex: 1 1 calc(25% - 16px);
 }
  
-.test-sport-cardroot-class-name10 {
-  width: auto;
-  align-self: center;
-}
- 
 .test-sport-cardroot-class-name11 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name12 {
   width: auto;
   align-self: center;
 }
@@ -2861,7 +2992,7 @@
 }
  
 @media(max-width: 479px) {
-  .test-sport-card-text22 {
+  .test-sport-card-text25 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -2869,7 +3000,7 @@
   .home-text49 {
     font-size: 22px;
   }
-  .sport-lottery-section-text25 {
+  .sport-lottery-section-text28 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -2877,24 +3008,18 @@
   .test-sport-cardroot-class-name2 {
     align-self: flex-start;
   }
-  .test-sport-cardroot-class-name10 {
-    align-self: flex-start;
-  }
   .test-sport-cardroot-class-name11 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name12 {
     align-self: flex-start;
   }
 }
 
-.test-sport-card-wrapper-mh1h {
+.test-sport-card-wrapper-0ty7 {
   display: contents;
 }
  
 .test-sport-card-container2 {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -2902,7 +3027,8 @@
 }
  
 .test-sport-card-container-event2 {
-  height: 100%;
+  width: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -2927,7 +3053,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text34 {
+.test-sport-card-text40 {
   width: 200px;
   height: auto;
   font-size: 30px;
@@ -2935,7 +3061,7 @@
   text-align: center;
 }
  
-.test-sport-card-text35 {
+.test-sport-card-text41 {
   width: var(--dl-layout-size-small);
   height: auto;
   align-self: center;
@@ -2946,7 +3072,7 @@
   border-width: 0px;
 }
  
-.test-sport-card-text36 {
+.test-sport-card-text42 {
   width: var(--dl-layout-size-small);
   height: auto;
   align-self: center;
@@ -2956,7 +3082,7 @@
   border-color: #000000;
 }
  
-.test-sport-card-text37 {
+.test-sport-card-text43 {
   width: var(--dl-layout-size-small);
   height: auto;
   align-self: center;
@@ -2980,7 +3106,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text38 {
+.test-sport-card-text44 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3019,7 +3145,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text39 {
+.test-sport-card-text45 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3058,7 +3184,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text40 {
+.test-sport-card-text46 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3097,7 +3223,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text41 {
+.test-sport-card-text47 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3136,7 +3262,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text42 {
+.test-sport-card-text48 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3163,6 +3289,8 @@
  
 .test-sport-card-container-button2 {
   flex: 0;
+  width: 100%;
+  height: auto;
   display: flex;
   align-self: center;
   margin-top: auto;
@@ -3171,7 +3299,13 @@
   justify-content: center;
 }
  
-.test-sport-card-price2 {
+.test-sport-card-text49 {
+  width: 90%;
+  font-size: 12px;
+  margin-top: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-price5 {
   flex: 0 0 auto;
   width: auto;
   height: 24px;
@@ -3185,7 +3319,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text43 {
+.test-sport-card-text50 {
   width: auto;
   height: auto;
   align-self: center;
@@ -3195,9 +3329,42 @@
   padding-right: var(--dl-layout-space-halfunit);
 }
  
-.test-sport-card-text44 {
+.test-sport-card-text51 {
   width: auto;
   align-self: center;
+  font-style: normal;
+  font-weight: 700;
+}
+ 
+.test-sport-card-price6 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.test-sport-card-text52 {
+  width: auto;
+  height: auto;
+  align-self: center;
+  text-align: left;
+  padding-left: var(--dl-layout-space-halfunit);
+  border-radius: var(--dl-layout-radius-radius4);
+  padding-right: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-text53 {
+  width: auto;
+  align-self: center;
+  font-style: normal;
+  font-weight: 700;
 }
  
 .test-sport-card-button2 {
@@ -3209,7 +3376,7 @@
   background-color: #bf4408;
 }
  
-.test-sport-card-text45 {
+.test-sport-card-text54 {
   color: #ffffff;
 }
  
@@ -3238,6 +3405,30 @@
   display: inline-block;
 }
  
+.sport-lottery-section-fragment52 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text55 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment49 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text52 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment50 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text53 {
+  display: inline-block;
+}
+ 
 .sport-lottery-section-fragment44 {
   display: contents;
 }
@@ -3254,27 +3445,11 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment42 {
+.sport-lottery-section-fragment48 {
   display: contents;
 }
  
-.sport-lottery-section-text45 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment37 {
-  display: contents;
-}
- 
-.sport-lottery-section-text40 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment35 {
-  display: contents;
-}
- 
-.sport-lottery-section-text38 {
+.sport-lottery-section-text51 {
   display: inline-block;
 }
  
@@ -3284,16 +3459,24 @@
  
 .sport-lottery-section-text43 {
   display: inline-block;
+  font-style: normal;
+  font-weight: 700;
 }
  
-.sport-lottery-section-fragment34 {
+.sport-lottery-section-fragment53 {
   display: contents;
 }
  
-.sport-lottery-section-text37 {
+.sport-lottery-section-text56 {
   display: inline-block;
-  font-style: normal;
-  font-weight: 700;
+}
+ 
+.sport-lottery-section-fragment46 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text49 {
+  display: inline-block;
 }
  
 .sport-lottery-section-fragment45 {
@@ -3301,22 +3484,6 @@
 }
  
 .sport-lottery-section-text48 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment38 {
-  display: contents;
-}
- 
-.sport-lottery-section-text41 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment36 {
-  display: contents;
-}
- 
-.sport-lottery-section-text39 {
   display: inline-block;
 }
  
@@ -3328,11 +3495,35 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment39 {
+.sport-lottery-section-fragment54 {
   display: contents;
 }
  
-.sport-lottery-section-text42 {
+.sport-lottery-section-text57 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment42 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text45 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment51 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text54 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment47 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text50 {
   display: inline-block;
 }
  
@@ -3377,17 +3568,7 @@
   flex: 1 1 calc(25% - 16px);
 }
  
-.test-sport-cardroot-class-name10 {
-  width: auto;
-  align-self: center;
-}
- 
 .test-sport-cardroot-class-name11 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name12 {
   width: auto;
   align-self: center;
 }
@@ -3399,7 +3580,7 @@
 }
  
 @media(max-width: 479px) {
-  .test-sport-card-text34 {
+  .test-sport-card-text40 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -3407,7 +3588,7 @@
   .home-text49 {
     font-size: 22px;
   }
-  .sport-lottery-section-text37 {
+  .sport-lottery-section-text43 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -3415,24 +3596,18 @@
   .test-sport-cardroot-class-name2 {
     align-self: flex-start;
   }
-  .test-sport-cardroot-class-name10 {
-    align-self: flex-start;
-  }
   .test-sport-cardroot-class-name11 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name12 {
     align-self: flex-start;
   }
 }
 
-.test-sport-card-wrapper-jwjh {
+.test-sport-card-wrapper-m4ni {
   display: contents;
 }
  
 .test-sport-card-container3 {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -3440,7 +3615,8 @@
 }
  
 .test-sport-card-container-event3 {
-  height: 100%;
+  width: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -3465,7 +3641,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text46 {
+.test-sport-card-text55 {
   width: 200px;
   height: auto;
   font-size: 30px;
@@ -3473,7 +3649,7 @@
   text-align: center;
 }
  
-.test-sport-card-text47 {
+.test-sport-card-text56 {
   width: var(--dl-layout-size-small);
   height: auto;
   align-self: center;
@@ -3484,7 +3660,7 @@
   border-width: 0px;
 }
  
-.test-sport-card-text48 {
+.test-sport-card-text57 {
   width: var(--dl-layout-size-small);
   height: auto;
   align-self: center;
@@ -3494,7 +3670,7 @@
   border-color: #000000;
 }
  
-.test-sport-card-text49 {
+.test-sport-card-text58 {
   width: var(--dl-layout-size-small);
   height: auto;
   align-self: center;
@@ -3518,7 +3694,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text50 {
+.test-sport-card-text59 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3557,7 +3733,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text51 {
+.test-sport-card-text60 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3596,7 +3772,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text52 {
+.test-sport-card-text61 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3635,7 +3811,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text53 {
+.test-sport-card-text62 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3674,7 +3850,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text54 {
+.test-sport-card-text63 {
   width: 200px;
   height: auto;
   align-self: center;
@@ -3701,6 +3877,8 @@
  
 .test-sport-card-container-button3 {
   flex: 0;
+  width: 100%;
+  height: auto;
   display: flex;
   align-self: center;
   margin-top: auto;
@@ -3709,7 +3887,13 @@
   justify-content: center;
 }
  
-.test-sport-card-price3 {
+.test-sport-card-text64 {
+  width: 90%;
+  font-size: 12px;
+  margin-top: var(--dl-layout-space-halfunit);
+}
+ 
+.test-sport-card-price7 {
   flex: 0 0 auto;
   width: auto;
   height: 24px;
@@ -3723,7 +3907,7 @@
   justify-content: center;
 }
  
-.test-sport-card-text55 {
+.test-sport-card-text65 {
   width: auto;
   height: auto;
   align-self: center;
@@ -3733,521 +3917,14 @@
   padding-right: var(--dl-layout-space-halfunit);
 }
  
-.test-sport-card-text56 {
+.test-sport-card-text66 {
   width: auto;
   align-self: center;
-}
- 
-.test-sport-card-button3 {
-  margin: var(--dl-layout-space-halfunit);
-  align-self: center;
-  align-items: center;
-  padding-top: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-buttonradius);
-  background-color: #bf4408;
-}
- 
-.test-sport-card-text57 {
-  color: #ffffff;
-}
- 
-.home-fragment41 {
-  display: contents;
-}
- 
-.home-text50 {
-  display: inline-block;
-}
- 
-.home-fragment40 {
-  display: contents;
-}
- 
-.home-text49 {
-  display: inline-block;
-  font-size: 22px;
-}
- 
-.home-fragment42 {
-  display: contents;
-}
- 
-.home-text51 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment56 {
-  display: contents;
-}
- 
-.sport-lottery-section-text59 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment53 {
-  display: contents;
-}
- 
-.sport-lottery-section-text56 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment54 {
-  display: contents;
-}
- 
-.sport-lottery-section-text57 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment49 {
-  display: contents;
-}
- 
-.sport-lottery-section-text52 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment47 {
-  display: contents;
-}
- 
-.sport-lottery-section-text50 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment52 {
-  display: contents;
-}
- 
-.sport-lottery-section-text55 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment46 {
-  display: contents;
-}
- 
-.sport-lottery-section-text49 {
-  display: inline-block;
   font-style: normal;
   font-weight: 700;
 }
  
-.sport-lottery-section-fragment57 {
-  display: contents;
-}
- 
-.sport-lottery-section-text60 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment50 {
-  display: contents;
-}
- 
-.sport-lottery-section-text53 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment48 {
-  display: contents;
-}
- 
-.sport-lottery-section-text51 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment55 {
-  display: contents;
-}
- 
-.sport-lottery-section-text58 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment51 {
-  display: contents;
-}
- 
-.sport-lottery-section-text54 {
-  display: inline-block;
-}
- 
-.test-sport-cardroot-class-name {
-  width: auto;
-}
- 
-.test-sport-cardroot-class-name1 {
-  width: auto;
-}
- 
-.test-sport-cardroot-class-name2 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name3 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name4 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name5 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name6 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name7 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name8 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name9 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name10 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name11 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name12 {
-  width: auto;
-  align-self: center;
-}
- 
-@media(max-width: 991px) {
-  .home-text50 {
-    font-size: 22px;
-  }
-}
- 
-@media(max-width: 479px) {
-  .test-sport-card-text46 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .home-text49 {
-    font-size: 22px;
-  }
-  .sport-lottery-section-text49 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .test-sport-cardroot-class-name2 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name10 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name11 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name12 {
-    align-self: flex-start;
-  }
-}
-
-.test-sport-card-wrapper-jyau {
-  display: contents;
-}
- 
-.test-sport-card-container4 {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  flex-direction: column;
-}
- 
-.test-sport-card-container-event4 {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-self: center;
-  box-shadow: 5px 5px 5px 5px #7e7e7e;
-  align-items: flex-start;
-  border-color: #7e7e7e;
-  border-width: 1px;
-  border-radius: var(--dl-layout-radius-radius4);
-  flex-direction: column;
-}
- 
-.test-sport-card-title-event4 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: var(--dl-layout-size-small);
-  display: flex;
-  align-self: center;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text58 {
-  width: 200px;
-  height: auto;
-  font-size: 30px;
-  align-self: center;
-  text-align: center;
-}
- 
-.test-sport-card-text59 {
-  width: var(--dl-layout-size-small);
-  height: auto;
-  align-self: center;
-  font-style: normal;
-  text-align: center;
-  font-weight: 600;
-  border-color: #000000;
-  border-width: 0px;
-}
- 
-.test-sport-card-text60 {
-  width: var(--dl-layout-size-small);
-  height: auto;
-  align-self: center;
-  font-style: normal;
-  text-align: center;
-  font-weight: 600;
-  border-color: #000000;
-}
- 
-.test-sport-card-text61 {
-  width: var(--dl-layout-size-small);
-  height: auto;
-  align-self: center;
-  font-style: normal;
-  text-align: center;
-  font-weight: 600;
-  border-color: #000000;
-}
- 
-.test-sport-card-event21 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text62 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox70 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox71 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox72 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-event22 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text63 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox73 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox74 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox75 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-event23 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text64 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox76 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox77 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox78 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-event24 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text65 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox79 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox80 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox81 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-event25 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text66 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox82 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox83 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox84 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-container-button4 {
-  flex: 0;
-  display: flex;
-  align-self: center;
-  margin-top: auto;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
- 
-.test-sport-card-price4 {
+.test-sport-card-price8 {
   flex: 0 0 auto;
   width: auto;
   height: 24px;
@@ -4274,9 +3951,11 @@
 .test-sport-card-text68 {
   width: auto;
   align-self: center;
+  font-style: normal;
+  font-weight: 700;
 }
  
-.test-sport-card-button4 {
+.test-sport-card-button3 {
   margin: var(--dl-layout-space-halfunit);
   align-self: center;
   align-items: center;
@@ -4314,43 +3993,11 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment68 {
+.sport-lottery-section-fragment67 {
   display: contents;
 }
  
-.sport-lottery-section-text71 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment65 {
-  display: contents;
-}
- 
-.sport-lottery-section-text68 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment66 {
-  display: contents;
-}
- 
-.sport-lottery-section-text69 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment61 {
-  display: contents;
-}
- 
-.sport-lottery-section-text64 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment59 {
-  display: contents;
-}
- 
-.sport-lottery-section-text62 {
+.sport-lottery-section-text70 {
   display: inline-block;
 }
  
@@ -4362,45 +4009,27 @@
   display: inline-block;
 }
  
-.sport-lottery-section-fragment58 {
+.sport-lottery-section-fragment65 {
   display: contents;
 }
  
-.sport-lottery-section-text61 {
-  display: inline-block;
-  font-style: normal;
-  font-weight: 700;
-}
- 
-.sport-lottery-section-fragment69 {
-  display: contents;
-}
- 
-.sport-lottery-section-text72 {
+.sport-lottery-section-text68 {
   display: inline-block;
 }
  
-.sport-lottery-section-fragment62 {
+.sport-lottery-section-fragment59 {
   display: contents;
 }
  
-.sport-lottery-section-text65 {
+.sport-lottery-section-text62 {
   display: inline-block;
 }
  
-.sport-lottery-section-fragment60 {
+.sport-lottery-section-fragment56 {
   display: contents;
 }
  
-.sport-lottery-section-text63 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment67 {
-  display: contents;
-}
- 
-.sport-lottery-section-text70 {
+.sport-lottery-section-text59 {
   display: inline-block;
 }
  
@@ -4412,541 +4041,77 @@
   display: inline-block;
 }
  
-.test-sport-cardroot-class-name {
-  width: auto;
-}
- 
-.test-sport-cardroot-class-name1 {
-  width: auto;
-}
- 
-.test-sport-cardroot-class-name2 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name3 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name4 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name5 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name6 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name7 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name8 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name9 {
-  flex: 1 1 calc(25% - 16px);
-}
- 
-.test-sport-cardroot-class-name10 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name11 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name12 {
-  width: auto;
-  align-self: center;
-}
- 
-@media(max-width: 991px) {
-  .home-text50 {
-    font-size: 22px;
-  }
-}
- 
-@media(max-width: 479px) {
-  .test-sport-card-text58 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .home-text49 {
-    font-size: 22px;
-  }
-  .sport-lottery-section-text61 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .test-sport-cardroot-class-name2 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name10 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name11 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name12 {
-    align-self: flex-start;
-  }
-}
-
-.test-sport-card-wrapper-1gki {
+.sport-lottery-section-fragment55 {
   display: contents;
 }
  
-.test-sport-card-container5 {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  flex-direction: column;
-}
- 
-.test-sport-card-container-event5 {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-self: center;
-  box-shadow: 5px 5px 5px 5px #7e7e7e;
-  align-items: flex-start;
-  border-color: #7e7e7e;
-  border-width: 1px;
-  border-radius: var(--dl-layout-radius-radius4);
-  flex-direction: column;
-}
- 
-.test-sport-card-title-event5 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: var(--dl-layout-size-small);
-  display: flex;
-  align-self: center;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text70 {
-  width: 200px;
-  height: auto;
-  font-size: 30px;
-  align-self: center;
-  text-align: center;
-}
- 
-.test-sport-card-text71 {
-  width: var(--dl-layout-size-small);
-  height: auto;
-  align-self: center;
-  font-style: normal;
-  text-align: center;
-  font-weight: 600;
-  border-color: #000000;
-  border-width: 0px;
-}
- 
-.test-sport-card-text72 {
-  width: var(--dl-layout-size-small);
-  height: auto;
-  align-self: center;
-  font-style: normal;
-  text-align: center;
-  font-weight: 600;
-  border-color: #000000;
-}
- 
-.test-sport-card-text73 {
-  width: var(--dl-layout-size-small);
-  height: auto;
-  align-self: center;
-  font-style: normal;
-  text-align: center;
-  font-weight: 600;
-  border-color: #000000;
-}
- 
-.test-sport-card-event26 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text74 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox85 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox86 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox87 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-event27 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text75 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox88 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox89 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox90 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-event28 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text76 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox91 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox92 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox93 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-event29 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text77 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox94 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox95 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox96 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-event30 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  min-height: 24px;
-  align-items: flex-start;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text78 {
-  width: 200px;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-checkbox97 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox98 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-checkbox99 {
-  flex: 1;
-  align-self: center;
-}
- 
-.test-sport-card-container-button5 {
-  flex: 0;
-  display: flex;
-  align-self: center;
-  margin-top: auto;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
- 
-.test-sport-card-price5 {
-  flex: 0 0 auto;
-  width: auto;
-  height: 24px;
-  display: flex;
-  align-self: flex-start;
-  margin-top: var(--dl-layout-space-unit);
-  align-items: center;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 0px;
-  flex-direction: row;
-  justify-content: center;
-}
- 
-.test-sport-card-text79 {
-  width: auto;
-  height: auto;
-  align-self: center;
-  text-align: left;
-  padding-left: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-radius4);
-  padding-right: var(--dl-layout-space-halfunit);
-}
- 
-.test-sport-card-text80 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-card-button5 {
-  margin: var(--dl-layout-space-halfunit);
-  align-self: center;
-  align-items: center;
-  padding-top: var(--dl-layout-space-halfunit);
-  border-radius: var(--dl-layout-radius-buttonradius);
-  background-color: #bf4408;
-}
- 
-.test-sport-card-text81 {
-  color: #ffffff;
-}
- 
-.home-fragment41 {
-  display: contents;
-}
- 
-.home-text50 {
-  display: inline-block;
-}
- 
-.home-fragment40 {
-  display: contents;
-}
- 
-.home-text49 {
-  display: inline-block;
-  font-size: 22px;
-}
- 
-.home-fragment42 {
-  display: contents;
-}
- 
-.home-text51 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment80 {
-  display: contents;
-}
- 
-.sport-lottery-section-text83 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment77 {
-  display: contents;
-}
- 
-.sport-lottery-section-text80 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment78 {
-  display: contents;
-}
- 
-.sport-lottery-section-text81 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment73 {
-  display: contents;
-}
- 
-.sport-lottery-section-text76 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment71 {
-  display: contents;
-}
- 
-.sport-lottery-section-text74 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment76 {
-  display: contents;
-}
- 
-.sport-lottery-section-text79 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment70 {
-  display: contents;
-}
- 
-.sport-lottery-section-text73 {
+.sport-lottery-section-text58 {
   display: inline-block;
   font-style: normal;
   font-weight: 700;
 }
  
-.sport-lottery-section-fragment81 {
+.sport-lottery-section-fragment68 {
   display: contents;
 }
  
-.sport-lottery-section-text84 {
+.sport-lottery-section-text71 {
   display: inline-block;
 }
  
-.sport-lottery-section-fragment74 {
+.sport-lottery-section-fragment61 {
   display: contents;
 }
  
-.sport-lottery-section-text77 {
+.sport-lottery-section-text64 {
   display: inline-block;
 }
  
-.sport-lottery-section-fragment72 {
+.sport-lottery-section-fragment60 {
   display: contents;
 }
  
-.sport-lottery-section-text75 {
+.sport-lottery-section-text63 {
   display: inline-block;
 }
  
-.sport-lottery-section-fragment79 {
+.sport-lottery-section-fragment58 {
   display: contents;
 }
  
-.sport-lottery-section-text82 {
+.sport-lottery-section-text61 {
   display: inline-block;
 }
  
-.sport-lottery-section-fragment75 {
+.sport-lottery-section-fragment69 {
   display: contents;
 }
  
-.sport-lottery-section-text78 {
+.sport-lottery-section-text72 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment57 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text60 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment66 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text69 {
+  display: inline-block;
+}
+ 
+.sport-lottery-section-fragment62 {
+  display: contents;
+}
+ 
+.sport-lottery-section-text65 {
   display: inline-block;
 }
  
@@ -4991,17 +4156,7 @@
   flex: 1 1 calc(25% - 16px);
 }
  
-.test-sport-cardroot-class-name10 {
-  width: auto;
-  align-self: center;
-}
- 
 .test-sport-cardroot-class-name11 {
-  width: auto;
-  align-self: center;
-}
- 
-.test-sport-cardroot-class-name12 {
   width: auto;
   align-self: center;
 }
@@ -5013,7 +4168,7 @@
 }
  
 @media(max-width: 479px) {
-  .test-sport-card-text70 {
+  .test-sport-card-text55 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -5021,7 +4176,7 @@
   .home-text49 {
     font-size: 22px;
   }
-  .sport-lottery-section-text73 {
+  .sport-lottery-section-text58 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -5029,13 +4184,7 @@
   .test-sport-cardroot-class-name2 {
     align-self: flex-start;
   }
-  .test-sport-cardroot-class-name10 {
-    align-self: flex-start;
-  }
   .test-sport-cardroot-class-name11 {
-    align-self: flex-start;
-  }
-  .test-sport-cardroot-class-name12 {
     align-self: flex-start;
   }
 }
@@ -5059,6 +4208,7 @@
   flex: 0 0 auto;
   display: flex;
   align-self: center;
+  margin-top: var(--dl-layout-space-unit);
   align-items: flex-start;
   margin-bottom: var(--dl-layout-space-unit);
   flex-direction: column;
@@ -5086,6 +4236,7 @@
   flex-wrap: wrap;
   align-self: center;
   align-items: flex-start;
+  margin-bottom: var(--dl-layout-space-unit);
   justify-content: center;
 }
  
@@ -5193,8 +4344,6 @@
  
 .sport-lottery-section-text25 {
   display: inline-block;
-  font-style: normal;
-  font-weight: 700;
 }
  
 .sport-lottery-section-fragment23 {
@@ -5219,6 +4368,8 @@
  
 .sport-lottery-section-text28 {
   display: inline-block;
+  font-style: normal;
+  font-weight: 700;
 }
  
 .sport-lottery-section-fragment26 {
@@ -5291,8 +4442,6 @@
  
 .sport-lottery-section-text37 {
   display: inline-block;
-  font-style: normal;
-  font-weight: 700;
 }
  
 .sport-lottery-section-fragment35 {
@@ -5341,6 +4490,8 @@
  
 .sport-lottery-section-text43 {
   display: inline-block;
+  font-style: normal;
+  font-weight: 700;
 }
  
 .sport-lottery-section-fragment41 {
@@ -5389,8 +4540,6 @@
  
 .sport-lottery-section-text49 {
   display: inline-block;
-  font-style: normal;
-  font-weight: 700;
 }
  
 .sport-lottery-section-fragment47 {
@@ -5463,6 +4612,8 @@
  
 .sport-lottery-section-text58 {
   display: inline-block;
+  font-style: normal;
+  font-weight: 700;
 }
  
 .sport-lottery-section-fragment56 {
@@ -5487,8 +4638,6 @@
  
 .sport-lottery-section-text61 {
   display: inline-block;
-  font-style: normal;
-  font-weight: 700;
 }
  
 .sport-lottery-section-fragment59 {
@@ -5576,104 +4725,6 @@
 }
  
 .sport-lottery-section-text72 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment70 {
-  display: contents;
-}
- 
-.sport-lottery-section-text73 {
-  display: inline-block;
-  font-style: normal;
-  font-weight: 700;
-}
- 
-.sport-lottery-section-fragment71 {
-  display: contents;
-}
- 
-.sport-lottery-section-text74 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment72 {
-  display: contents;
-}
- 
-.sport-lottery-section-text75 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment73 {
-  display: contents;
-}
- 
-.sport-lottery-section-text76 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment74 {
-  display: contents;
-}
- 
-.sport-lottery-section-text77 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment75 {
-  display: contents;
-}
- 
-.sport-lottery-section-text78 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment76 {
-  display: contents;
-}
- 
-.sport-lottery-section-text79 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment77 {
-  display: contents;
-}
- 
-.sport-lottery-section-text80 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment78 {
-  display: contents;
-}
- 
-.sport-lottery-section-text81 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment79 {
-  display: contents;
-}
- 
-.sport-lottery-section-text82 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment80 {
-  display: contents;
-}
- 
-.sport-lottery-section-text83 {
-  display: inline-block;
-}
- 
-.sport-lottery-section-fragment81 {
-  display: contents;
-}
- 
-.sport-lottery-section-text84 {
   display: inline-block;
 }
  
@@ -5733,27 +4784,17 @@
     font-style: normal;
     font-weight: 700;
   }
-  .sport-lottery-section-text25 {
+  .sport-lottery-section-text28 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
   }
-  .sport-lottery-section-text37 {
+  .sport-lottery-section-text43 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
   }
-  .sport-lottery-section-text49 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .sport-lottery-section-text61 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .sport-lottery-section-text73 {
+  .sport-lottery-section-text58 {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -5762,6 +4803,122 @@
     font-size: 22px;
   }
 }
+
+.promo-stop-on7-wrapper {
+  display: contents;
+}
+ 
+.promo-stop-on7-container10 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+.promo-stop-on7-container12 {
+  display: contents;
+}
+ 
+.promo-stop-on7-container14 {
+  display: contents;
+}
+ 
+.promo-stop-on7-container15 {
+  width: auto;
+  height: auto;
+}
+ 
+.promo-stop-on7-confetti {
+  flex: 0 0 auto;
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.promo-stop-on7-container18 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.promo-stop-on7-container19 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.home-fragment45 {
+  display: contents;
+}
+ 
+.home-text54 {
+  display: inline-block;
+}
+ 
+.home-fragment44 {
+  display: contents;
+}
+ 
+.home-text53 {
+  display: inline-block;
+}
+ 
+.home-fragment46 {
+  display: contents;
+}
+ 
+.home-text55 {
+  display: inline-block;
+}
+ 
+.home-fragment43 {
+  display: contents;
+}
+ 
+.home-text52 {
+  display: inline-block;
+}
+ 
+.home-fragment47 {
+  display: contents;
+}
+ 
+.home-text56 {
+  display: inline-block;
+}
+ 
+.home-fragment48 {
+  display: contents;
+}
+ 
+.home-text57 {
+  display: inline-block;
+}
+ 
+.home-fragment49 {
+  display: contents;
+}
+ 
+.home-text58 {
+  display: inline-block;
+}
+ 
+.home-fragment50 {
+  display: contents;
+}
+ 
+.home-text59 {
+  display: inline-block;
+}
+ 
+
 
 .classic-lottery-section-wrapper {
   display: contents;
@@ -5853,20 +5010,20 @@
   width: calc(25% - 6.4px);
 }
  
-.home-fragment43 {
+.home-fragment51 {
   display: contents;
 }
  
-.home-text52 {
+.home-text60 {
   display: inline-block;
   font-style: normal;
 }
  
-.home-fragment44 {
+.home-fragment52 {
   display: contents;
 }
  
-.home-text56 {
+.home-text64 {
   display: inline-block;
 }
  
@@ -6053,43 +5210,11 @@
   text-align: left;
 }
  
-.home-fragment50 {
+.home-fragment58 {
   display: contents;
 }
  
-.home-text62 {
-  display: inline-block;
-}
- 
-.home-fragment46 {
-  display: contents;
-}
- 
-.home-text58 {
-  display: inline-block;
-}
- 
-.home-fragment57 {
-  display: contents;
-}
- 
-.home-text69 {
-  display: inline-block;
-}
- 
-.home-fragment55 {
-  display: contents;
-}
- 
-.home-text67 {
-  display: inline-block;
-}
- 
-.home-fragment48 {
-  display: contents;
-}
- 
-.home-text60 {
+.home-text72 {
   display: inline-block;
 }
  
@@ -6101,11 +5226,75 @@
   display: inline-block;
 }
  
-.home-fragment58 {
+.home-fragment65 {
+  display: contents;
+}
+ 
+.home-text79 {
+  display: inline-block;
+}
+ 
+.home-fragment63 {
+  display: contents;
+}
+ 
+.home-text77 {
+  display: inline-block;
+}
+ 
+.home-fragment56 {
   display: contents;
 }
  
 .home-text70 {
+  display: inline-block;
+}
+ 
+.home-fragment62 {
+  display: contents;
+}
+ 
+.home-text76 {
+  display: inline-block;
+}
+ 
+.home-fragment66 {
+  display: contents;
+}
+ 
+.home-text80 {
+  display: inline-block;
+}
+ 
+.home-fragment61 {
+  display: contents;
+}
+ 
+.home-text75 {
+  display: inline-block;
+}
+ 
+.home-fragment64 {
+  display: contents;
+}
+ 
+.home-text78 {
+  display: inline-block;
+}
+ 
+.home-fragment57 {
+  display: contents;
+}
+ 
+.home-text71 {
+  display: inline-block;
+}
+ 
+.home-fragment60 {
+  display: contents;
+}
+ 
+.home-text74 {
   display: inline-block;
 }
  
@@ -6117,51 +5306,19 @@
   display: inline-block;
 }
  
-.home-fragment56 {
+.home-fragment59 {
   display: contents;
 }
  
-.home-text68 {
+.home-text73 {
   display: inline-block;
 }
  
-.home-fragment49 {
+.home-fragment55 {
   display: contents;
 }
  
-.home-text61 {
-  display: inline-block;
-}
- 
-.home-fragment52 {
-  display: contents;
-}
- 
-.home-text64 {
-  display: inline-block;
-}
- 
-.home-fragment45 {
-  display: contents;
-}
- 
-.home-text57 {
-  display: inline-block;
-}
- 
-.home-fragment51 {
-  display: contents;
-}
- 
-.home-text63 {
-  display: inline-block;
-}
- 
-.home-fragment47 {
-  display: contents;
-}
- 
-.home-text59 {
+.home-text69 {
   display: inline-block;
 }
  
@@ -6345,51 +5502,55 @@
   justify-content: center;
 }
  
-.home-fragment60 {
+.features24-feature3-title {
+  text-align: left;
+}
+ 
+.home-fragment68 {
   display: contents;
 }
  
-.home-text72 {
+.home-text82 {
   display: inline-block;
 }
  
-.home-fragment61 {
+.home-fragment69 {
   display: contents;
 }
  
-.home-text73 {
+.home-text83 {
   display: inline-block;
 }
  
-.home-fragment64 {
+.home-fragment72 {
   display: contents;
 }
  
-.home-text76 {
+.home-text86 {
   display: inline-block;
 }
  
-.home-fragment62 {
+.home-fragment70 {
   display: contents;
 }
  
-.home-text74 {
+.home-text84 {
   display: inline-block;
 }
  
-.home-fragment59 {
+.home-fragment67 {
   display: contents;
 }
  
-.home-text71 {
+.home-text81 {
   display: inline-block;
 }
  
-.home-fragment63 {
+.home-fragment71 {
   display: contents;
 }
  
-.home-text75 {
+.home-text85 {
   display: inline-block;
 }
  
@@ -6464,27 +5625,27 @@
   object-fit: cover;
 }
  
-.home-fragment65 {
+.home-fragment73 {
   display: contents;
 }
  
-.home-text77 {
+.home-text87 {
   display: inline-block;
 }
  
-.home-fragment66 {
+.home-fragment75 {
   display: contents;
 }
  
-.home-text78 {
+.home-text89 {
   display: inline-block;
 }
  
-.home-fragment67 {
+.home-fragment74 {
   display: contents;
 }
  
-.home-text79 {
+.home-text88 {
   display: inline-block;
 }
  
@@ -6497,6 +5658,142 @@
   .banner2-text1 {
     width: 371px;
   }
+}
+
+.logos9-wrapper {
+  display: contents;
+}
+ 
+.logos9-container1 {
+  gap: var(--dl-layout-space-threeunits);
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.logos9-max-width {
+  gap: var(--dl-layout-space-twounits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.logos9-text1 {
+  text-align: center;
+}
+ 
+.logos9-container2 {
+  width: 100%;
+}
+ 
+.logos9-logo11 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo21 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo31 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo41 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo51 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo61 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo12 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo22 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo32 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo42 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo52 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-logo62 {
+  width: 200px;
+  object-fit: contain;
+}
+ 
+.logos9-container6 {
+  display: contents;
+}
+ 
+.our-partners-fragment {
+  display: contents;
+}
+ 
+.our-partners-text {
+  display: inline-block;
+}
+ 
+@media(max-width: 767px) {
+  .logos9-container1 {
+    gap: var(--dl-layout-space-twounits);
+  }
+  .logos9-max-width {
+    gap: var(--dl-layout-space-twounits);
+  }
+}
+
+.our-partners-wrapper {
+  display: contents;
+}
+ 
+.our-partners-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.our-partners-fragment {
+  display: contents;
+}
+ 
+.our-partners-text {
+  display: inline-block;
+}
+ 
+.our-partnersroot-class-name {
+  width: 90%;
+  height: auto;
 }
 
 .footer4-wrapper {
@@ -6579,67 +5876,67 @@
   color: var(--dl-color-theme-neutral-dark);
 }
  
-.home-fragment72 {
+.home-fragment80 {
   display: contents;
 }
  
-.home-text84 {
+.home-text94 {
   display: inline-block;
 }
  
-.home-fragment75 {
+.home-fragment83 {
   display: contents;
 }
  
-.home-text87 {
+.home-text97 {
   display: inline-block;
 }
  
-.home-fragment74 {
+.home-fragment82 {
   display: contents;
 }
  
-.home-text86 {
+.home-text96 {
   display: inline-block;
 }
  
-.home-fragment71 {
+.home-fragment79 {
   display: contents;
 }
  
-.home-text83 {
+.home-text93 {
   display: inline-block;
 }
  
-.home-fragment70 {
+.home-fragment78 {
   display: contents;
 }
  
-.home-text82 {
+.home-text92 {
   display: inline-block;
 }
  
-.home-fragment73 {
+.home-fragment81 {
   display: contents;
 }
  
-.home-text85 {
+.home-text95 {
   display: inline-block;
 }
  
-.home-fragment68 {
+.home-fragment76 {
   display: contents;
 }
  
-.home-text80 {
+.home-text90 {
   display: inline-block;
 }
  
-.home-fragment69 {
+.home-fragment77 {
   display: contents;
 }
  
-.home-text81 {
+.home-text91 {
   display: inline-block;
 }
  
@@ -6693,7 +5990,7 @@
  
 .sign-in3-form-root {
   gap: var(--dl-layout-space-unit);
-  width: 600px;
+  width: auto;
   height: auto;
   display: flex;
   overflow: hidden;
@@ -6706,7 +6003,7 @@
  
 .sign-in3-form1 {
   gap: var(--dl-layout-space-oneandhalfunits);
-  width: 100%;
+  width: auto;
   display: flex;
   align-self: center;
   align-items: flex-start;
@@ -6716,6 +6013,7 @@
  
 .sign-in3-text10 {
   align-self: center;
+  text-align: center;
 }
  
 .sign-in3-form2 {
@@ -6832,9 +6130,13 @@
   background-color: var(--dl-color-theme-primary1);
 }
  
+.sign-in3-text15 {
+  text-align: center;
+}
+ 
 .sign-in3-divider3 {
   flex: 1;
-  width: var(--dl-layout-size-medium);
+  width: auto;
   height: 1px;
   display: flex;
   align-items: flex-start;
@@ -6845,6 +6147,7 @@
 .sign-in3-button2 {
   width: 100%;
   align-self: center;
+  text-decoration: none;
 }
  
 .sign-in3-text16 {
@@ -6910,6 +6213,8 @@
   display: inline-block;
 }
  
+
+ 
 @media(max-width: 991px) {
   .sign-in3-form-root {
     width: 100%;
@@ -6933,17 +6238,14 @@
 }
  
 .login-modal-login-modal {
-  top: 0;
   flex: 1;
-  left: 0;
-  width: 100%;
-  height: 100vx;
+  width: auto;
+  height: auto;
   display: flex;
   z-index: 9999;
-  position: fixed;
   box-sizing: border-box;
   overflow-y: scroll;
-  align-items: stretch;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -7174,6 +6476,12 @@
   background-color: #595959;
 }
  
+.home-separator3 {
+  width: 90%;
+  height: 1px;
+  background-color: #595959;
+}
+ 
 .home-fragment31 {
   display: contents;
 }
@@ -7202,7 +6510,7 @@
   display: contents;
 }
  
-.home-text36 {
+.home-text34 {
   display: inline-block;
 }
  
@@ -7210,7 +6518,7 @@
   display: contents;
 }
  
-.home-text40 {
+.home-text37 {
   display: inline-block;
 }
  
@@ -7218,7 +6526,7 @@
   display: contents;
 }
  
-.home-text43 {
+.home-text41 {
   display: inline-block;
 }
  
@@ -7226,17 +6534,17 @@
   display: contents;
 }
  
-.home-text46 {
+.home-text44 {
   display: inline-block;
 }
  
-.home-separator3 {
+.home-separator4 {
   width: 90%;
   height: 1px;
   background-color: #595959;
 }
  
-.home-separator4 {
+.home-separator5 {
   width: 90%;
   height: 1px;
   background-color: #595959;
@@ -7259,7 +6567,7 @@
   display: inline-block;
 }
  
-.home-separator5 {
+.home-separator6 {
   width: 90%;
   height: 1px;
   background-color: #595959;
@@ -7290,7 +6598,7 @@
   display: inline-block;
 }
  
-.home-separator6 {
+.home-separator7 {
   width: 90%;
   height: 1px;
   display: flex;
@@ -7304,28 +6612,21 @@
  
 .home-text52 {
   display: inline-block;
-  font-style: normal;
 }
  
 .home-fragment44 {
   display: contents;
 }
  
-.home-text56 {
+.home-text53 {
   display: inline-block;
-}
- 
-.home-separator7 {
-  width: 90%;
-  height: 1px;
-  background-color: #595959;
 }
  
 .home-fragment45 {
   display: contents;
 }
  
-.home-text57 {
+.home-text54 {
   display: inline-block;
 }
  
@@ -7333,7 +6634,7 @@
   display: contents;
 }
  
-.home-text58 {
+.home-text55 {
   display: inline-block;
 }
  
@@ -7341,7 +6642,7 @@
   display: contents;
 }
  
-.home-text59 {
+.home-text56 {
   display: inline-block;
 }
  
@@ -7349,7 +6650,7 @@
   display: contents;
 }
  
-.home-text60 {
+.home-text57 {
   display: inline-block;
 }
  
@@ -7357,7 +6658,7 @@
   display: contents;
 }
  
-.home-text61 {
+.home-text58 {
   display: inline-block;
 }
  
@@ -7365,16 +6666,25 @@
   display: contents;
 }
  
-.home-text62 {
+.home-text59 {
   display: inline-block;
+}
+ 
+.home-separator8 {
+  width: 90%;
+  height: 1px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #595959;
 }
  
 .home-fragment51 {
   display: contents;
 }
  
-.home-text63 {
+.home-text60 {
   display: inline-block;
+  font-style: normal;
 }
  
 .home-fragment52 {
@@ -7383,6 +6693,12 @@
  
 .home-text64 {
   display: inline-block;
+}
+ 
+.home-separator9 {
+  width: 90%;
+  height: 1px;
+  background-color: #595959;
 }
  
 .home-fragment53 {
@@ -7405,7 +6721,7 @@
   display: contents;
 }
  
-.home-text67 {
+.home-text69 {
   display: inline-block;
 }
  
@@ -7413,7 +6729,7 @@
   display: contents;
 }
  
-.home-text68 {
+.home-text70 {
   display: inline-block;
 }
  
@@ -7421,7 +6737,7 @@
   display: contents;
 }
  
-.home-text69 {
+.home-text71 {
   display: inline-block;
 }
  
@@ -7429,7 +6745,7 @@
   display: contents;
 }
  
-.home-text70 {
+.home-text72 {
   display: inline-block;
 }
  
@@ -7437,7 +6753,7 @@
   display: contents;
 }
  
-.home-text71 {
+.home-text73 {
   display: inline-block;
 }
  
@@ -7445,7 +6761,7 @@
   display: contents;
 }
  
-.home-text72 {
+.home-text74 {
   display: inline-block;
 }
  
@@ -7453,7 +6769,7 @@
   display: contents;
 }
  
-.home-text73 {
+.home-text75 {
   display: inline-block;
 }
  
@@ -7461,7 +6777,7 @@
   display: contents;
 }
  
-.home-text74 {
+.home-text76 {
   display: inline-block;
 }
  
@@ -7469,7 +6785,7 @@
   display: contents;
 }
  
-.home-text75 {
+.home-text77 {
   display: inline-block;
 }
  
@@ -7477,7 +6793,7 @@
   display: contents;
 }
  
-.home-text76 {
+.home-text78 {
   display: inline-block;
 }
  
@@ -7485,7 +6801,7 @@
   display: contents;
 }
  
-.home-text77 {
+.home-text79 {
   display: inline-block;
 }
  
@@ -7493,7 +6809,7 @@
   display: contents;
 }
  
-.home-text78 {
+.home-text80 {
   display: inline-block;
 }
  
@@ -7501,7 +6817,7 @@
   display: contents;
 }
  
-.home-text79 {
+.home-text81 {
   display: inline-block;
 }
  
@@ -7509,7 +6825,7 @@
   display: contents;
 }
  
-.home-text80 {
+.home-text82 {
   display: inline-block;
 }
  
@@ -7517,7 +6833,7 @@
   display: contents;
 }
  
-.home-text81 {
+.home-text83 {
   display: inline-block;
 }
  
@@ -7525,7 +6841,7 @@
   display: contents;
 }
  
-.home-text82 {
+.home-text84 {
   display: inline-block;
 }
  
@@ -7533,7 +6849,7 @@
   display: contents;
 }
  
-.home-text83 {
+.home-text85 {
   display: inline-block;
 }
  
@@ -7541,7 +6857,7 @@
   display: contents;
 }
  
-.home-text84 {
+.home-text86 {
   display: inline-block;
 }
  
@@ -7549,7 +6865,7 @@
   display: contents;
 }
  
-.home-text85 {
+.home-text87 {
   display: inline-block;
 }
  
@@ -7557,7 +6873,7 @@
   display: contents;
 }
  
-.home-text86 {
+.home-text88 {
   display: inline-block;
 }
  
@@ -7565,7 +6881,79 @@
   display: contents;
 }
  
-.home-text87 {
+.home-text89 {
+  display: inline-block;
+}
+ 
+.home-link {
+  display: contents;
+}
+ 
+.home-component22 {
+  text-decoration: none;
+}
+ 
+.home-fragment76 {
+  display: contents;
+}
+ 
+.home-text90 {
+  display: inline-block;
+}
+ 
+.home-fragment77 {
+  display: contents;
+}
+ 
+.home-text91 {
+  display: inline-block;
+}
+ 
+.home-fragment78 {
+  display: contents;
+}
+ 
+.home-text92 {
+  display: inline-block;
+}
+ 
+.home-fragment79 {
+  display: contents;
+}
+ 
+.home-text93 {
+  display: inline-block;
+}
+ 
+.home-fragment80 {
+  display: contents;
+}
+ 
+.home-text94 {
+  display: inline-block;
+}
+ 
+.home-fragment81 {
+  display: contents;
+}
+ 
+.home-text95 {
+  display: inline-block;
+}
+ 
+.home-fragment82 {
+  display: contents;
+}
+ 
+.home-text96 {
+  display: inline-block;
+}
+ 
+.home-fragment83 {
+  display: contents;
+}
+ 
+.home-text97 {
   display: inline-block;
 }
  

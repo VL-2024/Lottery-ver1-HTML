@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lottery ver.1</title>
+    <title>loginform - Lottery ver.1</title>
+    <meta property="og:title" content="loginform - Lottery ver.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -64,20 +65,126 @@
     </style>
   </head>
   <body>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="./banner21.css" rel="stylesheet" />
-      <div class="banner21-container thq-section-padding banner21">
-        <div class="banner21-max-width thq-section-max-width">
-          <video
-            src="public/Video/video_home4.mp4"
-            loop="true"
-            muted="true"
-            poster="public/Video/video_home4.mp4"
-            autoplay="true"
-            playsinline="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-            class="banner21-video"
-          ></video>
+      <link href="./loginform.css" rel="stylesheet" />
+
+      <div class="loginform-container1">
+        <div class="loginform-container2">
+          <login-form-wrapper
+            class="login-form-wrapper"
+            rootclassname="login-formundefined"
+          >
+            <!--LoginForm component-->
+            <div class="login-form-container1 login-formroot-class-name">
+              <div class="login-form-container2 login-container">
+                <h1 class="login-form-text10">
+                  <fragment class="loginform-fragment9">
+                    <span class="loginform-text9">Вход в аккаунт</span>
+                  </fragment>
+                </h1>
+                <label class="login-form-text11">
+                  <fragment class="loginform-fragment1">
+                    <span class="loginform-text1">Номер телефона</span>
+                  </fragment>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  required="true"
+                  maxlength="18"
+                  placeholder="+996 (___) ___-__-__"
+                  class="login-form-textinput1 input"
+                />
+                <span class="login-form-text12">
+                  <fragment class="loginform-fragment2">
+                    <span class="loginform-text2">
+                      Мы отправим код подтверждения на указанный номер
+                    </span>
+                  </fragment>
+                </span>
+                <div id="smsCodeBlock" class="login-form-sms-code-block">
+                  <label>
+                    <fragment class="loginform-fragment3">
+                      <span class="loginform-text3">Код из СМС</span>
+                    </fragment>
+                  </label>
+                  <input
+                    type="tel"
+                    id="sms-code"
+                    pattern="\d"
+                    required="true"
+                    maxlength="4"
+                    minlength="4"
+                    placeholder="Код из СМС"
+                    class="login-form-textinput2 input"
+                  />
+                  <button
+                    id="smsCodeBtn"
+                    type="button"
+                    class="login-form-button1 sms-btn button"
+                  >
+                    <span class="login-form-text14">
+                      <fragment class="loginform-fragment5">
+                        <span class="loginform-text5">Продолжить</span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+                <div id="passwordBlock" class="login-form-password-block">
+                  <label class="login-form-text15">
+                    <fragment class="loginform-fragment4">
+                      <span class="loginform-text4">Пароль</span>
+                    </fragment>
+                  </label>
+                  <input
+                    type="password"
+                    id="password"
+                    minlength="6"
+                    placeholder="Пароль"
+                    class="login-form-textinput3 input"
+                  />
+                  <button
+                    id="passwordBtn"
+                    type="button"
+                    class="login-form-button2 sms-btn button"
+                  >
+                    <span>
+                      <fragment class="loginform-fragment6">
+                        <span class="loginform-text6">Продолжить</span>
+                      </fragment>
+                    </span>
+                  </button>
+                </div>
+                <button
+                  id="smsBtn"
+                  type="button"
+                  class="login-form-button3 sms-btn button"
+                >
+                  <span id="smsBtnText">
+                    <fragment class="loginform-fragment7">
+                      <span class="loginform-text7">Войти по СМС</span>
+                    </fragment>
+                  </span>
+                </button>
+                <button
+                  id="passwordLoginBtn"
+                  type="button"
+                  class="login-form-button4 button password-btn"
+                >
+                  <span>
+                    <fragment class="loginform-fragment8">
+                      <span class="loginform-text8">Войти по паролю</span>
+                    </fragment>
+                  </span>
+                </button>
+                <div
+                  id="message"
+                  class="login-form-container3 success-message hidden"
+                ></div>
+              </div>
+            </div>
+          </login-form-wrapper>
         </div>
       </div>
     </div>
